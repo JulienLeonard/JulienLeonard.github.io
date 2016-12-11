@@ -112,17 +112,23 @@ color: #000;}
 #introtekst hr{border-width: 8px 0 0;}
 
 #introtekst a img{
-	width: 100px;
+	width: 50px;
  	border: none;
-	display: inline-block;
+	float: left;
 	text-decoration: none;
+	margin-right: 30px;
 }
 
-
+.introtitle {
+    float: left;
+    display: inline-block;
+    font-size: 64px;
+    margin-bottom: 50px
+}
 
 .introlinks{
 	float: right;
-	margin-top: -50px;
+	margin-top: 0px;
 }
 .introlinks a{
 font-size: 14px;
