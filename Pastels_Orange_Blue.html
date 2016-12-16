@@ -1,0 +1,465 @@
+	
+<!DOCTYPE html>
+<html lang="en-US"> 
+    
+<head>
+
+<meta charset="UTF-8" />
+        
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if gte IE 9 ]><html class="no-js ie9" lang="en"> <![endif]-->
+    
+    <title>DOTS2ART - Generative Webfolio of Julien Leonard </title>
+        
+	<meta name="description" content="Generative Webfolio of Julien Leonard" />
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS ================================================== -->
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+    <!-- TODO
+	<link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cousine:400italic,400,700,700italic' rel='stylesheet' type='text/css'>
+     -->
+    
+    <!-- Favicons ================================================== -->
+        <!--
+	<link rel="shortcut icon" href="http://www.fiftylab.be/wp-content/themes/Iarts-portfolio/images/favicon.ico">
+	<link rel="apple-touch-icon" href="http://www.fiftylab.be/wp-content/themes/Iarts-portfolio/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="http://www.fiftylab.be/wp-content/themes/Iarts-portfolio/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="http://www.fiftylab.be/wp-content/themes/Iarts-portfolio/images/apple-touch-icon-114x114.png">
+    -->
+    
+    <!-- TODO
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    --> 
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    
+    <!--
+	<script type="text/javascript" src="http://www.fiftylab.be/wp-content/themes/Iarts-portfolio/glitch.js"></script>
+        <script src="http://www.fiftylab.be/wp-content/themes/Iarts-portfolio/jquery.glitch.js"></script>
+        -->
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+
+        <script src="javascript/jquery.flexslider.js"></script>
+
+	<script type="text/javascript">
+	  $(window).load(function(){
+          $('.flexslider').flexslider({
+          animation: "fade",
+          slideshow: true,
+	  slideshowSpeed: 3000,
+          });
+	  })
+
+	</script>
+
+	<!--
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.fiftylab.be\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.4"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+		-->
+
+<!-- TODO	
+<link rel='stylesheet' id='lightview-css'  href='http://www.fiftylab.be/wp-content/plugins/lightview-plus/css/lightview/lightview.css?ver=3.1.3' type='text/css' media='screen' />
+<link rel='stylesheet' id='lightview_plus-css'  href='http://www.fiftylab.be/wp-content/plugins/lightview-plus/style.css?ver=3.1.3' type='text/css' media='screen' />
+<script type='text/javascript' src='http://www.fiftylab.be/wp-includes/js/swfobject.js?ver=2.2-20120417'></script>
+<script type='text/javascript' src='http://www.fiftylab.be/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.fiftylab.be/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://www.fiftylab.be/wp-content/plugins/lightview-plus/js/spinners/spinners.min.js?ver=3.1.3'></script>
+<script type='text/javascript' src='http://www.fiftylab.be/wp-content/plugins/lightview-plus/js/lightview/lightview.js?ver=3.1.3'></script>
+<link rel='https://api.w.org/' href='http://www.fiftylab.be/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.fiftylab.be/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.fiftylab.be/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.4" />
+-->
+
+<!--
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-41485177-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85603200-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body class="home blog custom-background"><!-- the Body  -->
+      
+    
+<!--  the Menu -->   
+<!--  glitch 1 : http://xenxier.com/glitch.js/ //colors -->
+<!--
+<script type="text/javascript">
+  (function ($) {
+  // On page load:
+  $(document); // Fix jQuery nonsense
+  glitch(); // Start glitch script and clock
+  
+  // Override settings:
+  distort_objects_one_at_a_time = true;
+  distort_class_name = ".glitch";
+  distort_range = -5;
+  distort_backwards = false;
+  distort_blur = 0;
+  distort_chance = 1;
+  }(jQuery));
+  
+  $(function(){
+  
+  $('div.introlinks .glitch').glitch({bg:'white', minint:1, maxint:3, direction:'random'});
+  $('div.posttitle h2.glitch').glitch({bg:'#ffffff', minint:1, maxint:3, hoffset:30, voffset:10, direction:'random'});
+  $('div.columntitle span.glitch').glitch({bg:'#ffffff', minint:1, maxint:3, direction:'random'});
+  $('div.post span.glitch').glitch({bg:'transparent',minint:1, maxint:3, direction:'random'});
+  $('')
+  .css('background-color', 'transparent')
+  .html(function(){return '<span style="background-color:white">'+$(this).html()+'</span>';})
+  });
+
+  $(document).ready(function () {
+  
+  });
+</script>
+-->
+
+<div class="container">
+
+    <!-- menu header -->
+  <div class="sixteen columns" id="intro">
+    <div id="introtekst"><a href="http://julienleonard.com" title="DOTS2ART" rel="home"><img src="images/dots2art_logo.png" /></a></div>
+    <div class="introtitle">DOTS2ART</div>
+     <div class="introlinks">
+      <a class="glitch" href="index.html" target="_blank">home</a>
+      <a class="glitch" href="blog.html" target="_blank">blog</a>
+      <a class="glitch" href="about.html" target="_blank">about</a>
+      <a class="glitch" href="shop.html" target="_blank">shop</a>
+     </div>
+  </div>
+  
+  <div class="clear"></div>
+
+  <!--  End blog header -->
+
+
+  <div class="content">
+<h2>Pastels Orange Blue</h2>
+<p></p>
+    <div class="one-third column">
+      <div class="post">
+	<a href="Sea_Kingdom_1481368895.html"><img width="1024" height="1024" src="images/webrise11yellow1481362454.81.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1481362454.81.png 1024w, images/webrise11yellow1481362454.81.png 150w, images/webrise11yellow1481362454.81.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Sea_Kingdom_1481368895.html" title="Sea Kingdom">Sea Kingdom</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Bubble_Bouquet_1481325963.html"><img width="1024" height="1024" src="images/webrise11yellow1481237923.09.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1481237923.09.png 1024w, images/webrise11yellow1481237923.09.png 150w, images/webrise11yellow1481237923.09.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Bubble_Bouquet_1481325963.html" title="Bubble Bouquet">Bubble Bouquet</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Crystallogrowing_1481325732.html"><img width="1024" height="1024" src="images/webrise11yellow1480940232.58.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480940232.58.png 1024w, images/webrise11yellow1480940232.58.png 150w, images/webrise11yellow1480940232.58.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Crystallogrowing_1481325732.html" title="Crystallogrowing">Crystallogrowing</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Bluecolli_1480947040.html"><img width="1024" height="1024" src="images/webrise11yellow1480946563.95.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480946563.95.png 1024w, images/webrise11yellow1480946563.95.png 150w, images/webrise11yellow1480946563.95.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Bluecolli_1480947040.html" title="Bluecolli">Bluecolli</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Tiger_Shrimp_1480939777.html"><img width="1024" height="1024" src="images/webrise11yellow1480937768.55.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480937768.55.png 1024w, images/webrise11yellow1480937768.55.png 150w, images/webrise11yellow1480937768.55.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Tiger_Shrimp_1480939777.html" title="Tiger Shrimp">Tiger Shrimp</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Genie_Lamp_1480939070.html"><img width="1024" height="1024" src="images/webrise11yellow1480827597.28.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480827597.28.png 1024w, images/webrise11yellow1480827597.28.png 150w, images/webrise11yellow1480827597.28.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Genie_Lamp_1480939070.html" title="Genie Lamp">Genie Lamp</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Carrousel_1480826599.html"><img width="1024" height="1024" src="images/webrise11yellow1480824960.53.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480824960.53.png 1024w, images/webrise11yellow1480824960.53.png 150w, images/webrise11yellow1480824960.53.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Carrousel_1480826599.html" title="Carrousel">Carrousel</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Weaving_Steel_1480826407.html"><img width="1024" height="1024" src="images/webrise11yellow1480824804.63.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480824804.63.png 1024w, images/webrise11yellow1480824804.63.png 150w, images/webrise11yellow1480824804.63.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Weaving_Steel_1480826407.html" title="Weaving Steel">Weaving Steel</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Evasion_1480825762.html"><img width="1024" height="1024" src="images/webrise11yellow1480824634.71.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480824634.71.png 1024w, images/webrise11yellow1480824634.71.png 150w, images/webrise11yellow1480824634.71.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Evasion_1480825762.html" title="Evasion">Evasion</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Splash_1480825597.html"><img width="1024" height="1024" src="images/webrise11yellow1480824720.96.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480824720.96.png 1024w, images/webrise11yellow1480824720.96.png 150w, images/webrise11yellow1480824720.96.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Splash_1480825597.html" title="Splash">Splash</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Fungus_Blues_1480824414.html"><img width="1024" height="1024" src="images/webrise11yellow1480729429.94.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480729429.94.png 1024w, images/webrise11yellow1480729429.94.png 150w, images/webrise11yellow1480729429.94.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Fungus_Blues_1480824414.html" title="Fungus Blues">Fungus Blues</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Citrus_1480824218.html"><img width="1024" height="1024" src="images/webrise11yellow1480737296.32.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480737296.32.png 1024w, images/webrise11yellow1480737296.32.png 150w, images/webrise11yellow1480737296.32.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Citrus_1480824218.html" title="Citrus">Citrus</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Sun_vs_Dragon_1480751221.html"><img width="1024" height="1024" src="images/webrise11yellow1480750662.91.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480750662.91.png 1024w, images/webrise11yellow1480750662.91.png 150w, images/webrise11yellow1480750662.91.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Sun_vs_Dragon_1480751221.html" title="Sun vs Dragon">Sun vs Dragon</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Cryolava_1480728460.html"><img width="1024" height="1024" src="images/webrise11yellow1480727609.74.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480727609.74.png 1024w, images/webrise11yellow1480727609.74.png 150w, images/webrise11yellow1480727609.74.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Cryolava_1480728460.html" title="Cryolava">Cryolava</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Jelly_Fish_1480729200.html"><img width="1024" height="1024" src="images/webrise11yellow1480722725.12.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480722725.12.png 1024w, images/webrise11yellow1480722725.12.png 150w, images/webrise11yellow1480722725.12.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Jelly_Fish_1480729200.html" title="Jelly Fish">Jelly Fish</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Wind_Seed_1480727276.html"><img width="1024" height="1024" src="images/webrise11yellow1480722815.8.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480722815.8.png 1024w, images/webrise11yellow1480722815.8.png 150w, images/webrise11yellow1480722815.8.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Wind_Seed_1480727276.html" title="Wind Seed">Wind Seed</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Fecond_1480722389.html"><img width="1024" height="1024" src="images/webrise11yellow1480682496.09.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480682496.09.png 1024w, images/webrise11yellow1480682496.09.png 150w, images/webrise11yellow1480682496.09.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Fecond_1480722389.html" title="Fecond">Fecond</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Shooting_Star_1480722201.html"><img width="1024" height="1024" src="images/webrise11yellow1480682758.14.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480682758.14.png 1024w, images/webrise11yellow1480682758.14.png 150w, images/webrise11yellow1480682758.14.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Shooting_Star_1480722201.html" title="Shooting Star">Shooting Star</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Purplifere_1480686420.html"><img width="1024" height="1024" src="images/webrise11yellow1480683720.76.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480683720.76.png 1024w, images/webrise11yellow1480683720.76.png 150w, images/webrise11yellow1480683720.76.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Purplifere_1480686420.html" title="Purplifere">Purplifere</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Dew_Leaf_1480686133.html"><img width="1024" height="1024" src="images/webrise11yellow1480685368.87.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480685368.87.png 1024w, images/webrise11yellow1480685368.87.png 150w, images/webrise11yellow1480685368.87.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Dew_Leaf_1480686133.html" title="Dew Leaf">Dew Leaf</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Solaronic_1480685886.html"><img width="1024" height="1024" src="images/webrise11yellow1480637494.51.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480637494.51.png 1024w, images/webrise11yellow1480637494.51.png 150w, images/webrise11yellow1480637494.51.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Solaronic_1480685886.html" title="Solaronic">Solaronic</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Joker_1480685684.html"><img width="1024" height="1024" src="images/webrise11yellow1480684148.89.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480684148.89.png 1024w, images/webrise11yellow1480684148.89.png 150w, images/webrise11yellow1480684148.89.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Joker_1480685684.html" title="Joker">Joker</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Pousse_1480681154.html"><img width="1024" height="1024" src="images/webrise11yellow1480680828.66.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480680828.66.png 1024w, images/webrise11yellow1480680828.66.png 150w, images/webrise11yellow1480680828.66.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Pousse_1480681154.html" title="Pousse">Pousse</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="China_Blue_1480637202.html"><img width="1024" height="1024" src="images/webrise11yellow1480634530.43.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480634530.43.png 1024w, images/webrise11yellow1480634530.43.png 150w, images/webrise11yellow1480634530.43.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="China_Blue_1480637202.html" title="China Blue">China Blue</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Biphase_Growth_1480637003.html"><img width="1024" height="1024" src="images/webrise11yellow1480634992.69.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480634992.69.png 1024w, images/webrise11yellow1480634992.69.png 150w, images/webrise11yellow1480634992.69.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Biphase_Growth_1480637003.html" title="Biphase Growth">Biphase Growth</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Blue_Bysance_1480635790.html"><img width="1024" height="1024" src="images/webrise11yellow1480633798.86.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480633798.86.png 1024w, images/webrise11yellow1480633798.86.png 150w, images/webrise11yellow1480633798.86.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Blue_Bysance_1480635790.html" title="Blue Bysance">Blue Bysance</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Croiseur_1480635150.html"><img width="1024" height="1024" src="images/webrise11yellow1480634358.77.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11yellow1480634358.77.png 1024w, images/webrise11yellow1480634358.77.png 150w, images/webrise11yellow1480634358.77.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Croiseur_1480635150.html" title="Croiseur">Croiseur</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Feather_Fern_1480633137.html"><img width="1024" height="1024" src="images/webrise11blue1480320432.8.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11blue1480320432.8.png 1024w, images/webrise11blue1480320432.8.png 150w, images/webrise11blue1480320432.8.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Feather_Fern_1480633137.html" title="Feather Fern">Feather Fern</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Mechanic_Sprouts_1480320041.html"><img width="1024" height="1024" src="images/webrise11blue1480319397.15.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11blue1480319397.15.png 1024w, images/webrise11blue1480319397.15.png 150w, images/webrise11blue1480319397.15.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Mechanic_Sprouts_1480320041.html" title="Mechanic Sprouts">Mechanic Sprouts</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Peacock_Wheel_1480315365.html"><img width="1024" height="1024" src="images/webrise11blue1480310024.78.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11blue1480310024.78.png 1024w, images/webrise11blue1480310024.78.png 150w, images/webrise11blue1480310024.78.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Peacock_Wheel_1480315365.html" title="Peacock Wheel">Peacock Wheel</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Winter_1480304134.html"><img width="1024" height="1024" src="images/webrise11blue1480302904.0.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11blue1480302904.0.png 1024w, images/webrise11blue1480302904.0.png 150w, images/webrise11blue1480302904.0.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Winter_1480304134.html" title="Winter">Winter</a>
+	</div>	
+      </div> 	
+    </div>	
+    <div class="one-third column">
+      <div class="post">
+	<a href="Boreal_Shrimp_1480303968.html"><img width="1024" height="1024" src="images/webrise11blue1480303070.52.png" class="attachment-large size-large wp-post-image" alt="DSC00533" srcset="images/webrise11blue1480303070.52.png 1024w, images/webrise11blue1480303070.52.png 150w, images/webrise11blue1480303070.52.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<div class="title">  
+          <a href="Boreal_Shrimp_1480303968.html" title="Boreal Shrimp">Boreal Shrimp</a>
+	</div>	
+      </div> 	
+    </div>	    
+  </div>
+  
+
+  <div  id="footer">
+    
+    <div id="footertext" class="container">
+      
+      + <a href="mailto: jl.julien.leonard@gmail.com">mail</a> | <a href="http://julienleonard.tumblr.com">tumblr</a> | <a href="ram.com/julleor/">instagram</a>
+
+    </div>   
+
+    </div>  
+
+</div>                                        
+
+<!--
+<script type='text/javascript' src='http://www.fiftylab.be/wp-includes/js/wp-embed.min.js?ver=4.5.4'></script>
+-->
+
+</body>
+</html>           
+
