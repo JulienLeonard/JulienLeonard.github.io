@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="coquillagewebgl">
+    </div>
+    <script type="text/javascript" src="libs/others/webgl-utils.js"></script>
+    <script type="text/javascript" src="libs/others/sylvester.js"></script>
+    <script type="text/javascript" src="libs/jsvg/myquadtree.js"></script>
+    <script type="text/javascript" src="libs/jsvg/utils.js"></script>
+    <script type="text/javascript" src="libs/jsvg/color.js"></script>
+    <script type="text/javascript" src="libs/jsvg/geoutils.js"></script>
+    <script type="text/javascript" src="libs/jsvg/bside.js"></script>
+    <script type="text/javascript" src="libs/jsvg/mywebgl.js"></script>
+    <script type="text/javascript" src="libs/jsvg/bpatternbao.js"></script>
+    <script type="text/javascript" src="coquillagewebgl.js"></script>
+  </body>
+</html>

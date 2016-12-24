@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="migration3">
+    </div>
+    <script type="text/javascript" src="C:/Users/JulienL/Dropbox/Public/jsvg/libs/d3.v3/d3.v3.min.js"></script>
+    <script type="text/javascript" src="C:/Users/JulienL/Dropbox/Public/jsvg/libs/jsvg/myd3.js"></script>
+    <script type="text/javascript" src="C:/Users/JulienL/Dropbox/Public/jsvg/libs/others/sylvester.js"></script>
+    <script type="text/javascript" src="C:/Users/JulienL/Dropbox/Public/jsvg/libs/jsvg/myquadtree.js"></script>
+    <script type="text/javascript" src="C:/Users/JulienL/Dropbox/Public/jsvg/libs/jsvg/utils.js"></script>
+    <script type="text/javascript" src="C:/Users/JulienL/Dropbox/Public/jsvg/libs/jsvg/geoutils.js"></script>
+    <script type="text/javascript" src="C:/Users/JulienL/Dropbox/Public/jsvg/libs/jsvg/bpatternbao.js"></script>
+    <script type="text/javascript" src="C:/Users/JulienL/Dropbox/Public/jsvg/migration3.js"></script>
+  </body>
+</html>

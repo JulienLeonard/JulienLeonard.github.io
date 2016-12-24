@@ -1,0 +1,58 @@
+function mymax(values) {
+	return d3.max(values)
+}
+
+function mymin(values) {
+	return d3.min(values)
+}
+
+// TODO: must define proper encapsulation to have multiple concurrent seeds
+var randomseed = 0;
+
+function initrandomseed(seed) {
+	randomseed = seed;
+}
+
+function myrandom() {
+    var x = Math.sin(randomseed++) * 10000;
+    return x - Math.floor(x);
+}
+
+function rand(min, max) {
+	return myrandom() * (max - min) + min;
+}
+
+function randitem(array) {
+	return array[Math.floor(rand(0.0,array.length))];
+}
+
+function lcircular(array,index) {
+	return array[index % array.length];
+}
+
+function lconcat(list1,list2) {
+	return list1.concat(list2);
+}
+
+function lrepeat(v,ntimes) {
+	result = [];
+	var i = 0;
+	for (i = 0; i < ntimes; i++) {
+		result.push(v);
+	}
+	return result;
+}
+
+function sample(v1,v2,abs) {
+	return v1 + (v2-v1) *abs;
+}
+
+function samples(v1,v2,nitems) {
+	var result = [];
+	var i = 0;
+	for (i=0; i< nitems;i++) {
+		var abs = i/nitems;
+		result.push(sample(v1,v2,abs));
+	}
+	return result;
+}
