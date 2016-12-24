@@ -192,7 +192,7 @@ color: #000;
 position: absolute;
 top: 40%;
 width: 100%;
-font-family: 'Cantarell', sans-serif;
+font-family: 'Cousine', sans-serif;
 text-align: center;
 }
 
@@ -206,7 +206,7 @@ color: #000;
 
 top: 40%;
 width: 100%;
-font-family: 'Cantarell', sans-serif;
+font-family: 'Cousine', sans-serif;
 text-align: right;
 }
 
@@ -223,7 +223,7 @@ height: 100%;
 text-align: center;
 vertical-align: middle;    
 line-height: 30px;
-font-family: 'cantarell', sans-serif;
+font-family: 'Cousine', sans-serif;
 font-weight: bold;
 
 font-size: 20px;
@@ -288,7 +288,7 @@ width: 80%;
 }
 
 .subposttitle{
-	font-family: 'Cantarell', sans-serif;
+	font-family: 'Cousine', sans-serif;
 	font-size: 14px;
 	width: 100%;
 	text-align: center;
@@ -326,7 +326,7 @@ border: 1px solid #000; padding: 2px;
 #backlink{
 font-size: 45px;
 line-height: 60px;
-font-family: 'Cantarell', sans-serif;
+font-family: 'Cousine', sans-serif;
 float:left;
 min-width: 10%;
 max-height: 30px;
@@ -342,7 +342,7 @@ text-decoration: line-through;
 
 }
 
-#nextlink{text-align: right; font-family: 'Cantarell', sans-serif; font-size: 45px;
+#nextlink{text-align: right; font-family: 'Cousine', sans-serif; font-size: 45px;
 line-height: 60px; float: right; min-width: 10%;}
 
 #nextlink a{
@@ -371,15 +371,15 @@ text-decoration: line-through;
 	.title{margin-top: -0px;}
 	#subtitle{margin-top: -20px; color: #a51a1f;}
 
-	#footertext a{line-height: 40px; text-size: 24px; text-align: left; color:#ffffff; font-family: 'Cantarell', sans-serif;}
+	#footertext a{line-height: 40px; text-size: 24px; text-align: left; color:#ffffff; font-family: 'Cousine', sans-serif;}
 
 /* #Basic Styles
 ================================================== */
 	body {
 		background-color: #ffffff;
-		font-family: "Cousine";
-  line-height: 20px;
-  font-size: 13px;
+		font-family: 'Cousine';
+		line-height: 20px;
+		font-size: 13px;
 		color: #000;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
@@ -409,7 +409,7 @@ margin-bottom: 0px;
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
 		color: #181818;
-		font-family: "Georgia", "Times New Roman", serif;
+		font-family: 'Cousine';
 		font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; text-decoration: none;}
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
@@ -502,7 +502,7 @@ margin-bottom: 0px;
 	  margin-bottom: 20px;
 	  line-height: normal;
 	  padding: 8px 10px;
-	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+	  font-family: 'Cousine'; }
 
 	.button:hover,
 	button:hover,
