@@ -191,41 +191,31 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <h1>Making of paper cut butterfly</h1>
 <p>Welcome to my second tutorial post on generative art.</p>
 <p>I am going to describe here the process to generate the following artwork, entitled <a href="work:Paper"></a> Cut Butterfly_1434337762][Paper Cut Butterfly]]</p>
-<p>+BEGIN_IMG_FROM_WORK</p>
-<p><a href="http://dl.dropboxusercontent.com/u/78965321/site/images/pictures/Paper_Cut_Butterfly.jpg">Paper</a> Cut Butterfly]]</p>
-<p>+END_IMG_FROM_WORK</p>
+<p><img src="images/Paper_Cut_Butterfly.jpg"/></p>
 <p>This tutorial is going to be quite fast-paced, so if you have any question, please feel free to enter them below as a commentary.</p>
 <h2>Contour</h2>
 <p>The first thing necessary to compute this image is to get a proper vector contour. I choose to use SVG contour, as they are easy to parse, and can be easily generated with open-source tools like <a href="http://inkscape.org">Inkscape</a> Here it is:</p>
-<p>+BEGIN_IMG</p>
-<p><a href="../archive/dots2art/images/tuto/butterfly_contour.jpg">butterfly_contour</a></p>
-<p>+END_IMG</p>
+<p><img src="images/butterfly_contour.jpg"/></p>
 <p>Once we have got the proper SVG file, we can get the corresponding path specification of the shape (a SVG path), then parse it to build a polybezier curve.</p>
 <h2>Polybezier</h2>
 <p>A polybezier curve is simply a list of adjacent atomic bezier curves that defines the contour. I use a custom library (basically a translation of my Ruby <a href="http://xrvg.rubyforge.org">XRVG</a> library, in python) to both parse the SVG path, and handle the resulting object.</p>
 <p>One thing to note in particular, when dealing with bezier curves, is that they are parametric curves, but their parameter is not linear: if you sample a bezier curve with a linear sampling of its parameter, you will not get an evenly distributed set of points (it can actually give you some pretty cool distribution though ...). To be able to sample properly such a curve, a proper linearisation of it must be done. I will not describe here this matter that will hopefully be the subject of another post.</p>
 <p>Let just note that the polybezier object is also used to abstract this linearisation, that gives access to all the curve properties that we need for the rest of the generative process. Here is a representation of the polybezier curve with its control points:</p>
-<p>+BEGIN_IMG</p>
-<p><a href="../archive/dots2art/images/tuto/butterfly_tuto2.jpg">butterfly_tuto2</a></p>
-<p>+END_IMG</p>
+<p><img src="images/butterfly_tuto2.jpg"/></p>
 <h2>Seed</h2>
 <p>Once we have got access to the contour properties, we need to do 2 things.</p>
 <p>First, we need to compute the viewbox of the contour, and from there to compute the enclosing circle, for the exterior boundary.</p>
 <p>Then, we need to compute a string of adjacent circles on this contour and this boundary, first to define collision boundaries, and then to define seeds for the optimization process, a seed being a pair of adjacent circles chosen from the string.</p>
 <p>Here is a large-grained picture of the circles strings defined on the two contours:</p>
-<p>+BEGIN_IMG</p>
-<p><a href="../archive/dots2art/images/tuto/butterfly_tuto_cstring.jpg">butterfly_tuto_cstring</a></p>
-<p>+END_IMG</p>
+<p><img src="images/butterfly_tuto_cstring.jpg"/></p>
 <h2>Maximum Circle Packing</h2>
 <p>Once we have got the seeds, we can start to compute the maximum circle packing diagram, that is the diagram made of circles which have maximum radius and are enclosed in the contour (so are not colliding with any other circle).</p>
 <p>To compute those circles, we compute for each seed the maximum-sized adjacent circle that can be defined by them (by a short optimization process), and then choose the largest one among the seeds. Once we have got the maximum-sized circle for this iteration, we keep it in the result, and add it in the collision buffer list. As an additional trick, we can instead add a modified version of the circle, by decreasing its radius, to give more space to the next circles.</p>
 <p>Hereafter you can see the result of this computation for different numbers of circles (1, 16, 256 and 2048), with a radius ratio of 0.5.</p>
-<p>+BEGIN_IMGS_ROW</p>
-<p><a href="../archive/dots2art/images/tuto/butterfly_tuto_1max.jpg">butterfly_tuto_1max</a></p>
-<p><a href="../archive/dots2art/images/tuto/butterfly_tuto_5.jpg">butterfly_tuto_5</a></p>
-<p><a href="../archive/dots2art/images/tuto/butterfly_tuto_10.jpg">butterfly_tuto_10</a></p>
-<p><a href="../archive/dots2art/images/tuto/butterfly_tuto_1000.jpg">butterfly_tuto_1000</a></p>
-<p>+END_IMGS_ROW</p>
+<p><img src="images/butterfly_tuto_1max.jpg"/>
+<img src="images/butterfly_tuto_5.jpg"/>
+<img src="images/butterfly_tuto_10.jpg"/>
+<img src="images/butterfly_tuto_1000.jpg"/></p>
 <h2>Voronoi</h2>
 <p>I will not explain here the nature of a Voronoi diagram (you can check for example <a href="https://en.wikipedia.org/wiki/Voronoi_diagram">here</a> but it is enough to say that this kind of diagram is ubiquitous in Nature, and usually leads to beautiful generative designs.</p>
 <p>For this artwork, I use the centers of the maximum circles previously computed to obtain two Voronoi diagrams, one inside the butterfly and one outside the butterfly but inside the enclosing circle. It's worth mentionning that Voronoi polygons are trimmed from the computational raw results, to keep only those that are completely contained inside the contours.</p>

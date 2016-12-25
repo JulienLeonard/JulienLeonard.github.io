@@ -199,19 +199,19 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <p>More precisely, we can define the color of a newly computed circle by taking into account the colors of the 2 parents and add a small variation.</p>
 <p>A nice way to do this is to use colors described as a hue (see here the detailed description of this color format).</p>
 <p>By defining an initial hue for the root circles, and a constant hue increment of 0.1 for each new circle, we get:</p>
-<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2colorhueincr01.py"></a></p>
-<p>IMAGE: file+sys:C:devPVGexamplesx2colorhueincr01.png</p>
+<p><img src="images/2x2colorhueincr01.png"/></p>
+<p></p>
 <p>Interesting!</p>
 <p>Of course, as for the radius in the previous tutorial, we can make this increment random, for example in the -0.2 0.2 interval, to get a centered color variation:</p>
-<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2colorhueincrrand02.py"></a></p>
-<p>IMAGE: file+sys:C:devPVGexamplesx2colorhueincrrand02.png</p>
+<p><img src="images/2x2colorhueincrrand02.png"/></p>
+<p></p>
 <p>Nice !</p>
 <p>This process can be extended to other parameters of the colors, in particular for the light component (see here again). We can make it synchro with the hue variation :</p>
-<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2colorhueincrrandlight02.py"></a></p>
-<p>IMAGE: file+sys:C:devPVGexamplesx2colorhueincrrandlight02.png</p>
+<p><img src="images/2x2colorhueincrrandlight02.png"/></p>
+<p></p>
 <p>Or not:</p>
-<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2colorhueincrrandlight03.py"></a></p>
-<p>IMAGE: file+sys:C:devPVGexamplesx2colorhueincrrandlight03.png</p>
+<p><img src="images/2x2colorhueincrrandlight03.png"/></p>
+<p></p>
 <p>This last example is interesting: varying parameters one after the other is interesting, but combining them open new kinds of algorithms that are more powerful.</p>
 <p>So considering this point, we can go back to think about combining colors with radius variations !</p>
 <h2>Radius and color</h2>
@@ -220,8 +220,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <p>As a consequence, to synchronize them, we first need to take a random value from a given interval (by convention (0.0,1.0)),</p>
 <p>then map the result on the intervals of the two variables, to get the two variations.</p>
 <p>By doing so, we get</p>
-<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2colorradiushue1.py"></a></p>
-<p>IMAGE: file+sys:C:devPVGexamplesx2colorradiushue1.png</p>
+<p><img src="images/2x2colorradiushue1.png"/></p>
+<p></p>
 <p>Interesting, but somehow not easy to see the relationship between radius and color.</p>
 <p>As a matter of fact, we are mapping increments, not quantities, and as a consequence,the relationship between them is not obvious.</p>
 <p>To make the relationship more noticeable, we must map the quantities themselves, for example radiuses to colors.</p>
@@ -233,8 +233,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <p>As described in the previous section, if we want to map radiuses with colors, we cannot do it locally, as we must know the range of radiuses of the pattern before computing a single color.</p>
 <p>As a consequence, we must use another type of algorithm, called non-local, whose template is the following:</p>
 <p>By doing so, we got:</p>
-<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2colorradiushue2.py"></a></p>
-<p>IMAGE: file+sys:C:devPVGexamplesx2colorradiushue2.png</p>
+<p><img src="images/2x2colorradiushue2.png"/></p>
+<p></p>
 <h2>Emergence</h2>    
   </div>
   
