@@ -189,52 +189,52 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
   <div class="content">
 <h1>Color packing</h1>
-In the previous tutorial of this ongoing serie, I introduced the circle packing 2x2 algorithm.
-I explained how the simple 2x2 rule, creating a new circle from 2 adjacent ones, can be iterated to produce circle packing patterns.
-I also explored a first way to adapt the algorithm to create more interesting and natural patterns.
-This new tutorial will build on the previous one by exploring another way to adapt the 2x2 algorithm.
-It will present different ways to draw the computed circle patterns, by computing varying colors.
+<p>In the previous tutorial of this ongoing serie, I introduced the circle packing 2x2 algorithm.</p>
+<p>I explained how the simple 2x2 rule, creating a new circle from 2 adjacent ones, can be iterated to produce circle packing patterns.</p>
+<p>I also explored a first way to adapt the algorithm to create more interesting and natural patterns.</p>
+<p>This new tutorial will build on the previous one by exploring another way to adapt the 2x2 algorithm.</p>
+<p>It will present different ways to draw the computed circle patterns, by computing varying colors.</p>
 <h2>Color diffusion</h2>
-À first way to define colors for each computed circle is to use a similar rule as for the radius.
-More precisely, we can define the color of a newly computed circle by taking into account the colors of the 2 parents and add a small variation.
-A nice way to do this is to use colors described as a hue (see here the detailed description of this color format).
-By defining an initial hue for the root circles, and a constant hue increment of 0.1 for each new circle, we get:
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2colorhueincr01.py]]
-IMAGE: file+sys:C:\dev\PVG\examples\2x2colorhueincr01.png
-Interesting!
-Of course, as for the radius in the previous tutorial, we can make this increment random, for example in the -0.2 0.2 interval, to get a centered color variation:
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2colorhueincrrand02.py]]
-IMAGE: file+sys:C:\dev\PVG\examples\2x2colorhueincrrand02.png
-Nice !
-This process can be extended to other parameters of the colors, in particular for the light component  (see here again).  We can make it synchro with the hue variation :
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2colorhueincrrandlight02.py]]
-IMAGE: file+sys:C:\dev\PVG\examples\2x2colorhueincrrandlight02.png
-Or not:
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2colorhueincrrandlight03.py]]
-IMAGE: file+sys:C:\dev\PVG\examples\2x2colorhueincrrandlight03.png
-This last example is interesting: varying parameters one after the other is interesting, but combining them open new kinds of algorithms that are more powerful.
-So considering this point, we can go back to think about combining colors with radius variations !
+<p>À first way to define colors for each computed circle is to use a similar rule as for the radius.</p>
+<p>More precisely, we can define the color of a newly computed circle by taking into account the colors of the 2 parents and add a small variation.</p>
+<p>A nice way to do this is to use colors described as a hue (see here the detailed description of this color format).</p>
+<p>By defining an initial hue for the root circles, and a constant hue increment of 0.1 for each new circle, we get:</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2colorhueincr01.py"></a></p>
+<p>IMAGE: file+sys:C:devPVGexamplesx2colorhueincr01.png</p>
+<p>Interesting!</p>
+<p>Of course, as for the radius in the previous tutorial, we can make this increment random, for example in the -0.2 0.2 interval, to get a centered color variation:</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2colorhueincrrand02.py"></a></p>
+<p>IMAGE: file+sys:C:devPVGexamplesx2colorhueincrrand02.png</p>
+<p>Nice !</p>
+<p>This process can be extended to other parameters of the colors, in particular for the light component (see here again). We can make it synchro with the hue variation :</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2colorhueincrrandlight02.py"></a></p>
+<p>IMAGE: file+sys:C:devPVGexamplesx2colorhueincrrandlight02.png</p>
+<p>Or not:</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2colorhueincrrandlight03.py"></a></p>
+<p>IMAGE: file+sys:C:devPVGexamplesx2colorhueincrrandlight03.png</p>
+<p>This last example is interesting: varying parameters one after the other is interesting, but combining them open new kinds of algorithms that are more powerful.</p>
+<p>So considering this point, we can go back to think about combining colors with radius variations !</p>
 <h2>Radius and color</h2>
-A first way to synchronize radius and color when creating a new circle is just to take the same amount of variation for both quantities.
-However, we must note that radius and color variations are not expressed in the same way: radius variation by a ratio between (1.2, 0.8) while color (hue) variation by an increment (-0.1,0.1).
-As a consequence, to synchronize them, we first need to take a random value from a given interval (by convention (0.0,1.0)),
-then map the result on the intervals of the two variables, to get the two variations.
-By doing so, we get
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2colorradiushue1.py]]
-IMAGE: file+sys:C:\dev\PVG\examples\2x2colorradiushue1.png
-Interesting, but somehow not easy to see the relationship between radius and color.
-As a matter of fact, we are mapping increments, not quantities, and as a consequence,the relationship between them is  not obvious.
-To make the relationship more noticeable, we must map the quantities themselves, for example radiuses to colors.
-But to do so, to be able to compute a color, we must know the range of radiuses of the pattern.
-And as such, we must abandon locality.
+<p>A first way to synchronize radius and color when creating a new circle is just to take the same amount of variation for both quantities.</p>
+<p>However, we must note that radius and color variations are not expressed in the same way: radius variation by a ratio between (1.2, 0.8) while color (hue) variation by an increment (-0.1,0.1).</p>
+<p>As a consequence, to synchronize them, we first need to take a random value from a given interval (by convention (0.0,1.0)),</p>
+<p>then map the result on the intervals of the two variables, to get the two variations.</p>
+<p>By doing so, we get</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2colorradiushue1.py"></a></p>
+<p>IMAGE: file+sys:C:devPVGexamplesx2colorradiushue1.png</p>
+<p>Interesting, but somehow not easy to see the relationship between radius and color.</p>
+<p>As a matter of fact, we are mapping increments, not quantities, and as a consequence,the relationship between them is not obvious.</p>
+<p>To make the relationship more noticeable, we must map the quantities themselves, for example radiuses to colors.</p>
+<p>But to do so, to be able to compute a color, we must know the range of radiuses of the pattern.</p>
+<p>And as such, we must abandon locality.</p>
 <h2>Non locality</h2>
-Every algorithm described up to now are based on local computation rules.
-Attributes of a new circle are computed from increments of "parents"'s characteristics.
-As described in the previous section, if we want to map radiuses with colors, we cannot do it locally, as we must know the range of radiuses of the pattern before computing a single color.
-As a consequence, we must use another type of algorithm, called non-local, whose template is the following:
-By doing so, we got:
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2colorradiushue2.py]]
-IMAGE: file+sys:C:\dev\PVG\examples\2x2colorradiushue2.png
+<p>Every algorithm described up to now are based on local computation rules.</p>
+<p>Attributes of a new circle are computed from increments of parents's characteristics.</p>
+<p>As described in the previous section, if we want to map radiuses with colors, we cannot do it locally, as we must know the range of radiuses of the pattern before computing a single color.</p>
+<p>As a consequence, we must use another type of algorithm, called non-local, whose template is the following:</p>
+<p>By doing so, we got:</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2colorradiushue2.py"></a></p>
+<p>IMAGE: file+sys:C:devPVGexamplesx2colorradiushue2.png</p>
 <h2>Emergence</h2>    
   </div>
   

@@ -189,62 +189,62 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
   <div class="content">
 <h1>The Circle Network</h1>
-In the previous articles, here and here, I described how the 2x2 circle packing algorithm can be used  to generate and color circle packing patterns.
-With this new tutorial, I will detail a new way to look at those patterns, and by doing so I will introduce new processes to render them.
+<p>In the previous articles, here and here, I described how the 2x2 circle packing algorithm can be used to generate and color circle packing patterns.</p>
+<p>With this new tutorial, I will detail a new way to look at those patterns, and by doing so I will introduce new processes to render them.</p>
 <h2>What is a circle ?</h2>
-Let's go back to one of the very first picture we generated:
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2singlepackequi.py]]
-RESULT: [[file+sys:C:\dev\PVG\examples\2x2singlepackequi.png]]
-If we keep on iterating a bit more, we obtain the following picture:
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2singlepackequi100.py]]
-RESULT: [[file+sys:C:\dev\PVG\examples\2x2singlepackequi100.png]]
-If you look at this picture from far or rapidly, you  hardly notice the circles anymore. Instead, you only perceive a network of shapes, vaguely similar to a plant or a cloud.
-Consider now that when we compute circles to generate patterns, we actually use circles for two different purposes :
-Using the same circles to compute and draw the patterns is actually just a convenient shortcut. We can now try a bit harder.
+<p>Let's go back to one of the very first picture we generated:</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2singlepackequi.py"></a></p>
+<p>RESULT: <a href="file+sys:C:devPVGexamplesx2singlepackequi.png"></a></p>
+<p>If we keep on iterating a bit more, we obtain the following picture:</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2singlepackequi100.py"></a></p>
+<p>RESULT: <a href="file+sys:C:devPVGexamplesx2singlepackequi100.png"></a></p>
+<p>If you look at this picture from far or rapidly, you hardly notice the circles anymore. Instead, you only perceive a network of shapes, vaguely similar to a plant or a cloud.</p>
+<p>Consider now that when we compute circles to generate patterns, we actually use circles for two different purposes :</p>
+<p>Using the same circles to compute and draw the patterns is actually just a convenient shortcut. We can now try a bit harder.</p>
 <h2>Dissociation</h2>
-A first thing that we can do to differentiate the 2 kinds of circles is to draw them reduced:
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2singlepackequi05.py]]
-RESULT: [[file+sys:C:\dev\PVG\examples\2x2singlepackequi05.png]]
-or expanded
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2singlepackequi2.py]]
-RESULT: [[file+sys:C:\dev\PVG\examples\2x2singlepackequi2.png]]
-Another way is to draw a line of circles between 2 adjacent circles
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2singlepackequiline.py]]
-RESULT: [[file+sys:C:\dev\PVG\examples\2x2singlepackequiline.png]]
-So far so good. But let's go a bit further.
+<p>A first thing that we can do to differentiate the 2 kinds of circles is to draw them reduced:</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2singlepackequi05.py"></a></p>
+<p>RESULT: <a href="file+sys:C:devPVGexamplesx2singlepackequi05.png"></a></p>
+<p>or expanded</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2singlepackequi2.py"></a></p>
+<p>RESULT: <a href="file+sys:C:devPVGexamplesx2singlepackequi2.png"></a></p>
+<p>Another way is to draw a line of circles between 2 adjacent circles</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2singlepackequiline.py"></a></p>
+<p>RESULT: <a href="file+sys:C:devPVGexamplesx2singlepackequiline.png"></a></p>
+<p>So far so good. But let's go a bit further.</p>
 <h2>The family triangle</h2>
-The 2x2 rule consists in creating a child circle from 2 parents.
-Instead of representing each member of a family by individual circles, we can instead represent the family itself by a single shape, that is as a triangle, linking each circle center:
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2singlepackequitriangle.py]]
-RESULT: [[file+sys:C:\dev\PVG\examples\2x2singlepackequitriangle.png]]
-We can shrink the triangles towards their centers:
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2singlepackequitriangleshrink.py]]
-RESULT: [[file+sys:C:\dev\PVG\examples\2x2singlepackequitriangleshrink.png]]
-And then mix the 2 representations, to give:
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2singlepackequimix.py]]
-RESULT: [[file+sys:C:\dev\PVG\examples\2x2singlepackequimix.png]]
-This last example is interesting because it highlights the 2 different ways we identified to draw a pattern:
-And as described in the previous section, it is actually the relationships that really make the pattern.
-As a consequence, we can look at other ways to represent relationships between shapes, to find new interesting ways to draw patterns. And by doing so, a very famous and ubiquitous algorithm will impose by itself, as described in the next section.
+<p>The 2x2 rule consists in creating a child circle from 2 parents.</p>
+<p>Instead of representing each member of a family by individual circles, we can instead represent the family itself by a single shape, that is as a triangle, linking each circle center:</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2singlepackequitriangle.py"></a></p>
+<p>RESULT: <a href="file+sys:C:devPVGexamplesx2singlepackequitriangle.png"></a></p>
+<p>We can shrink the triangles towards their centers:</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2singlepackequitriangleshrink.py"></a></p>
+<p>RESULT: <a href="file+sys:C:devPVGexamplesx2singlepackequitriangleshrink.png"></a></p>
+<p>And then mix the 2 representations, to give:</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2singlepackequimix.py"></a></p>
+<p>RESULT: <a href="file+sys:C:devPVGexamplesx2singlepackequimix.png"></a></p>
+<p>This last example is interesting because it highlights the 2 different ways we identified to draw a pattern:</p>
+<p>And as described in the previous section, it is actually the relationships that really make the pattern.</p>
+<p>As a consequence, we can look at other ways to represent relationships between shapes, to find new interesting ways to draw patterns. And by doing so, a very famous and ubiquitous algorithm will impose by itself, as described in the next section.</p>
 <h2>Voronoi</h2>
-The Voronoi algorithm, described here, allows to pave a plan by delimiting regions nearest to a set of points. The resulting Voronoi diagram, that can be seen again and again in Nature, is made of adjacent polygons separating those regions, and centered on each point of a given set.
-If we go back to our circle packing, it is very straightforward to use the centers of the circles of the pattern as the set of points to build a Voronoi diagram.
-If we do so, we get:
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2singlepackvoronoi.py]]
-RESULT: [[file+sys:C:\dev\PVG\examples\2x2singlepackvoronoi.png]]
-We can improve the picture by using a trick.
-Instead of filling polygons only, we can also draw their edges with a fixed width. By doing so, we will highlight the densily-packed zones, as below:
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2singlepackvoronoib.py]]
-RESULT: [[file+sys:C:\dev\PVG\examples\2x2singlepackvoronoib.png]]
+<p>The Voronoi algorithm, described here, allows to pave a plan by delimiting regions nearest to a set of points. The resulting Voronoi diagram, that can be seen again and again in Nature, is made of adjacent polygons separating those regions, and centered on each point of a given set.</p>
+<p>If we go back to our circle packing, it is very straightforward to use the centers of the circles of the pattern as the set of points to build a Voronoi diagram.</p>
+<p>If we do so, we get:</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2singlepackvoronoi.py"></a></p>
+<p>RESULT: <a href="file+sys:C:devPVGexamplesx2singlepackvoronoi.png"></a></p>
+<p>We can improve the picture by using a trick.</p>
+<p>Instead of filling polygons only, we can also draw their edges with a fixed width. By doing so, we will highlight the densily-packed zones, as below:</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2singlepackvoronoib.py"></a></p>
+<p>RESULT: <a href="file+sys:C:devPVGexamplesx2singlepackvoronoib.png"></a></p>
 <h2>Voronoi blend</h2>
-Through the previous sectiond, we have seen different ways to render a circle packing pattern:
-A lot of those simple algorithms can be further extended to give very interesting results.
-As a first example, we can get the following picture just by mixing the 3 representations we have studied above (circles, triangles, and voronoi):
-IMAGEFROMSCRIPT: [[C:\dev\PVG\examples\2x2singlepackvoronoiblend.py]]
-RESULT: [[file+sys:C:\dev\PVG\examples\2x2singlepackvoronoiblend.png]]
-All good ! But note however that all these pictures are for the koment based on the same kind of pattern shapes.
-So in the next article, I will highlight a subtle mechanism of the 2x2 circle packing algorithm, that will be twicked to provide very different results.
-Stay tuned ! A bientôt.    
+<p>Through the previous sectiond, we have seen different ways to render a circle packing pattern:</p>
+<p>A lot of those simple algorithms can be further extended to give very interesting results.</p>
+<p>As a first example, we can get the following picture just by mixing the 3 representations we have studied above (circles, triangles, and voronoi):</p>
+<p>IMAGEFROMSCRIPT: <a href="C:devPVGexamplesx2singlepackvoronoiblend.py"></a></p>
+<p>RESULT: <a href="file+sys:C:devPVGexamplesx2singlepackvoronoiblend.png"></a></p>
+<p>All good ! But note however that all these pictures are for the koment based on the same kind of pattern shapes.</p>
+<p>So in the next article, I will highlight a subtle mechanism of the 2x2 circle packing algorithm, that will be twicked to provide very different results.</p>
+<p>Stay tuned ! A bientôt.</p>    
   </div>
   
 

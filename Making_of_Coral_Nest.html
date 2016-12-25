@@ -189,49 +189,49 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
   <div class="content">
 <h1>Making of Coral Nest</h1>
-In this post, I am going to describe how the work below, [[work:test_bworld.66_1417835639][Coral Nest]], has been created.
-+BEGIN_IMG_FROM_WORK
-[[http://dl.dropboxusercontent.com/u/78965321/site/images/pictures/test_bworld.66.jpg][Coral Nest]]
-+END_IMG_FROM_WORK
-Coral Net is made of 30000+ circles, computed by a generative program. This computer program uses pre-defined patterns of adjacent circles, and tries to combine them without collision.
-Let check first what are adjacent circles, and how we can define patterns and combinations with them.
+<p>In this post, I am going to describe how the work below, <a href="work:test_bworld.66_1417835639">Coral</a> Nest]], has been created.</p>
+<p>+BEGIN_IMG_FROM_WORK</p>
+<p><a href="http://dl.dropboxusercontent.com/u/78965321/site/images/pictures/test_bworld.66.jpg">Coral</a> Nest]]</p>
+<p>+END_IMG_FROM_WORK</p>
+<p>Coral Net is made of 30000+ circles, computed by a generative program. This computer program uses pre-defined patterns of adjacent circles, and tries to combine them without collision.</p>
+<p>Let check first what are adjacent circles, and how we can define patterns and combinations with them.</p>
 <h2>Circles adjacency</h2>
-+BEGIN_IMG
-[[../archive/dots2art/images/tuto/adjacent.jpg][adjacent]]
-+END_IMG
-Two circles are adjacent if their intersection only consists of one point. It simply means that the two circles touch each other.
+<p>+BEGIN_IMG</p>
+<p><a href="../archive/dots2art/images/tuto/adjacent.jpg">adjacent</a></p>
+<p>+END_IMG</p>
+<p>Two circles are adjacent if their intersection only consists of one point. It simply means that the two circles touch each other.</p>
 <h2>Iterating adjacent circles</h2>
-One interesting way to consider two adjacent circles is to imagine that a first circle gives berth to a second one, according to some parameters, a bit like cell division.
-+BEGIN_IMG
-[[../archive/dots2art/images/tuto/adjacent4.jpg][adjacent4]]
-+END_IMG
-Thus:
-Of course, by varying the angles and the radiuses used at each step for the new circles, we can get some interesting designs. In particular, we can define several new circles with different angles from a same circle, to create bifurcations and trees of circles.
-Meanwhile, another way to create bifurcations is to use the 2-circle adjaceny, as explained in the next section.
+<p>One interesting way to consider two adjacent circles is to imagine that a first circle gives berth to a second one, according to some parameters, a bit like cell division.</p>
+<p>+BEGIN_IMG</p>
+<p><a href="../archive/dots2art/images/tuto/adjacent4.jpg">adjacent4</a></p>
+<p>+END_IMG</p>
+<p>Thus:</p>
+<p>Of course, by varying the angles and the radiuses used at each step for the new circles, we can get some interesting designs. In particular, we can define several new circles with different angles from a same circle, to create bifurcations and trees of circles.</p>
+<p>Meanwhile, another way to create bifurcations is to use the 2-circle adjaceny, as explained in the next section.</p>
 <h2>2-circle adjacency</h2>
-If we consider again the first two adjacent circles, we can use another way to define the next circle to generate. Instead of using only the left-most circle and a new angle and radius, we can impose the new circle to be adjacent to the 2 previous circles.
-In that case, the new circle is defined by two new parameters, a radius, and the side of the first 2 circles to be used. So for 2 adjacent circles, with this process, we can obtain 2 new circles, as follows
-+BEGIN_IMG
-[[../archive/dots2art/images/tuto/asj22.jpg][asj22]]
-+END_IMG
-From those 2 red circles, we can:
+<p>If we consider again the first two adjacent circles, we can use another way to define the next circle to generate. Instead of using only the left-most circle and a new angle and radius, we can impose the new circle to be adjacent to the 2 previous circles.</p>
+<p>In that case, the new circle is defined by two new parameters, a radius, and the side of the first 2 circles to be used. So for 2 adjacent circles, with this process, we can obtain 2 new circles, as follows</p>
+<p>+BEGIN_IMG</p>
+<p><a href="../archive/dots2art/images/tuto/asj22.jpg">asj22</a></p>
+<p>+END_IMG</p>
+<p>From those 2 red circles, we can:</p>
 <h2>Bubble pattern</h2>
-Based on the mechanism of adjacent circles described in the previous sections, we can define a pattern by the set of parameters used to compute the new circles from a root or seed. This pattern also describes how to render the circles
-For example, the following pictures represent one of the 3 patterns used to compute Coral Net
-+BEGIN_IMG
-[[../archive/dots2art/images/tuto/pattern1.jpg][pattern1]]
-+END_IMG
-This pattern is made of 5 circles, alternatively white and whote/orange, and whose third circle is 3 times the size of the other circles.
+<p>Based on the mechanism of adjacent circles described in the previous sections, we can define a pattern by the set of parameters used to compute the new circles from a root or seed. This pattern also describes how to render the circles</p>
+<p>For example, the following pictures represent one of the 3 patterns used to compute Coral Net</p>
+<p>+BEGIN_IMG</p>
+<p><a href="../archive/dots2art/images/tuto/pattern1.jpg">pattern1</a></p>
+<p>+END_IMG</p>
+<p>This pattern is made of 5 circles, alternatively white and whote/orange, and whose third circle is 3 times the size of the other circles.</p>
 <h2>Iteration of bubble patterns</h2>
-What is now really interesting is that a bubble pattern can also be used to define seeds for some new patterns, and so to define a way to combine and iterate bubble patterns.
+<p>What is now really interesting is that a bubble pattern can also be used to define seeds for some new patterns, and so to define a way to combine and iterate bubble patterns.</p>
 <h2>Coral Net anatomy</h2>
-Coral Net makes use of three elementary bubble patterns:
-+BEGIN_IMGS_ROW
-[[../archive/dots2art/images/tuto/pattern1.jpg][pattern1]]
-[[../archive/dots2art/images/tuto/pattern2.jpg][pattern2]]
-[[../archive/dots2art/images/tuto/pattern3.jpg][pattern3]]
-+END_IMGS_ROW
-Those three patterns are combined in the following recipe:    
+<p>Coral Net makes use of three elementary bubble patterns:</p>
+<p>+BEGIN_IMGS_ROW</p>
+<p><a href="../archive/dots2art/images/tuto/pattern1.jpg">pattern1</a></p>
+<p><a href="../archive/dots2art/images/tuto/pattern2.jpg">pattern2</a></p>
+<p><a href="../archive/dots2art/images/tuto/pattern3.jpg">pattern3</a></p>
+<p>+END_IMGS_ROW</p>
+<p>Those three patterns are combined in the following recipe:</p>    
   </div>
   
 
