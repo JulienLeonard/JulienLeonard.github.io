@@ -97,6 +97,9 @@
 <p>One interesting way to consider two adjacent circles is to imagine that a first circle gives berth to a second one, according to some parameters, a bit like cell division.</p>
 <p><img src="images/adj4.jpg"/></p>
 <p>Thus:</p>
+<p>- a first circle is created, called the seed. On the picture above, let say the seed is the right circle.</p>
+<p>- from this seed, a new circle is created, by choosing an angle and a radius. On the picture above, the left circle is obtained by creating an adjacent circle from the left right, with a slight angle and an identical radius.</p>
+<p>- this process can be iterated again, to obtain a pattern of adjacent circles, in that case what I called a circle string</p>
 <p>Of course, by varying the angles and the radiuses used at each step for the new circles, we can get some interesting designs. In particular, we can define several new circles with different angles from a same circle, to create bifurcations and trees of circles.</p>
 <p>Meanwhile, another way to create bifurcations is to use the 2-circle adjaceny, as explained in the next section.</p>
 <h2>2-circle adjacency</h2>
@@ -104,6 +107,8 @@
 <p>In that case, the new circle is defined by two new parameters, a radius, and the side of the first 2 circles to be used. So for 2 adjacent circles, with this process, we can obtain 2 new circles, as follows</p>
 <p><img src="images/asj22.jpg"/></p>
 <p>From those 2 red circles, we can:</p>
+<p>- create a new circle string</p>
+<p>- or iterate the same 2-circle process with the 4 new circle pairs obtained</p>
 <h2>Bubble pattern</h2>
 <p>Based on the mechanism of adjacent circles described in the previous sections, we can define a pattern by the set of parameters used to compute the new circles from a root or seed. This pattern also describes how to render the circles</p>
 <p>For example, the following pictures represent one of the 3 patterns used to compute Coral Net</p>
@@ -116,7 +121,10 @@
 <p><img src="images/pattern1.jpg"/>
 <img src="images/pattern2.jpg"/>
 <img src="images/pattern3.jpg"/></p>
-<p>Those three patterns are combined in the following recipe:</p>    
+<p>Those three patterns are combined in the following recipe:</p>
+<p>- 4 seeds are first computed and regularly spaced on a circular contour</p>
+<p>- those seeds are first used by the first pattern, to create new seeds for the second pattern</p>
+<p>- those new seeds are then grown with the second pattern, and if succeed, are used to create new seeds for the third one.</p>    
   </div>
   
 
