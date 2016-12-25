@@ -412,11 +412,11 @@ margin-bottom: 0px;
 		font-family: 'Cousine';
 		font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; text-decoration: none;}
-	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
-	h2 { font-size: 30px; line-height: 35px; margin-bottom: 10px; font-style:italic; color:#000;}
+	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px; color:#000000;}
+	h2 { font-size: 30px; line-height: 35px; margin-bottom: 10px; font-style:italic; color:#000000;}
 	h2 strong{color:#000;}
-	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; color:#feaa09;}
-	h4 { font-size: 20px; line-height: 30px; margin-bottom: 4px; color:#feaa09; }
+	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; color:#000000;}
+	h4 { font-size: 20px; line-height: 30px; margin-bottom: 4px; color:#000000; }
 	h5 { font-size: 18px; line-height: 24px; }
 	h6 { font-size: 16px; line-height: 21px; }
 	.subheader { color: #777; }
