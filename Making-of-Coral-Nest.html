@@ -1,0 +1,145 @@
+	
+<!DOCTYPE html>
+<html lang="en-US"> 
+    
+<head>
+
+<meta charset="UTF-8" />
+        
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if gte IE 9 ]><html class="no-js ie9" lang="en"> <![endif]-->
+    
+    <title>DOTS2ART - Generative Webfolio of Julien Leonard </title>
+        
+	<meta name="description" content="Generative Webfolio of Julien Leonard" />
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS ================================================== -->
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+    	<link href='http://fonts.googleapis.com/css?family=Cousine:400italic,400,700,700italic' rel='stylesheet' type='text/css'>
+    
+        <script type="text/javascript" src="javascript/jquery.min.js"></script>
+
+    <!--
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+
+        <script src="javascript/jquery.flexslider.js"></script>
+
+	<script type="text/javascript">
+	  $(window).load(function(){
+          $('.flexslider').flexslider({
+          animation: "fade",
+          slideshow: true,
+	  slideshowSpeed: 3000,
+          });
+	  })
+
+	</script>
+    -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85603200-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body class="home blog custom-background">
+      
+
+<div class="container">
+
+    <!-- menu header -->
+  <div class="sixteen columns" id="intro">
+    <div id="introtekst"><a href="http://julienleonard.com" title="DOTS2ART" rel="home"><img src="images/dots2art_logo.png" /></a></div>
+    <div class="introtitle">DOTS2ART</div>
+     <div class="introlinks">
+      <a class="glitch" href="index.html" target="_blank">home</a>
+      <a class="glitch" href="projects.html" target="_blank">projects</a>
+      <a class="glitch" href="dynamics.html" target="_blank">dynamics</a>
+      <a class="glitch" href="tutorials.html" target="_blank">tutorials</a>
+      <a class="glitch" href="blog.html" target="_blank">blog</a>
+      <a class="glitch" href="About.html" target="_blank">about</a>
+      <a class="glitch" href="Shop.html" target="_blank">shop</a>
+     </div>
+  </div>
+  
+  <div class="clear"></div>
+
+
+  <div class="content">
+<h1>Making of Coral Nest</h1>
+<p>In this post, I am going to describe how the work below, <a href="work:test_bworld.66_1417835639">Coral</a> Nest]], has been created.</p>
+<p><img src="images/test_bworld.66.png"/></p>
+<p>Coral Net is made of 30000+ circles, computed by a generative program. This computer program uses pre-defined patterns of adjacent circles, and tries to combine them without collision.</p>
+<p>Let check first what are adjacent circles, and how we can define patterns and combinations with them.</p>
+<h2>Circles adjacency</h2>
+<p><img src="images/adjacent.jpg"/></p>
+<p>Two circles are adjacent if their intersection only consists of one point. It simply means that the two circles touch each other.</p>
+<h2>Iterating adjacent circles</h2>
+<p>One interesting way to consider two adjacent circles is to imagine that a first circle gives berth to a second one, according to some parameters, a bit like cell division.</p>
+<p><img src="images/adj4.jpg"/></p>
+<p>Thus:</p>
+<p>- a first circle is created, called the seed. On the picture above, let say the seed is the right circle.</p>
+<p>- from this seed, a new circle is created, by choosing an angle and a radius. On the picture above, the left circle is obtained by creating an adjacent circle from the left right, with a slight angle and an identical radius.</p>
+<p>- this process can be iterated again, to obtain a pattern of adjacent circles, in that case what I called a circle string</p>
+<p>Of course, by varying the angles and the radiuses used at each step for the new circles, we can get some interesting designs. In particular, we can define several new circles with different angles from a same circle, to create bifurcations and trees of circles.</p>
+<p>Meanwhile, another way to create bifurcations is to use the 2-circle adjaceny, as explained in the next section.</p>
+<h2>2-circle adjacency</h2>
+<p>If we consider again the first two adjacent circles, we can use another way to define the next circle to generate. Instead of using only the left-most circle and a new angle and radius, we can impose the new circle to be adjacent to the 2 previous circles.</p>
+<p>In that case, the new circle is defined by two new parameters, a radius, and the side of the first 2 circles to be used. So for 2 adjacent circles, with this process, we can obtain 2 new circles, as follows</p>
+<p><img src="images/asj22.jpg"/></p>
+<p>From those 2 red circles, we can:</p>
+<p>- create a new circle string</p>
+<p>- or iterate the same 2-circle process with the 4 new circle pairs obtained</p>
+<h2>Bubble pattern</h2>
+<p>Based on the mechanism of adjacent circles described in the previous sections, we can define a pattern by the set of parameters used to compute the new circles from a root or seed. This pattern also describes how to render the circles</p>
+<p>For example, the following pictures represent one of the 3 patterns used to compute Coral Net</p>
+<p><img src="images/pattern1.jpg"/></p>
+<p>This pattern is made of 5 circles, alternatively white and whote/orange, and whose third circle is 3 times the size of the other circles.</p>
+<h2>Iteration of bubble patterns</h2>
+<p>What is now really interesting is that a bubble pattern can also be used to define seeds for some new patterns, and so to define a way to combine and iterate bubble patterns.</p>
+<h2>Coral Net anatomy</h2>
+<p>Coral Net makes use of three elementary bubble patterns:</p>
+<p><img src="images/pattern1.jpg"/>
+<img src="images/pattern2.jpg"/>
+<img src="images/pattern3.jpg"/></p>
+<p>Those three patterns are combined in the following recipe:</p>
+<p>- 4 seeds are first computed and regularly spaced on a circular contour</p>
+<p>- those seeds are first used by the first pattern, to create new seeds for the second pattern</p>
+<p>- those new seeds are then grown with the second pattern, and if succeed, are used to create new seeds for the third one.</p>    
+  </div>
+  
+
+  <div  id="footer">
+    
+    <div id="footertext" class="container">
+      
+      + <a href="mailto: jl.julien.leonard@gmail.com">mail</a> | <a href="http://julienleonard.tumblr.com">tumblr</a> | <a href="ram.com/julleor/">instagram</a>
+
+    </div>   
+
+    </div>  
+
+</div>                                        
+
+</body>
+</html>           
+
