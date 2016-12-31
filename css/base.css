@@ -258,6 +258,7 @@ filter: none; /* Firefox 10+, Firefox on Android */
 .post a img{
 width: 100%; 
 margin-bottom: 15px;
+border-radius: 50%;
 }
 
 
