@@ -100,7 +100,8 @@ function main() {
 
 // startanim(context());
 
-window.addEventListener('load', main);
+// window.addEventListener('load', main);
 window.addEventListener('resize', resizeCanvas);
+document.getElementById("startAnim").onclick = function () { main(); };
 
 
