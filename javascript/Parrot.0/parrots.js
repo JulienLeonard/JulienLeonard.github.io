@@ -8,7 +8,7 @@
 // <script type="text/javascript" src="bpatternbao.js"></script>
 
 
-var canvasname    = "parrot";
+var canvasname    = "parrots";
 var quadtree      = null;
 var lastpatternid = 0;
 var patterns    = [];

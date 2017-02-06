@@ -1,6 +1,6 @@
 <html style="width:100%;height:100%;">
   <body style="width:1000;height:1000;">
-    <div id="sandbox" style="width:100%;height:auto;">
+    <div id="quadrant" style="width:100%;height:auto;">
     </div>
     <script type="text/javascript" src="../libs/others/webgl-utils.js"></script>
     <script type="text/javascript" src="../libs/jsvg/mywebgl.js"></script>
@@ -12,6 +12,6 @@
     <script type="text/javascript" src="../libs/jsvg/bpattern.js"></script>
     <script type="text/javascript" src="../libs/jsvg/mywebgl.js"></script>
     <script type="text/javascript" src="../libs/jsvg/bpatternbao.js"></script>
-    <script type="text/javascript" src="sandbox.js"></script>
+    <script type="text/javascript" src="quadrant.js"></script>
   </body>
 </html>
