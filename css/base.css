@@ -103,7 +103,8 @@ color: #000;}
 
 
 #introtekst{
-	float:none;
+    float:none;
+    // line-height:0px;
   }
 
 #introtekst a{ color: #000; text-decoration: line-through; background-color: transparent;
@@ -127,17 +128,24 @@ color: #000;}
 }
 
 .introlinks{
-	float: right;
-	margin-top: 0px;
+    float: right;
+    margin-top: 0px;
 }
 .introlinks a{
-font-size: 14px;
-margin-left: 10px;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    // background: #BADA55;
+    text-align: center;
+    line-height: 50px;
 }
 
 
 .introlinks a:hover{
- box-shadow: inset 0 0px 0 white, inset 0 -2px 0 black;
+    box-shadow: inset 0 0px 0 white, inset 0 -2px 0 black;
 }
 
 #intro a img:hover{
