@@ -120,16 +120,31 @@ color: #000;}
 	margin-right: 30px;
 }
 
-.introtitle {
+.headerleft {
+    float:left
+}
+.intrologo img{
+     display: inline-block;
+	width: 75px;
+ 	border: none;
+	float: left;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+
+.introsig img {
+    // display: inline-block;
     float: left;
-    display: inline-block;
-    font-size: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    max-height: 100px;
+    width: auto;
 }
 
 .introlinks{
     float: right;
-    margin-top: 0px;
+    margin-top: 20px;
+    margin-left: 60px;
 }
 .introlinks a{
     display: inline-block;
@@ -147,6 +162,8 @@ color: #000;}
 .introlinks a:hover{
     box-shadow: inset 0 0px 0 white, inset 0 -2px 0 black;
 }
+
+
 
 #intro a img:hover{
 
