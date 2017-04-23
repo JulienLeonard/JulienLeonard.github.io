@@ -131,7 +131,9 @@ color: #000;}
  	border: none;
 	float: left;
 	text-decoration: none;
-	margin-right: 30px;
+	margin-right: 90px;
+	margin-bottom: 20px;
+	margin-left: 0px;
 }
 
 
@@ -146,7 +148,8 @@ color: #000;}
 .introlinks{
     float: right;
     margin-top: 20px;
-    margin-left: 60px;
+    // margin-left: 60px;
+    margin-bottom: 20px;
 }
 .introlinks a{
     display: inline-block;
