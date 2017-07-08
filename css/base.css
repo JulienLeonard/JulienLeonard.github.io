@@ -260,7 +260,7 @@ table {
     position: absolute;
     top: 40%;
     width: 100%;
-    font-family: 'Cousine', sans-serif;
+    font-family: 'Bellefair', sans-serif;
     text-align: center;
 }
 
@@ -274,7 +274,7 @@ table {
 
     top: 40%;
     width: 100%;
-    font-family: 'Cousine', sans-serif;
+    font-family: 'Bellefair', sans-serif;
     text-align: right;
 }
 
@@ -292,13 +292,13 @@ table {
     text-align: center;
     vertical-align: middle;    
     line-height: 30px;
-    font-family: 'Cousine', sans-serif;
-    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    // font-weight: bold;
 
     font-size: 20px;
     padding-top: 0%;
     padding-bottom: 0%;
-    text-transform: uppercase;
+    // text-transform: uppercase;
 
 }
 
@@ -335,7 +335,7 @@ table {
 .columntitle{
     color: #000;
     font-size: 18px;
-    font-family: 'Cousine', sans-serif;
+    font-family: 'Bellefair', sans-serif;
     margin-bottom: 0px;
     margin-top: 15px;
 }
@@ -350,7 +350,7 @@ hr { border: solid #000; border-width: 3px 0 0; clear: both; margin: 10px 0 30px
     color: #000;
     font-size: 32px;
     line-height: 60px;
-    font-family: 'Cousine', sans-serif;
+    font-family: 'Bellefair', sans-serif;
     margin-bottom: 0px;
     text-align: center;
     float: left;
@@ -358,7 +358,7 @@ hr { border: solid #000; border-width: 3px 0 0; clear: both; margin: 10px 0 30px
 }
 
 .subposttitle{
-    font-family: 'Cousine', sans-serif;
+    font-family: 'Bellefair', sans-serif;
     font-size: 14px;
     width: 100%;
     text-align: center;
@@ -396,7 +396,7 @@ hr { border: solid #000; border-width: 3px 0 0; clear: both; margin: 10px 0 30px
 #backlink{
     font-size: 45px;
     line-height: 60px;
-    font-family: 'Cousine', sans-serif;
+    font-family: 'Bellefair', sans-serif;
     float:left;
     min-width: 10%;
     max-height: 30px;
@@ -413,7 +413,7 @@ hr { border: solid #000; border-width: 3px 0 0; clear: both; margin: 10px 0 30px
 
 #nextlink {
     text-align: right;
-    font-family: 'Cousine', sans-serif;
+    font-family: 'Bellefair', sans-serif;
     font-size: 45px;
     line-height: 60px;
     float: right;
@@ -464,9 +464,9 @@ img a{padding: 0px;}
 ================================================== */
 body {
     background-color: #ffffff;
-    font-family: 'Cousine';
-    line-height: 20px;
-    font-size: 13px;
+    font-family: 'Bellefair';
+    line-height: 25px;
+    font-size: 25px;
     color: #000;
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
@@ -498,7 +498,7 @@ body {
 ================================================== */
 h1, h2, h3, h4, h5, h6 {
     color: #181818;
-    font-family: 'Cousine';
+    font-family: 'Bellefair';
     font-weight: normal; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; text-decoration: none;}
 h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px; color:#000000; text-align: center;}
@@ -591,7 +591,7 @@ input[type="button"] {
     margin-bottom: 20px;
     line-height: normal;
     padding: 8px 10px;
-    font-family: 'Cousine'; }
+    font-family: 'Ubuntu'; }
 
 .button:hover,
 button:hover,
