@@ -98,7 +98,8 @@ font-size: 13px;
 
 #intro a{
 padding: 2px;
-color: #000;}
+color: #000;
+}
 
 
 
@@ -123,6 +124,7 @@ color: #000;}
 .headerleft {
     float:left
 }
+
 .intrologo img{
      display: inline-block;
      max-height: 75px;
@@ -136,6 +138,13 @@ color: #000;}
 	margin-left: 0px;
 }
 
+.intrologo a {
+    display: inline-block;
+    font-size: 60px;
+    font-family: 'Bellefair';
+    margin-top: 20px;
+    float: left;
+}
 
 .introsig img {
     // display: inline-block;
@@ -153,26 +162,55 @@ color: #000;}
 }
 .introlinks a{
     display: inline-block;
-    font-size: 14px;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    margin-top: 20px;
     margin-left: 10px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    // background: #BADA55;
+    # background: #FFFFFF;
     text-align: center;
+    vertical-align: middle;
     line-height: 50px;
 }
 
+.introtext p {
+    background-color: #FFFFFF;
+    color: #000000;
 
-.introlinks a:hover{
-    box-shadow: inset 0 0px 0 white, inset 0 -2px 0 black;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family: 'Bellefair';
+    line-height: 60px;
+    
+    // display: inline-block;
+    // float: left;
+    // margin-bottom: 20px;
+    // max-height: 75px;
+    // width: auto;
 }
 
+.pagesection p {
+    background-color: #FFFFFF;
+    color: #000000;
 
-
-#intro a img:hover{
-
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: 'Bellefair';
+    line-height: 60px;
+    
+    // display: inline-block;
+    // float: left;
+    // margin-bottom: 20px;
+    // max-height: 75px;
+    // width: auto;
 }
+
 
 
 #bio{
@@ -288,7 +326,7 @@ filter: none; /* Firefox 10+, Firefox on Android */
 .post a img{
 width: 100%; 
 margin-bottom: 15px;
-border-radius: 50%;
+// border-radius: 50%;
 }
 
 
@@ -402,7 +440,13 @@ text-decoration: line-through;
 	.title{margin-top: -0px;}
 	#subtitle{margin-top: -20px; color: #a51a1f;}
 
-	#footertext a{line-height: 40px; text-size: 24px; text-align: left; color:#ffffff; font-family: 'Cousine', sans-serif;}
+	#footertext a{line-height: 40px;
+		      font-size: 24px;
+		      text-align: left;
+		      color:#ffffff;
+		      font-family: 'Ubuntu', sans-serif;
+		      margin-top: 50px;
+		      margin-bottom: 50px;}
 
 /* #Basic Styles
 ================================================== */
@@ -418,16 +462,18 @@ text-decoration: line-through;
 
 #footer{
 background-color: #fff;
-text-align: right;
+text-align: center;
 line-height: 20px;
 color: #000;
 height: 10px;
 clear: both;
-margin-bottom: 0px;
+margin-top: 50px;
+margin-bottom: 50px;
 }
 
 #footer a{
-	color: #000;
+    margin-top: 50px;
+    color: #000;
 }
 
 #footer img{
