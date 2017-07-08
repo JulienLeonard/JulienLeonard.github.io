@@ -25,57 +25,60 @@
 /* #Media Queries
 ================================================== */
 
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {
-	.logo{max-width: 100px;}
-.posttitle{font-size: 24px;}
-	#backlink{width:5%;}
-	#nextlink{width:5%;}
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+    .logo{max-width: 100px;}
+    .posttitle{font-size: 24px;}
+    #backlink{width:5%;}
+    #nextlink{width:5%;}
+}
 
-
-
-	}
-
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {
-	#quote{visibility:hidden; display:inline; height: 0px;}
-	#contactlinks{margin-top: -40px;}
-	}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #quote{visibility:hidden; display:inline; height: 0px;}
+    #contactlinks{margin-top: -40px;}
+    .introlinks a{float: none; margin-top: 15px; margin-left: 10px; font-size: 18px; width: 35px; height: 35px; line-height: 35px}
+    #footertext a {font-size: 18px;}
+    .introtext p {font-size: 30px; line-height: 40px;}
+    .pagesection p {font-size: 30px; line-height: 40px;}
+}
 
 /* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {
-	h1,h2,h3,h4 {text-align: center;}
-	h2{font-size: 18px;}
-	
-	.header{text-align: center;}
-	.logo{margin-left: auto; margin-right: auto; margin-top: 20px;}
-	p{width: 80%; margin-left: auto; margin-right: auto;}
-	.footertext{text-align: center;}
-	.posttitle{font-size: 24px; width: 70%; float: left;}
-	#backlink{font-size: 24px; float: left; }
-	#nextlink{font-size: 24px;}
-.introlinks{float: none; margin-top: 5px;}
-
-
-
+@media only screen and (max-width: 767px) {
+    h1,h2,h3,h4 {text-align: center;}
+    h2{font-size: 18px;}
+    
+    .header{text-align: center;}
+    .logo{margin-left: auto; margin-right: auto; margin-top: 20px;}
+    p{width: 100%; margin-left: auto; margin-right: auto;}
+    .footertext{text-align: center;}
+    .posttitle{font-size: 24px; width: 70%; float: left;}
+    #backlink{font-size: 24px; float: left; }
+    #nextlink{font-size: 24px;}
+    .introlinks{float: none; margin-top: 15px;}
 }
 	
 
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-	
-
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .introlinks a{float: none; margin-top: 15px; font-size: 20px;}
+    #footertext a {font-size: 20px;}
+    .introtext p {font-size: 20px; line-height: 30px;}
+    .pagesection p {font-size: 20px; line-height: 30px;}
 }
 
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
-.posttitle{font-size: 20px; width: 200px; margin: 0; float: left;}
-#backlink{font-size: 18px; float: left; width: 50px; }
-	#nextlink{font-size: 18px; width: 50px;}
-.introlinks a{float: none; margin-top: 5px; font-size: 10px;}
-.logo{ max-width: 50px;}
-	}
-
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .posttitle{font-size: 20px; width: 200px; margin: 0; float: left;}
+    #backlink{font-size: 18px; float: left; width: 50px; }
+    #nextlink{font-size: 18px; width: 50px;}
+    .introlinks a{float: none; margin-top: 15px; font-size: 15px; width: 30px; height: 30px; line-height: 30px}
+    .introtext p {font-size: 20px; line-height: 30px;}
+    .intrologo a { font-size: 50px;}
+    .pagesection p {font-size: 20px; line-height: 30px;}
+    .logo{ max-width: 50px;}
+    #footertext a {font-size: 15px;}
+}
 
 /* #Font-Face
 ================================================== */
