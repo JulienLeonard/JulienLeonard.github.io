@@ -35,6 +35,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.lazy.min.js"></script>
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -47,6 +48,12 @@
 
     </script>
 
+    <script>
+    $(function() {
+        $('.lazy').lazy();
+    });
+    </script>
+    
 </head>
 
 <body class="home blog custom-background">
@@ -71,13 +78,12 @@
 
       <div class="content">
              <div class="sixteen columns">
-      <div class="post">
-	<img width="1024" height="1024" src="images/Orion.png" class="attachment-large size-large wp-post-image" alt="orion" srcset="images/Orion.png 1024w, images/Orion.png 150w, images/Orion.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" />
-      </div> 	
-    </div>	
+    <img width="1024" height="1024" src="images/Orion.png" class="lazy" alt="orion" data-srcset="images/Orion.1024.png 1024w, images/Orion.150.png 150w, images/Orion.550.png 550w" data-sizes="(max-width: 1024px) 100vw, 1024px" data-retina="images/Orion.png"/>
+    </div> 	
+
     <div class="one-third column">
       <div class="post">
-	<a href="coeur-de-boeuf-1499165390.html"><img width="1024" height="1024" src="thumbnails/altvarclosed1498050510.92.png" class="attachment-large size-large wp-post-image" alt="coeur de boeuf" srcset="thumbnails/altvarclosed1498050510.92.png 1024w, thumbnails/altvarclosed1498050510.92.png 150w, thumbnails/altvarclosed1498050510.92.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<a href="coeur-de-boeuf-1499165390.html"><img width="1024" height="1024" src="thumbnails/altvarclosed1498050510.92.png" class="lazy" alt="coeur de boeuf" data-srcset="thumbnails/altvarclosed1498050510.92.png 1024w, thumbnails/altvarclosed1498050510.92.png 150w, thumbnails/altvarclosed1498050510.92.png 550w" data-sizes="(max-width: 1024px) 100vw, 1024px" <img class="lazy" data-src="images/1.jpg" data-retina="thumbnails/altvarclosed1498050510.92.png" />/></a>                				
 	<div class="title">  
           <a href="coeur-de-boeuf-1499165390.html" title="Coeur De Boeuf">Coeur De Boeuf</a>
 	</div>	
@@ -85,7 +91,7 @@
     </div>	
     <div class="one-third column">
       <div class="post">
-	<a href="angel-1499165201.html"><img width="1024" height="1024" src="thumbnails/altvarclosedlessmax1499009732.54.png" class="attachment-large size-large wp-post-image" alt="angel" srcset="thumbnails/altvarclosedlessmax1499009732.54.png 1024w, thumbnails/altvarclosedlessmax1499009732.54.png 150w, thumbnails/altvarclosedlessmax1499009732.54.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<a href="angel-1499165201.html"><img width="1024" height="1024" src="thumbnails/altvarclosedlessmax1499009732.54.png" class="lazy" alt="angel" data-srcset="thumbnails/altvarclosedlessmax1499009732.54.png 1024w, thumbnails/altvarclosedlessmax1499009732.54.png 150w, thumbnails/altvarclosedlessmax1499009732.54.png 550w" data-sizes="(max-width: 1024px) 100vw, 1024px" <img class="lazy" data-src="images/1.jpg" data-retina="thumbnails/altvarclosedlessmax1499009732.54.png" />/></a>                				
 	<div class="title">  
           <a href="angel-1499165201.html" title="Angel">Angel</a>
 	</div>	
@@ -93,7 +99,7 @@
     </div>	
     <div class="one-third column">
       <div class="post">
-	<a href="tisseuse-1499164943.html"><img width="1024" height="1024" src="thumbnails/altvarclosed1498058907.9.png" class="attachment-large size-large wp-post-image" alt="tisseuse" srcset="thumbnails/altvarclosed1498058907.9.png 1024w, thumbnails/altvarclosed1498058907.9.png 150w, thumbnails/altvarclosed1498058907.9.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<a href="tisseuse-1499164943.html"><img width="1024" height="1024" src="thumbnails/altvarclosed1498058907.9.png" class="lazy" alt="tisseuse" data-srcset="thumbnails/altvarclosed1498058907.9.png 1024w, thumbnails/altvarclosed1498058907.9.png 150w, thumbnails/altvarclosed1498058907.9.png 550w" data-sizes="(max-width: 1024px) 100vw, 1024px" <img class="lazy" data-src="images/1.jpg" data-retina="thumbnails/altvarclosed1498058907.9.png" />/></a>                				
 	<div class="title">  
           <a href="tisseuse-1499164943.html" title="Tisseuse">Tisseuse</a>
 	</div>	
@@ -101,7 +107,7 @@
     </div>	
     <div class="one-third column">
       <div class="post">
-	<a href="graphite-1499083983.html"><img width="1024" height="1024" src="thumbnails/altvarclosedless1498363269.51.png" class="attachment-large size-large wp-post-image" alt="graphite" srcset="thumbnails/altvarclosedless1498363269.51.png 1024w, thumbnails/altvarclosedless1498363269.51.png 150w, thumbnails/altvarclosedless1498363269.51.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<a href="graphite-1499083983.html"><img width="1024" height="1024" src="thumbnails/altvarclosedless1498363269.51.png" class="lazy" alt="graphite" data-srcset="thumbnails/altvarclosedless1498363269.51.png 1024w, thumbnails/altvarclosedless1498363269.51.png 150w, thumbnails/altvarclosedless1498363269.51.png 550w" data-sizes="(max-width: 1024px) 100vw, 1024px" <img class="lazy" data-src="images/1.jpg" data-retina="thumbnails/altvarclosedless1498363269.51.png" />/></a>                				
 	<div class="title">  
           <a href="graphite-1499083983.html" title="Graphite">Graphite</a>
 	</div>	
@@ -109,7 +115,7 @@
     </div>	
     <div class="one-third column">
       <div class="post">
-	<a href="nazgul-1499084177.html"><img width="1024" height="1024" src="thumbnails/altvarclosedless1498229098.62.png" class="attachment-large size-large wp-post-image" alt="nazgul" srcset="thumbnails/altvarclosedless1498229098.62.png 1024w, thumbnails/altvarclosedless1498229098.62.png 150w, thumbnails/altvarclosedless1498229098.62.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<a href="nazgul-1499084177.html"><img width="1024" height="1024" src="thumbnails/altvarclosedless1498229098.62.png" class="lazy" alt="nazgul" data-srcset="thumbnails/altvarclosedless1498229098.62.png 1024w, thumbnails/altvarclosedless1498229098.62.png 150w, thumbnails/altvarclosedless1498229098.62.png 550w" data-sizes="(max-width: 1024px) 100vw, 1024px" <img class="lazy" data-src="images/1.jpg" data-retina="thumbnails/altvarclosedless1498229098.62.png" />/></a>                				
 	<div class="title">  
           <a href="nazgul-1499084177.html" title="Nazgul">Nazgul</a>
 	</div>	
@@ -117,7 +123,7 @@
     </div>	
     <div class="one-third column">
       <div class="post">
-	<a href="autel-1499083698.html"><img width="1024" height="1024" src="thumbnails/altvarclosedlessmax1498983153.97.src.png" class="attachment-large size-large wp-post-image" alt="autel" srcset="thumbnails/altvarclosedlessmax1498983153.97.src.png 1024w, thumbnails/altvarclosedlessmax1498983153.97.src.png 150w, thumbnails/altvarclosedlessmax1498983153.97.src.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<a href="autel-1499083698.html"><img width="1024" height="1024" src="thumbnails/altvarclosedlessmax1498983153.97.src.png" class="lazy" alt="autel" data-srcset="thumbnails/altvarclosedlessmax1498983153.97.src.png 1024w, thumbnails/altvarclosedlessmax1498983153.97.src.png 150w, thumbnails/altvarclosedlessmax1498983153.97.src.png 550w" data-sizes="(max-width: 1024px) 100vw, 1024px" <img class="lazy" data-src="images/1.jpg" data-retina="thumbnails/altvarclosedlessmax1498983153.97.src.png" />/></a>                				
 	<div class="title">  
           <a href="autel-1499083698.html" title="Autel">Autel</a>
 	</div>	
@@ -125,7 +131,7 @@
     </div>	
     <div class="one-third column">
       <div class="post">
-	<a href="succulent-1498981244.html"><img width="1024" height="1024" src="thumbnails/altvar1497510878.27.png" class="attachment-large size-large wp-post-image" alt="succulent" srcset="thumbnails/altvar1497510878.27.png 1024w, thumbnails/altvar1497510878.27.png 150w, thumbnails/altvar1497510878.27.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<a href="succulent-1498981244.html"><img width="1024" height="1024" src="thumbnails/altvar1497510878.27.png" class="lazy" alt="succulent" data-srcset="thumbnails/altvar1497510878.27.png 1024w, thumbnails/altvar1497510878.27.png 150w, thumbnails/altvar1497510878.27.png 550w" data-sizes="(max-width: 1024px) 100vw, 1024px" <img class="lazy" data-src="images/1.jpg" data-retina="thumbnails/altvar1497510878.27.png" />/></a>                				
 	<div class="title">  
           <a href="succulent-1498981244.html" title="Succulent">Succulent</a>
 	</div>	
@@ -133,7 +139,7 @@
     </div>	
     <div class="one-third column">
       <div class="post">
-	<a href="hole-1498981057.html"><img width="1024" height="1024" src="thumbnails/altvarclosed1498049932.52.png" class="attachment-large size-large wp-post-image" alt="hole" srcset="thumbnails/altvarclosed1498049932.52.png 1024w, thumbnails/altvarclosed1498049932.52.png 150w, thumbnails/altvarclosed1498049932.52.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<a href="hole-1498981057.html"><img width="1024" height="1024" src="thumbnails/altvarclosed1498049932.52.png" class="lazy" alt="hole" data-srcset="thumbnails/altvarclosed1498049932.52.png 1024w, thumbnails/altvarclosed1498049932.52.png 150w, thumbnails/altvarclosed1498049932.52.png 550w" data-sizes="(max-width: 1024px) 100vw, 1024px" <img class="lazy" data-src="images/1.jpg" data-retina="thumbnails/altvarclosed1498049932.52.png" />/></a>                				
 	<div class="title">  
           <a href="hole-1498981057.html" title="Hole">Hole</a>
 	</div>	
@@ -141,17 +147,16 @@
     </div>	
     <div class="one-third column">
       <div class="post">
-	<a href="black-snow-1498980766.html"><img width="1024" height="1024" src="thumbnails/altvarclosed1498064405.28.png" class="attachment-large size-large wp-post-image" alt="black snow" srcset="thumbnails/altvarclosed1498064405.28.png 1024w, thumbnails/altvarclosed1498064405.28.png 150w, thumbnails/altvarclosed1498064405.28.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>                				
+	<a href="black-snow-1498980766.html"><img width="1024" height="1024" src="thumbnails/altvarclosed1498064405.28.png" class="lazy" alt="black snow" data-srcset="thumbnails/altvarclosed1498064405.28.png 1024w, thumbnails/altvarclosed1498064405.28.png 150w, thumbnails/altvarclosed1498064405.28.png 550w" data-sizes="(max-width: 1024px) 100vw, 1024px" <img class="lazy" data-src="images/1.jpg" data-retina="thumbnails/altvarclosed1498064405.28.png" />/></a>                				
 	<div class="title">  
           <a href="black-snow-1498980766.html" title="Black Snow">Black Snow</a>
 	</div>	
       </div> 	
     </div>	
     <div class="sixteen columns">
-      <div class="post">
-	<img width="1024" height="1024" src="images/2000th.png" class="attachment-large size-large wp-post-image" alt="2000th" srcset="images/2000th.png 1024w, images/2000th.png 150w, images/2000th.png 550w" sizes="(max-width: 1024px) 100vw, 1024px" />
-      </div> 	
-    </div>	    
+    <img width="1024" height="1024" src="images/2000th.png" class="lazy" alt="2000th" data-srcset="images/2000th.1024.png 1024w, images/2000th.150.png 150w, images/2000th.550.png 550w" data-sizes="(max-width: 1024px) 100vw, 1024px" data-retina="images/2000th.png"/>
+    </div> 	
+    
       </div>
 
         <div  id="footer">
