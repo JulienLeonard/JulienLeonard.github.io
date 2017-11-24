@@ -1,0 +1,153 @@
+// <script type="text/javascript" src="./d3.v3/d3.v3.min.js"></script>
+// <script type="text/javascript" src="myd3.js"></script>
+// <script type="text/javascript" src="sylvester.js"></script>
+// <script type="text/javascript" src="myquadtree.js"></script>
+// <script type="text/javascript" src="utils.js"></script>
+// <script type="text/javascript" src="geoutils.js"></script>
+// <script type="text/javascript" src="bpattern.js"></script>
+// <script type="text/javascript" src="bpatternbao.js"></script>
+
+
+var canvasname    = "alternate";
+var colgrid      = null;
+var quadtree     = null;
+var lastpatternid = 0;
+var patterns      = [];
+var canvas        = null;
+var gl            = null;
+// var ratios        = [0.12819115916648469,0.5088121111080107,0.6051513923356083,0.7794509845690107,0.23269765136423412,0.9494264786827501,0.01082722098139451,0.973103034297518,0.9426974383847311,0.9158469321745666,0.6393890579414503,0.21189682195517087,0.3498866005567306,0.5440955569707302,0.6140260070627677,0.9351007039356515,0.2375310464936919,0.18429841947941966,0.5035361906064377,0.9327555223986299,0.8220649537733127,0.4456780680667973,0.5112899986613961,0.2510075020841358,0.68308752807001,0.6520842726584917,0.580370571268895,0.288191316317856,0.6314533542056816,0.8365241348913518];
+// var ratios        = [0.8249820553813978,0.473404795151858,0.5143921172779017,0.3883150896934397,0.4117124776410463,0.6516117130646537,0.6380614776341531,0.8992545972109095,0.7720153237562698,0.26154637162645644,0.809867925853407,0.4502298182110441,0.012554673018192254,0.006389416757221062,0.38692743861439055,0.08946079206162169,0.5675321796757784,0.5133438108085393,0.7694282591200565,0.7807510307900379,0.08257448816791851,0.8294226382064739,0.1062803362059781,0.25361061387397843,0.4335873799554945,0.3030949119958537,0.11618591431350722,0.7366618671159548,0.07600061785243481,0.34238424587174515];
+var ratios = [0.2513623462297778,0.6469530838760329,0.3404807044847313,0.45920027487874043,0.7790198869905527,0.9872406502194891,0.5536082389548459,0.49367211409549794,0.14722160303370171,0.3534821874245453,0.9751240443322454,0.9098130920481929,0.22863805397815912,0.7197732109202879,0.22835593727806394,0.9782378324206163,0.24324949329870263,0.29423387129522577,0.18867485885912313,0.05835284528245816,0.7362706622743377,0.5010208447934226,0.6573384430526469,0.8872123858366219,0.3785687561047118,0.6050838518911432,0.6442987344434014,0.728829790246128,0.4422846666734129,0.47839278004988695];
+// var ratios = [0.15390028113215243,0.6020249880859745,0.23397476097288297,0.4138076712441666,0.8655306007086907,0.9728061109654634,0.9523069965431034,0.423690899938201,0.9729552613445349,0.45907741759860765,0.7141575797992561,0.8464436860971356,0.17903223455838496,0.9947662227762706,0.03590620077955825,0.4755165020355566,0.005849711599689774,0.3161028559860321,0.7407005572415425,0.954265558605206,0.3412434776971319,0.27912965569604636,0.33212328345148046,0.996024969032046,0.1916545215955258,0.13754445600209034,0.7096720271323211,0.45776001292176544,0.5725371761119632,0.6323189137654002];
+ratios = ratios.map(function(x) {return sample(0.5,1.2,x);});
+var viewbox0      = null;
+var errormargin   = 0.00001;
+
+// var iratio = 0;
+// for (iratio = 0; iratio < ratios.length; iratio++) {
+//    ratios[iratio] = sample(0.5,1.2,ratios[iratio]);
+// }
+
+function rootseedratio(ratio,scale) {
+    return plug(new Circle(0.0,-ratio * scale,ratio * scale), new Circle(0.0,scale,scale),-1.0);
+}
+
+function context() {
+
+    initrandomseed(0);
+
+    initcanvas(canvasname);
+    
+    var iter = 0;
+    var maxiter = 1000000;
+
+    var startdate = (new Date()).getTime(); 
+    
+    if (patterns.length == 0) {
+	seed = rootseedratio(ratios[0],0.1);
+	patterns.push(new bpatternpackingalternate([seed],ratios));
+    }
+
+    // quadtree = initquadtree();
+    
+    quadtree = new MetaQuadTree(-200.0,-200.0,200.0,200.0,2.0,errormargin);
+    // colgrid = new Colgrid(-100.0,-100.0,100.0,100.0);
+    // console.log("quadtree " + quadtree);
+
+    var minx = 0.0;
+    var maxx = 0.0;
+    var miny = 0.0;
+    var maxy = 0.0;
+    
+    viewbox0 = mergeviewboxes(circleviewbox(new Circle(0.0,0.0,20.0)),circleviewbox(new Circle(0.0,0.0,1.0)));
+
+    console.log("init viewbox0",viewbox0);
+
+    var niterperframe = 100;
+    
+    function iterframe() {
+
+	// console.log("iterframe iter",iter);
+	// var niterperframe = maxiter - iter;
+	//if (niterperframe > 200) {
+	//    niterperframe = 200;
+	//}
+	if (niterperframe < maxiter) {
+	    niterperframe = Math.floor(niterperframe * 1.01);
+	} else {
+	    niterperframe = 0;
+	}
+	// var color = Color.white();	
+
+	if (iter < maxiter && patterns.length > 0) {
+	    if ((iter % 100000) == 0) {
+		// var currentdate = new Date(); 
+		// var datetime = "Last Sync: " + currentdate.getDate() + "/"
+                //     + (currentdate.getMonth()+1)  + "/" 
+                //     + currentdate.getFullYear() + " @ "  
+                //     + currentdate.getHours() + ":"  
+                //     + currentdate.getMinutes() + ":" 
+                //     + currentdate.getSeconds();
+		// console.log("iter ",iter," date ",currentdate);
+	    }
+
+	    // aresult = patterns[0].iter(colgrid,canvas,niterperframe);
+	    var aresult      = patterns[0].iter(quadtree,niterperframe);
+	    var cresult      = aresult[0];
+	    var cresultindex = aresult[1];
+
+	    // console.log("iter cresultindex",cresultindex);
+	    
+	    if (cresultindex > 0) {
+		gl.coords       = new Array(cresultindex * 3 * 5);
+		gl.coordindex   = 0;
+		gl.nnewcircles  = 0;
+		
+		for (var iresult = 0; iresult < cresultindex; iresult++) {
+		    var nnewnode = cresult[iresult];
+		    var newr     = nnewnode.r - 0.01;
+		    if (newr > 0.0) {
+			// viewbox0 = mergeviewboxes(circleviewbox(nnewnode),viewbox0);
+			drawcircle(gl,nnewnode.x,nnewnode.y,newr);
+			// if (nnewnode.x - newr < minx) {
+			//     minx = nnewnode.x - newr;
+			// }
+			// if (nnewnode.x + newr > maxx) {
+			//     maxx = nnewnode.x + newr;
+			// }
+			// if (nnewnode.y - newr < miny) {
+			//     miny = nnewnode.y - newr;
+			// }
+			// if (nnewnode.y + newr > maxy) {
+			//     maxy = nnewnode.y + newr;
+			// }
+		    }
+		}
+
+		// create the new buffer, bind the data, and add to the list of buffers
+		gl.batchs.push(createnewbatch(gl));
+
+	    }
+
+	    iter += niterperframe ;
+	}
+
+	viewbox0 = expandviewbox(viewbox0,1.002);
+	gl.viewbox0 = squareviewbox(expandviewbox(viewbox0,1.0));
+	resetviewbox(gl);
+	
+	if (iter >= maxiter) {
+	    var stopdate = (new Date()).getTime(); 
+	    var duration = stopdate - startdate;
+	    console.log("iter duration ",duration);
+	    console.log("xmin",minx,"ymin",miny,"xmax",maxx,"ymax",maxy);
+	}
+
+	return relaunchloop(iter < maxiter * 2,iterframe);
+    }
+
+    return iterframe;
+}
+
+startanim(context());
+
