@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 <meta charset="UTF-8"/>
-<meta name="description" content="Dots2art About"/>
+<meta name="description" content="Dots2art about"/>
 <meta name="author" content="Julien Leonard"/>
 <meta name="keywords" content="generative,dots,art,circles"/>
 <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
@@ -18,7 +18,7 @@
     <![endif]-->
 
     
-<title>About - DOTS2ART</title>
+<title>about - DOTS2ART</title>
 <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
 <link rel="stylesheet" href="css/base.css"/>
