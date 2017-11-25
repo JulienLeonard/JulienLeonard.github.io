@@ -1,7 +1,0 @@
-//
-// default bpattern packing
-//
-
-function plug(c1,c2,side) {
-	return {c1: c1, c2: c2, side: side}
-}

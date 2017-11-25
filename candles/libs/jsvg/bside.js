@@ -1,1 +1,0 @@
-function BS(){this.mlist=[]}BS.prototype.push=function(b){var a=1;0<this.mlist.length&&(a=-llast(this.mlist));this.mlist=this.mlist.concat(lfill(a,b));return this};BS.prototype.list=function(){return this.mlist};BS.prototype.alts=function(b){for(var a=0;a<b.length;a++)this.push(b[a]);return this};
