@@ -1,0 +1,11 @@
+function ColGrid(fviewbox,xmin,ymin,xmax,ymax)
+{
+	this.xmin = xmin;
+	this.xmax = xmax;
+	this.ymin = ymin;
+	this.ymax = ymax;
+	this.subquads  = [];
+	this.circlemap = [];
+	this.fviewbox = fviewbox;
+	this.MAXCIRCLENUMBER = 10;
+}
