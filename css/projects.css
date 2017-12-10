@@ -736,3 +736,23 @@ body {
 .clear {
     clear: both;
 }
+
+.footer {
+    width: 70%;
+    text-align: center;
+    // margin-top: 10vh;
+    // margin-bottom: 10vh;
+    margin: 20vh auto;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Helvetica';
+    // font-family: 'Georgia';
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 200%;
+    display: inline-block;
+    margin-left: 5%;
+}

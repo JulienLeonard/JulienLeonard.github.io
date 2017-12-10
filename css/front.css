@@ -270,7 +270,7 @@ body {
     overflow: hidden;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    tex-align: right;
+    text-align: right;
     // background-color: #fdd;
 }
 
