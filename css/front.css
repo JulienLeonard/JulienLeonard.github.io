@@ -120,7 +120,7 @@ body {
     display: block;
     width: auto;
     height: 80vh;
-    margin-bottom: -20vh;
+    margin-bottom: 0vh;
     // margin-left: 5vw;
     margin-top: 0vh;
     overflow: hidden;
