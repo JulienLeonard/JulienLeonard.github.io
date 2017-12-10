@@ -119,7 +119,8 @@ body {
     position: relative;
     display: block;
     width: auto;
-    height: 55vh;
+    height: 80vh;
+    margin-bottom: -20vh;
     // margin-left: 5vw;
     margin-top: 0vh;
     overflow: hidden;
