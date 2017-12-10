@@ -166,18 +166,6 @@ body {
     // height: auto;
 }
 
-.menu {
-    position: fixed;
-    top: 5vh;
-    left: 3vw;
-    writing-mode: vertical-rl;
-    font-family: 'Helvetica';
-    // font-family: 'Georgia';
-    font-size: 16px;
-    letter-spacing: 2px;
-}
-
-
 .front-title {
     text-decoration: none;
     color: #000;
