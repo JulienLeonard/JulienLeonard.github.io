@@ -237,7 +237,7 @@ body {
     text-align: left;
     float: left;
     width: 100%;
-    margin-left: 20vw;
+    margin-left: 15vw;
 }
 
 .paragraph-left-frame {
@@ -324,11 +324,11 @@ body {
 .project-title-left {
     // float: right;
     width: 50%;
-    margin-left: 25%;
+    margin-left: 15%;
     
     height: auto;
     overflow: hidden;
-    margin-top: 20vh;
+    margin-top: 0vh;
     margin-bottom: 0vh;
     // background-color: #fdd;    
 }
@@ -402,8 +402,9 @@ body {
     // background-color: #ddf;
 }
 
-
-
+.project-vspace {
+    height: 20vh;
+}
 
 
 .project-description-left {
@@ -414,7 +415,7 @@ body {
     overflow: hidden;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    margin-left: 25%;
+    margin-left: 15%;
     // min-width: 300px; 
     // background-color: #fdd;    
 }
@@ -751,6 +752,9 @@ body {
 }
 
 .main {
+}
+
+.main-simple {
     width: 70%;
     text-decoration: none;
     color: #000;
@@ -763,3 +767,57 @@ body {
     margin-left: 15vw;
     margin-bottom: -40vh;
 }
+
+.paragraph-about-left {
+    // float: right;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    // background-color: #fdd;
+}
+
+.paragraph-about-left p {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Helvetica';
+    // font-family: 'Georgia';
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 200%;
+    // margin-bottom: 10vmin;
+    text-align: left;
+    float: left;
+    width: 33vw;
+    margin-left: 15vw;
+}
+
+.paragraph-about-right {
+    // float: right;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    // background-color: #fdd;
+}
+
+.paragraph-about-right p {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Helvetica';
+    // font-family: 'Georgia';
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 200%;
+    // margin-bottom: 10vmin;
+    text-align: left;
+    float: right;
+    width: 33vw;
+    margin-right: 15vw;
+}
+
+
