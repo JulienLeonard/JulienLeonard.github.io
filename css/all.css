@@ -833,4 +833,17 @@ body {
     margin-right: 33vw;
 }
 
+.workimage {
+    // width: 50%;
+    max-width: 1024px;
+    // position: relative;
+    // top: -50vmin;
+    margin-top: -33vw;
+    width: auto;
+    height: 100vmin;
+    // margin-left: 33vmin;
+    // margin: auto;
+    float: right;
+    // margin-right: 10vw;
+}
 
