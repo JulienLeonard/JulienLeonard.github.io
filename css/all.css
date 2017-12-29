@@ -36,12 +36,14 @@ body {
 
 .intro {
     background-color: #fff;
+    opacity: 1.0;
     background: #fff;
 }
 
 .intropage {
     width: 100%;
     height: auto;
+    margin-top: 0vmin;
     padding-top: 5vmin;
 }
 
@@ -57,13 +59,13 @@ body {
     display: inline-block;
     // padding-top: 8vmin;
     padding-left: 10vw;
-    padding-bottom: 5vmin;
+    padding-bottom: 3vmin;
     // background-color: #f00;
 }
 
 .introtitle a {
     text-decoration: none;
-    font-size: 8vmin;
+    font-size: 5vmin;
     letter-spacing: 2px;
     color: #000;
     font-family: 'Playfair Display';
@@ -82,13 +84,15 @@ body {
     // display: inline-block;
     // min-width: 600px;
     text-decoration: none;
-    font-size: 8vmin;
+    font-size: 4vmin;
     letter-spacing: 2px;
     color: #000;
     font-family: 'Playfair Display';
+    padding-left: 30vw;
     // font-family: 'Playfair Display', serif;
     // text-transform: uppercase;
     // background-color: #fff;    
+    // background-color: #fff;
 }
 
 .intromenupage {
@@ -104,8 +108,8 @@ body {
 
 .intromenu {
     display: inline-block;
-    padding-top: 5vmin;
-    padding-bottom: 5vmin;
+    padding-top: 3vmin;
+    padding-bottom: 3vmin;
     // background-color: #0f0;
 }
 
@@ -116,7 +120,7 @@ body {
     // font-family: 'Catamaran',sans-serif;
     // font-weight: bold;
     font-family: 'Playfair Display', serif;
-    font-size: 5vmin;
+    font-size: 4vmin;
     // letter-spacing: 2px;
     display: inline;
     margin-right: 5vw;
@@ -186,8 +190,8 @@ body {
     margin-left: 20%;
     height: auto;
     overflow: hidden;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
 }
 
 .paragraph-left p {
@@ -326,7 +330,7 @@ body {
     margin-left: 15vw;
     height: auto;
     overflow: hidden;
-    margin-top: 10vmin;
+    margin-top: 0vmin;
     margin-bottom: 0vh;
     // background-color: #fdd;    
 }
@@ -773,11 +777,12 @@ img {
 .main {
     width: 100%;
     background-color: #fff;
+    margin-bottom: -5vh;
 }
 
 .mainpage {
     position: absolute;
-    top: 78%;
+    top: 90%;
     left: 0%;
 }
 
@@ -881,8 +886,8 @@ img {
     max-width: 800px;
     margin: auto;
     display: block;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
+    margin-bottom: 10vh;
+    margin-top: 0vh;
 }
 
 .post-image {
