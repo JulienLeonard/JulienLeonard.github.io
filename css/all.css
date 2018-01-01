@@ -36,7 +36,7 @@ body {
 
 .introcont {
     text-align: center;
-    margin-top: 33vh;
+    margin-top: 17vh;
 }
 
 .intro {
@@ -57,11 +57,13 @@ body {
 }
 
 .introwork {
-    width: 33%;
+    width: auto;
     min-width: 200px;
     height: auto;
     padding-top: 3vmin;
-    margin-left: 7vw;
+    margin-left: 10vw;
+    // margin-top: 5vw;
+    margin-bottom: 3vh;
 }
 
 
@@ -126,35 +128,22 @@ body {
 
 
 .scroll {
-    width: 10vmin;
-    height: 10vmin;
-    margin: auto;
-    // margin-left: 50vw;
-    text-align: center;
-    // float: right;
-    display: block;
-    // margin-top: 8vmin;
-    // margin-bottom: 0vh;
-    // margin-left: 1vw;
-    // margin-right: 3vmin;
-    // display: inline-block;
-    // min-width: 600px;
+    width: auto;
+    display: inline-block;
+    float: right;
+    text-align: right;
+    padding-right: 2vmin;
+    padding-left: 2vmin;
+    padding-top: 1vmin;
+    padding-bottom: 2vmin;
+    margin-top: -18vh;
     text-decoration: none;
     font-size: 3vmin;
-    letter-spacing: 2px;
-    color: #000;
+    color: #fff;
     font-family: 'Playfair Display';
-    // padding-left: 30vmin;
-    // font-family: 'Playfair Display', serif;
-    // text-transform: uppercase;
-    // background-color: #fff;    
-    background-color: #fff;
-    border-radius: 50%;
-    margin-top: -3%;
-    padding: 2vmin;
-    vertical-align: middle;
-    # padding-top: 3vmin;
-    line-height: 10vmin;
+    background-color: #000;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
 }
 
 .frame {
@@ -762,7 +751,7 @@ img {
     position: absolute;
     top: 100%;
     left: 0%;
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 
 .mainwork {
