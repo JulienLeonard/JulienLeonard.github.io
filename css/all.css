@@ -140,14 +140,12 @@ body {
     padding-left: 2vmin;
     padding-top: 1vmin;
     padding-bottom: 2vmin;
-    margin-top: -18vh;
+    margin-top: -25vh;
     text-decoration: none;
     font-size: 3vmin;
     color: #fff;
     font-family: 'Playfair Display';
     background-color: #000;
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
 }
 
 .frame {
