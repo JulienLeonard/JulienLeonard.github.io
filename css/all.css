@@ -53,7 +53,11 @@ body {
     height: auto;
     // margin-top: 10%;
     padding: 4vmin;
-    padding-top: 6vmin
+    padding-top: 6vmin;
+    border: 7px solid #111;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .introwork {
