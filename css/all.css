@@ -152,7 +152,7 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
-    float: right;
+    // float: right;
     width: 100%;
     overflow: hidden;
     height: 100%;
@@ -160,8 +160,8 @@ body {
 }
 
 .frame canvas {
-    width: 100vmax;
-    height: 100vmax;
+    width: 200vw;
+    height: 200vw;
     // padding: 3%;
 }
 
