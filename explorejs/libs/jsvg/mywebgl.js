@@ -230,8 +230,8 @@ function initcanvas(canvasname)
 	var wh = window.innerHeight;
 	var realToCSSPixels = window.devicePixelRatio;
 	var maxdim = wh > ww ? wh : ww;
-	var w =  maxdim;
-	var h =  maxdim;
+	var w =  maxdim * realToCSSPixels;
+	var h =  maxdim * realToCSSPixels;
 	// var w = ww;
 	// var h = wh;
 	

@@ -3,7 +3,7 @@ function plug(c1,c2,side) {
 	return {c1: c1, c2: c2, side: side}
 }
 
-function bpatternpackingalternate(plugs,ratios) {
+function bpatternpackingalternate(plugs,ratios,maxsize = 0.5) {
     this.lastindex = 1;
     var frontsize = 20000;
     this.front = new Array(frontsize);
@@ -17,7 +17,7 @@ function bpatternpackingalternate(plugs,ratios) {
     }
     
     this.minsize = 0.01;
-    this.maxsize = 0.5;
+    this.maxsize = maxsize;
     
     this.initratios = function(ratios) {
 	this.mratios = ratios;
