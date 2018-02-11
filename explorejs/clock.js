@@ -7,7 +7,7 @@
 // <script type="text/javascript" src="bpattern.js"></script>
 // <script type="text/javascript" src="bpatternbao.js"></script>
 
-
+try {
 var canvasname    = "alternate";
 var colgrid      = null;
 var quadtree     = null;
@@ -236,6 +236,7 @@ function iterframe() {
 	newdraw(gl);
     }
     // requestAnimationFrame(iterframe);
+    TODO;
     requestAnimFrame(iterframe);
 };
 
@@ -243,4 +244,7 @@ function iterframe() {
 // startanim(iterframe);
 // execloop();
 iterframe();
-
+}
+catch(err) {
+    document.getElementById("message").innerHTML = err.message;
+}
