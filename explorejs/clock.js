@@ -235,7 +235,8 @@ function iterframe() {
 
 	newdraw(gl);
     }
-    requestAnimationFrame(iterframe);
+    // requestAnimationFrame(iterframe);
+    requestAnimFrame(iterframe);
 };
 
 
