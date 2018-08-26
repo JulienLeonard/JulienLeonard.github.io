@@ -177,7 +177,7 @@ initrandomseed(0);
 
 function iterframe() {
 
-    console.log("iterframe " + restartdraw );
+    // console.log("iterframe " + restartdraw );
     
     if (restartdraw) {
 
