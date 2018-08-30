@@ -404,6 +404,17 @@ body {
     padding-bottom: 5vmin;
 }
 
+.paragraph-about {
+    // float: right;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    padding-top: 5vmin;
+    padding-bottom: 5vmin;
+}
+
+
 .paragraph p {
     text-decoration: none;
     color: #000000;
