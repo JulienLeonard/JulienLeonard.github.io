@@ -606,7 +606,8 @@ body {
     margin-top:  10vmin;
     // margin-bottom: 30vmin;
     // margin-left: 40%;
-    // background-color: #000000;
+    background-color: #000000;
+    padding: 2vmin;
     // border-radius: 100%;
     // margin-left: 50vmin;
 }
@@ -624,26 +625,26 @@ body {
 }
 
 .image_full {
-    // padding: 5vmin;
+    padding: 2vmin;
     // padding: 10px;
     text-align: center;
-    border: 0px solid #000;
+    border: 1px solid #fff;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: white;
+    background-color: black;
 }
 
 
 .image_full img {
-    width: 100%;
+    width: 85%;
     // margin: 3vmin;
-    // padding: 3vmin;
+    padding: 5vmin;
     text-align: center;
     height: auto;
     max-width: 800px;
     // border-radius: 100%;
-    background-color: #000;
+    background-color: #fff;
 }
 
 
