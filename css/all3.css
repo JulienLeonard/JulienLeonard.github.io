@@ -950,3 +950,13 @@ body {
     font-size: 5vmin;
     text-align: center;
 }
+
+.legend {
+    margin-top: 3vmin;
+    float: right;
+    margin-right: 5vmin;
+    font-family: 'Playfair Display',serif;
+    font-size: 3vmin;
+    color: #000000;
+    text-decoration: underline;;
+}
