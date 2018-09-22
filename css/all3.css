@@ -452,7 +452,7 @@ body {
     margin: auto;
     height: auto;
     overflow: hidden;
-    background-color: #000;
+    background-color: #fff;
     // margin-top: 10vh;
     // margin-bottom: 10vh;
     // background-color: #fdd;
@@ -606,7 +606,7 @@ body {
     margin-top:  10vmin;
     // margin-bottom: 30vmin;
     // margin-left: 40%;
-    background-color: #000000;
+    background-color: #fff;
     padding: 2vmin;
     // border-radius: 100%;
     // margin-left: 50vmin;
