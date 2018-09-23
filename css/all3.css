@@ -632,14 +632,13 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: black;
+    // background-color: black;
 }
 
 
 .image_full img {
     width: 88%;
-    // margin: 3vmin;
-    padding: 5vmin;
+    padding: 0vmin;
     text-align: center;
     height: auto;
     max-width: 800px;
