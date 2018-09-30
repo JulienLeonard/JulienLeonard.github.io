@@ -56,12 +56,13 @@ body {
     width: 100%;
     margin: auto;
     height: auto;
+    // border: 1px solid #000;
     // padding-top: 10vmin;
 }
 
 .greyline {
     border: 0;
-    width: 90%;
+    width: 80%;
     height: 1px;
     color: #000000;
     background-color: #000000;
@@ -90,8 +91,8 @@ body {
 
 .introtitle a {
     text-decoration: none;
-    font-size: 10vmin;
-    letter-spacing: 2px;
+    font-size: 5vmin;
+    letter-spacing: 4px;
     line-height: 100%;
     color: #000000;
     font-weight: 500;
@@ -179,15 +180,14 @@ body {
     // float: right;
     text-align: center;
     // margin-right: 15vmin;
-    margin-top: 0vmin;
+    margin-top: 5vmin;
     margin-bottom: 5vmin;
     text-decoration: none;
-    font-size: 5vmin;
+    font-size: 3.5vmin;
     // line-height: 125%;
-    color: #000000;
+    color: #000;
     font-weight: 500;
     font-style: italic;
-    // font-family: 'Playfair Display', serif;
     font-family: 'Playfair Display', serif;
 }
 
@@ -204,17 +204,60 @@ body {
     min-width: 600px;
 }
 
+.introline {
+    width: 100%;
+    margin: auto;
+}
+
 .introname {
-    margin-top: 2.5vmin;
+    // margin-top: 2.5vmin;
     // float: left;
+    margin-left: 10vmin;
+    // margin-right: 5vmin;
+    width: auto;
+    color: #000000;
+    font-family: 'Playfair Display',serif;
+    font-size: 3vmin;
+    text-align: left;
+    // margin: auto;
+    // vertical-align: middle;
+    // display: block;
+    letter-spacing: 3px;
+    float: left;
+}
+
+.introsubject {
+    // margin-top: 2.5vmin;
+    // float: left;
+    margin-right: 10vmin;
+    // margin-right: 5vmin;
+    width: auto;
+    color: #000000;
+    font-family: 'Playfair Display',serif;
+    font-size: 3vmin;
+    text-align: right;
+    // margin: auto;
+    // vertical-align: middle;
+    // display: block;
+    letter-spacing: 3px;
+    float: right;
+}
+
+.introtopic {
+    // margin-top: 2.5vmin;
+    // float: right;
     // margin-left: 30vmin;
     // margin-right: 5vmin;
     width: auto;
     color: #000000;
     font-family: 'Playfair Display',serif;
-    font-size: 5vmin;
+    font-size: 7.5vmin;
     text-align: center;
-    display: inline-block;
+    // vertical-align: middle;
+    // display: inline;
+    letter-spacing: 6px;
+    display: block;
+
 }
 
 .quoteauthor {
@@ -289,24 +332,26 @@ body {
 }
 
 .introsubhead {
-    display: inline-block;
-    width: auto;
+    display: block;
+    width: 100%;
     margin: auto;
+    text-align: center;
 }
 
 .intromenu {
-    // display: inline-block;
+    display: block;
     // float: right;
     // width: auto;
-    width: 100%;
+    width: auto;
     // padding: 5vmin;
     // width: auto;
-    margin: auto;
+    // margin: auto;
     // text-align: right;
-    text-align: center;
+    // text-align: right;
     margin-top: 0vmin;
     margin-bottom: 0vmin;
-    // margin-right: 2vmin;
+    // float: right;
+    // margin-right: 10vmin;
 }
 
 
@@ -314,15 +359,16 @@ body {
     // text-decoration: none;
     color: #000000;
     font-family: 'Playfair Display',serif;
-    font-size: 3.5vmin;
+    font-size: 3vmin;
     width: auto;
     display: inline;
     // float: left;
-    padding-right: 7vmin;
-    padding-left: 7vmin;    
+    padding-right: 4vmin;
+    padding-left: 4vmin;
+    margin: auto;
     // background-color: white;
     // border-radius: 100%;
-    font-weight: 500;
+    // font-weight: 500;
 }
 
 .intromenuindex0 {
@@ -511,11 +557,19 @@ body {
 }
 
 .paragraph-small-center {
-    width: 100%;
-    // margin-left: 40%;
-    // margin: auto;
+    width: auto;
+    // margin-left: 33%;
+    margin: auto;
     // display: inline-block;
     text-align: center;
+ }
+
+.paragraph-small-center2 {
+    width: 100%;
+    margin-left: 33%;
+    // margin: auto;
+    // display: inline-block;
+    // text-align: center;
  }
 
 .paragraph-small-center p {
@@ -523,6 +577,11 @@ body {
     margin: auto;
     display: inline-block;
 }
+
+.paragraph-small-center2 p a {
+    color: #000;
+}
+
 
 .paragraph-small-left p {
     width: auto;
@@ -594,7 +653,7 @@ body {
 }
 
 .paragraph-center-frame {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -607,7 +666,7 @@ body {
     // margin-bottom: 30vmin;
     // margin-left: 40%;
     background-color: #fff;
-    padding: 2vmin;
+    // padding: 2vmin;
     // border-radius: 100%;
     // margin-left: 50vmin;
 }
@@ -637,7 +696,7 @@ body {
 
 
 .image_full img {
-    width: 88%;
+    width: 100%;
     padding: 0vmin;
     text-align: center;
     height: auto;
@@ -901,10 +960,12 @@ body {
 }
 
 .intrologo {
-    width: auto;
+    width: 10vmin;
     text-align: center;
+    // vertical-align: middle;
     // float: left;
-    display: inline-block;
+    display: block;
+    margin: auto;
 }
 
 .intrologo img {
@@ -953,9 +1014,9 @@ body {
 .legend {
     margin-top: 3vmin;
     float: right;
-    margin-right: 5vmin;
+    margin-right: 10vmin;
     font-family: 'Playfair Display',serif;
     font-size: 3vmin;
     color: #000000;
-    text-decoration: underline;;
+    text-decoration: underline;
 }
