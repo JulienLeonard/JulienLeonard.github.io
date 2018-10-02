@@ -213,7 +213,7 @@ body {
     // margin-top: 2.5vmin;
     // float: left;
     // margin-left: 10%;
-    margin-right: 5%;
+    margin-right: 5vmin;
     margin-left: 5%;
     width: 40%;
     color: #000000;
@@ -223,9 +223,14 @@ body {
     // margin: auto;
     // vertical-align: middle;
     // display: block;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     // float: left;
     display: inline;
+}
+
+.introname a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .introsubject {
@@ -372,7 +377,7 @@ body {
     // background-color: white;
     // border-radius: 100%;
     // font-weight: 500;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .intromenuindex0 {
@@ -719,7 +724,7 @@ body {
     // margin-bottom: 10vh;
     // margin: 10vh auto;
     // background-color: white;
-    padding-top: 5vmin;
+    padding-top: 0vmin;
     padding-bottom: 5vmin;
 }
 
