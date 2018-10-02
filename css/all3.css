@@ -41,7 +41,7 @@ body {
 
 .introcont {
     text-align: center;
-    padding-top: 5vmin;
+    padding-top: 7.5vmin;
     background-color: white;
 }
 
@@ -66,8 +66,8 @@ body {
     height: 1px;
     color: #000000;
     background-color: #000000;
-    margin-top: 5vmin;
-    margin-bottom: 5vmin;
+    margin-top: 7.5vmin;
+    margin-bottom: 7.5vmin;
 }
 
 .introwork {
@@ -205,16 +205,17 @@ body {
 }
 
 .introline {
-    width: 100%;
+    width: 33%;
     margin: auto;
 }
 
 .introname {
     // margin-top: 2.5vmin;
     // float: left;
-    margin-left: 10vmin;
-    // margin-right: 5vmin;
-    width: auto;
+    // margin-left: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 40%;
     color: #000000;
     font-family: 'Playfair Display',serif;
     font-size: 3vmin;
@@ -223,7 +224,8 @@ body {
     // vertical-align: middle;
     // display: block;
     letter-spacing: 3px;
-    float: left;
+    // float: left;
+    display: inline;
 }
 
 .introsubject {
@@ -328,7 +330,7 @@ body {
 .introhead {
     display: block;
     width: 100%;
-    text-align: center;
+    // text-align: center;
 }
 
 .introsubhead {
@@ -339,10 +341,10 @@ body {
 }
 
 .intromenu {
-    display: block;
+    display: inline;
     // float: right;
     // width: auto;
-    width: auto;
+    width: 40%;
     // padding: 5vmin;
     // width: auto;
     // margin: auto;
@@ -351,24 +353,26 @@ body {
     margin-top: 0vmin;
     margin-bottom: 0vmin;
     // float: right;
-    // margin-right: 10vmin;
+    margin-right: 5%;
 }
 
 
 .intromenuitem {
-    // text-decoration: none;
+    text-decoration: none;
     color: #000000;
     font-family: 'Playfair Display',serif;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     width: auto;
     display: inline;
+    // text-align: right;
     // float: left;
-    padding-right: 4vmin;
-    padding-left: 4vmin;
+    padding-right: 1%;
+    padding-left: 1%;
     margin: auto;
     // background-color: white;
     // border-radius: 100%;
     // font-weight: 500;
+    letter-spacing: 3px;
 }
 
 .intromenuindex0 {
@@ -443,7 +447,8 @@ body {
 
 .paragraph {
     // float: right;
-    width: auto;
+    width: 80%;
+    margin: auto;
     height: auto;
     overflow: hidden;
     padding-top: 5vmin;
@@ -452,7 +457,7 @@ body {
 
 .paragraph-about {
     // float: right;
-    width: 90%;
+    width: 80%;
     margin: auto;
     height: auto;
     overflow: hidden;
@@ -662,7 +667,7 @@ body {
     // width: 55vmin;
     // height: auto;
     // margin-right: 5vmin;
-    margin-top:  10vmin;
+    margin-top:  5vmin;
     // margin-bottom: 30vmin;
     // margin-left: 40%;
     background-color: #fff;
@@ -995,7 +1000,7 @@ body {
 }
 
 .space {
-    height: 20vmin;
+    height: 30vmin;
 }
 
 .copyright {
