@@ -223,7 +223,7 @@ body {
     // margin: auto;
     // vertical-align: middle;
     // display: block;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     // float: left;
     display: inline;
 }
@@ -366,7 +366,7 @@ body {
     text-decoration: none;
     color: #000000;
     font-family: 'Playfair Display',serif;
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     width: auto;
     display: inline;
     // text-align: right;
@@ -377,7 +377,7 @@ body {
     // background-color: white;
     // border-radius: 100%;
     // font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .intromenuindex0 {
