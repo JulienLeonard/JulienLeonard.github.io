@@ -218,12 +218,12 @@ body {
     width: 40%;
     color: #000000;
     font-family: 'Playfair Display',serif;
-    font-size: 3vmin;
+    font-size: 4vmin;
     text-align: left;
     // margin: auto;
     // vertical-align: middle;
     // display: block;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
     // float: left;
     display: inline;
 }
@@ -366,7 +366,7 @@ body {
     text-decoration: none;
     color: #000000;
     font-family: 'Playfair Display',serif;
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     width: auto;
     display: inline;
     // text-align: right;
@@ -376,8 +376,8 @@ body {
     margin: auto;
     // background-color: white;
     // border-radius: 100%;
-    // font-weight: 500;
-    letter-spacing: 1px;
+    // font-weight: 600;
+    // letter-spacing: 1px;
 }
 
 .intromenuindex0 {
