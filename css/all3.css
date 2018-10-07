@@ -27,7 +27,7 @@ Menu
 */
 
 body {
-    background-color: #f4f4f4;
+    background-color: #404040;
 }
 
 .container {
@@ -35,7 +35,12 @@ body {
     width: 100%;
     max-width: 800px;
     margin: auto;
-    padding: 1px;
+    padding: 0px;
+    // background-color: #bdbebf;
+}
+
+.leaf {
+    width: 100%;
     background-color: #f4f4f4;
 }
 
@@ -69,6 +74,17 @@ body {
     margin-top: 7.5vmin;
     margin-bottom: 7.5vmin;
 }
+
+.whiteline {
+    border: 0;
+    width: 80%;
+    height: 1px;
+    color: #ffffff;
+    background-color: #ffffff;
+    margin-top: 7.5vmin;
+    margin-bottom: 7.5vmin;
+}
+
 
 .introwork {
     width: auto;
@@ -168,7 +184,7 @@ body {
     text-decoration: none;
     font-size: 5vmin;
     // line-height: 125%;
-    color: #000000;
+    color: #ffffff;
     font-weight: 500;
     font-style: italic;
     // font-family: 'Playfair Display', serif;
@@ -273,7 +289,7 @@ body {
     // margin-left: 30vmin;
     // margin-right: 5vmin;
     width: 90%;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Playfair Display',serif;
     font-size: 5vmin;
     text-align: right;
@@ -500,6 +516,23 @@ body {
     display: block;
 }
 
+.paradark {
+    background-color: #bdbebf;
+}
+
+.paradark p {
+    color: #ffffff;
+}
+
+.paradark2 {
+    background-color: #404040;
+}
+
+.paradark2 p {
+    color: #ffffff;
+}
+
+
 .picture-full-frame {
     // float: right;
     width: 100%;
@@ -725,13 +758,13 @@ body {
     // margin-bottom: 10vh;
     // margin: 10vh auto;
     // background-color: #f4f4f4;
-    padding-top: 0vmin;
-    padding-bottom: 5vmin;
+    // padding-top: 0vmin;
+    // padding-bottom: 5vmin;
 }
 
 .footer a {
     // text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     // font-family: 'Playfair Display', serif;
     font-family: 'Playfair Display', serif;
     // font-family: 'Catamaran';
@@ -747,8 +780,9 @@ body {
 
 .main {
     width: 100%;
-    // margin-bottom: -5vh;
+    // margin-bottom: -5vmin;
     background-color: #f4f4f4;
+    display: block;
 }
 
 .mainpage {
@@ -1006,17 +1040,17 @@ body {
 }
 
 .space {
-    height: 30vmin;
+    height: 10vmin;
 }
 
 .copyright {
     margin-top: 2.5vmin;
-    margin-bottom: 2.5vmin;
+    padding-bottom: 2.5vmin;
     // float: left;
     // margin-left: 30vmin;
     // margin-right: 5vmin;
     width: auto;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Playfair Display',serif;
     font-size: 3vmin;
     text-align: center;
