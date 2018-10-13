@@ -564,22 +564,13 @@ body {
 .paradark {
     // background-color: #bdbebf;
     background-color: #f4f4f4;
+    display: inline-block;
+    width: auto;
+    margin: auto;
+    text-align: left;
+    // text-align: center;
 }
 
-.paradark p {
-    // color: #ffffff;
-    color: #000;
-}
-
-.paradark2 {
-    // background-color: #404040;
-    background-color: #f4f4f4;
-}
-
-.paradark2 p {
-    // color: #ffffff;
-    color: #000;
-}
 
 
 .picture-full-frame {
@@ -630,6 +621,11 @@ body {
 /* } */
 
 
+.para3 {
+    width: 100%;
+    text-align: center;
+}
+
 .paragraph-left {
     margin-left: 5vmin;
 }
@@ -651,9 +647,10 @@ body {
 .paragraph-small-center {
     width: auto;
     // margin-left: 33%;
-    margin: auto;
-    // display: inline-block;
-    text-align: center;
+    // margin: auto;
+    display: inline-block;
+    text-align: left;
+    margin-right: auto;
  }
 
 .paragraph-small-center2 {
@@ -1038,11 +1035,11 @@ body {
 }
 
 .action-link {
-    width: 100%;
+    width: 80%;
     // display: inline-block;
-    // margin: auto;
+    margin: auto;
     // float: right;
-    text-align: center;
+    text-align: right;
     margin-top: 0vmin;
     margin-bottom: 0vmin;
     // margin-left: 45vmin;
@@ -1193,7 +1190,7 @@ body {
 .svgwrapup {
     background-color: #fefefe;
     // text-align: center;
-    width: 50px;
+    width: 30px;
     // margin: auto;
     float: left;
     margin-left: 10%;
