@@ -576,14 +576,14 @@ body {
     display: block;
     float: left;
     text-align: left;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 .work-right-frame {
     // float: right;
     width: 40%;
     margin-right: 10%;
-    margin-left: 10%;
+    margin-left: 5%;
     height: auto;
     overflow: hidden;
     background-color: #f4f4f4;
@@ -1319,8 +1319,8 @@ body {
 
 .perioddescription {
     // float: right;
-    width: 20%;
-    max-width: 300px;
+    width: auto;
+    // max-width: 300px;
     margin: auto;
     height: auto;
     overflow: hidden;
@@ -1337,4 +1337,5 @@ body {
     font-weight: 500;
     text-align: left;
     // font-style: italic;
+    // float: left;
 }
