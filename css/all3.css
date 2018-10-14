@@ -289,7 +289,6 @@ body {
     // display: inline;
     letter-spacing: 3px;
     display: block;
-
 }
 
 .quoteauthor {
@@ -561,6 +560,44 @@ body {
     display: block;
 }
 
+.work-left-frame {
+    // float: right;
+    width: 40%;
+    margin-left: 10%;
+    height: auto;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    // margin-top: 10vh;
+    // margin-bottom: 10vh;
+    // background-color: #fdd;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    text-align: left;
+    margin-right: 10%;
+}
+
+.work-right-frame {
+    // float: right;
+    width: 40%;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: auto;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    // margin-top: 10vh;
+    // margin-bottom: 10vh;
+    // background-color: #fdd;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    float: right;
+    text-align: right;
+}
+
 .paradark {
     // background-color: #bdbebf;
     background-color: #f4f4f4;
@@ -790,6 +827,17 @@ body {
     text-align: center;
     height: auto;
     max-width: 800px;
+    // border-radius: 100%;
+    // background-color: #fff;
+    margin: auto;
+}
+
+.image_middle img {
+    width: 100%;
+    // padding: 3%;
+    text-align: center;
+    height: auto;
+    max-width: 350px;
     // border-radius: 100%;
     // background-color: #fff;
     margin: auto;
@@ -1156,6 +1204,23 @@ body {
     font-family: 'Playfair Display',serif;
 }
 
+.legendleft {
+    width: 100%;
+    margin-top: 3vmin;
+    float: left;
+    margin-left: 10%;
+    font-family: 'Playfair Display',serif;
+}
+
+.legendright {
+    width: 100%;
+    margin-top: 3vmin;
+    float: right;
+    test-align: right;
+    margin-right: 10%;
+    font-family: 'Playfair Display',serif;
+}
+
 .legend a {
     text-decoration: none;
 }
@@ -1168,6 +1233,9 @@ body {
     margin-top: 2vmin;
 }
 
+.legendtitleright {
+    text-align: right;
+}
 
 .legendperiod {
     font-size: 10px;
@@ -1178,6 +1246,10 @@ body {
     letter-spacing: 3px;
 }
 
+.legendperiodright {
+    text-align: right;
+}
+
 .legendyear {
     font-size: 10px;
     color: #888;
@@ -1185,6 +1257,10 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
+}
+
+.legendyearright {
+    text-align: right;
 }
 
 .svgwrapup {
@@ -1202,4 +1278,63 @@ body {
     padding: 0%;
     margin: auto;
     background-color: #fefefe;
+}
+
+.periodname a {
+    text-decoration: none;
+    margin-top: 0px;
+    // float: right;
+    margin-left: 20%;
+    // margin-right: 5vmin;
+    width: auto;
+    color: #000000;
+    font-family: 'Playfair Display',serif;
+    font-size: 20px;
+    text-align: left;
+    // vertical-align: middle;
+    // display: inline;
+    letter-spacing: 3px;
+    display: block;
+}
+
+.perioddate  {
+    width: auto;
+    // float: right;
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 10px;
+    // line-height: 125%;
+    color: #000;
+    font-weight: 500;
+    color: #888;
+    // font-style: italic;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.perioddescription {
+    // float: right;
+    width: 20%;
+    max-width: 300px;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 10%;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    line-height: 200%;
+    // letter-spacing: 1px;
+    font-weight: 500;
+    text-align: left;
+    // font-style: italic;
 }
