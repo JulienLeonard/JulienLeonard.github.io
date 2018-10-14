@@ -231,7 +231,7 @@ body {
 }
 
 .introname a {
-    margin-top: 40px;
+    margin-top: 60px;
     // margin-top: 2.5vmin;
     // float: left;
     // margin-left: 10%;
@@ -1192,6 +1192,7 @@ body {
     // text-align: center;
     width: 30px;
     // margin: auto;
+    margin-top: -8px;
     float: left;
     margin-left: 10%;
 }

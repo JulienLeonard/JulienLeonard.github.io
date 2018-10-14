@@ -1,6 +1,6 @@
 .circle {
 	animation: hideshow 10.0s alternate infinite;
-	opacity: 0;
+	opacity: 1;
     }
 	
 	.circle0 {
@@ -1004,10 +1004,10 @@
     
 
 	@keyframes hideshow {
-	    50% {
+	    1% {
 		opacity: 0;
 	    }
-	    51% {
+	    2% {
 		opacity: 1;
 	    }
 	    100% {
