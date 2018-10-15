@@ -497,6 +497,17 @@ body {
     padding-bottom: 20px;
 }
 
+.paragraph-work {
+    // float: right;
+    width: 80%;
+    max-width: 400px;
+    margin-left: 10%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 
 .paragraph-index {
     // float: right;
