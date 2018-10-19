@@ -309,6 +309,7 @@ body {
     margin: auto;
     margin-top: 2.5vmin;
     margin-bottom: 5vmin;
+    text-transform: uppercase;
     // float: left;
     // margin-left: 10%;
     // margin-right: 5vmin;
@@ -319,6 +320,23 @@ body {
     font-size: 15px;
     text-align: left;
 }
+
+.paratitle-tutorial {
+    margin: auto;
+    margin-top: 10vmin;
+    margin-bottom: 2.5vmin;
+    text-transform: uppercase;
+    // float: left;
+    // margin-left: 10%;
+    // margin-right: 5vmin;
+    width: 80%;
+    max-width: 400px;
+    color: #000000;
+    font-family: 'Playfair Display',serif;
+    font-size: 15px;
+    text-align: left;
+}
+
 
 .periodtitle {
     margin-top: 2.5vmin;
@@ -496,6 +514,29 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.paragraph-tutorial {
+    // float: right;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.paragraph-tutorial-list {
+    // float: right;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
 
 .paragraph-work {
     // float: right;
@@ -852,6 +893,24 @@ body {
     // border-radius: 100%;
     // background-color: #fff;
     margin: auto;
+}
+
+.image_middle_center {
+    margin-top: 5vmin;
+    margin-bottom: 5vmin;
+    text-align: center;
+}
+
+.image_middle_center img {
+    width: 100%;
+    // padding: 3%;
+    text-align: center;
+    height: auto;
+    max-width: 350px;
+    // border-radius: 100%;
+    // background-color: #fff;
+    margin: auto;
+    border: 2px solid #000;
 }
 
 
