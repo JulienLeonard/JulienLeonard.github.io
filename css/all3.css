@@ -366,14 +366,24 @@ body {
 
 
 .introname2 {
-    margin-top: 0vmin;
+    margin-top: -10px;
     float: left;
-    margin-left: 5vmin;
+    margin-left: 10%;
     width: auto;
-    color: #000000;
     font-family: 'Playfair Display',serif;
-    font-size: 5vmin;
+    font-size: 10px;
+    font-weight: 600;
     text-align: left;
+    background-color: #888;
+    // border: 1px solid #000;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.introname2 a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;    
 }
 
 .introhead {
@@ -402,7 +412,7 @@ body {
     margin-top: 0vmin;
     margin-bottom: 0vmin;
     float: right;
-    margin-right: 10%;
+    margin-right: 10px;
 }
 
 
@@ -1189,12 +1199,13 @@ body {
 
 .intrologo {
     width: 30px;
-    text-align: left;
+    text-align: right;
     vertical-align: middle;
-    float: left;
+    float: right;
     // display: inline;
-    margin-left: 10%;
+    margin-right: 10%;
     background-color: #f4f4f4;
+    margin-top: -5px;
 }
 
 .intrologo img {
