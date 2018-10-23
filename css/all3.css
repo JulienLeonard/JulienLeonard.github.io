@@ -896,24 +896,30 @@ body {
 
 .image_middle img {
     width: 100%;
-    padding: 3%;
+    padding: 5px;
     text-align: center;
     height: auto;
     max-width: 350px;
     // border-radius: 100%;
     // background-color: #fff;
     margin: auto;
+    border: 1px solid #000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .image_middle_center {
     margin-top: 5vmin;
     margin-bottom: 5vmin;
     text-align: center;
+    padding: 0px;
+    border: 0px solid #000;
 }
 
 .image_middle_center img {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     height: auto;
     max-width: 350px;
