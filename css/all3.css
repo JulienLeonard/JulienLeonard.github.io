@@ -896,7 +896,7 @@ body {
 
 .image_middle img {
     width: 100%;
-    // padding: 3%;
+    padding: 3%;
     text-align: center;
     height: auto;
     max-width: 350px;
@@ -913,14 +913,14 @@ body {
 
 .image_middle_center img {
     width: 100%;
-    // padding: 3%;
+    padding: 10px;
     text-align: center;
     height: auto;
     max-width: 350px;
     // border-radius: 100%;
     // background-color: #fff;
     margin: auto;
-    border: 2px solid #000;
+    border: 1px solid #000;
 }
 
 
