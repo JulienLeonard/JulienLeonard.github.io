@@ -1426,3 +1426,44 @@ body {
     margin-right: 10%;
     float: right;
 }
+
+.blogname a {
+    text-decoration: none;
+    margin-bottom: 5px;
+    // float: right;
+    margin-left: 0%;
+    // margin-right: 5vmin;
+    width: auto;
+    color: #000000;
+    font-family: 'Playfair Display',serif;
+    font-size: 15px;
+    text-align: left;
+    // vertical-align: middle;
+    // display: inline;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.blogcat {
+    margin-bottom: 10px;    
+}
+
+.blogcat a {
+    font-size: 10px;
+    color: #888;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.blogdate {
+    font-size: 10px;
+    color: #888;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
