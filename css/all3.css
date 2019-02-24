@@ -1279,7 +1279,7 @@ body {
 
 .copyright {
     margin-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     // float: left;
     // margin-left: 30vmin;
     // margin-right: 5vmin;
@@ -1452,6 +1452,24 @@ body {
     color: #000000;
     font-family: 'Playfair Display',serif;
     font-size: 15px;
+    text-align: left;
+    // vertical-align: middle;
+    // display: inline;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.blogdescription p {
+    text-decoration: none;
+    margin-bottom: 15px;
+    line-height: 200%;
+    // float: right;
+    margin-left: 0%;
+    // margin-right: 5vmin;
+    width: auto;
+    color: #000000;
+    font-family: 'Playfair Display',serif;
+    font-size: 12.5px;
     text-align: left;
     // vertical-align: middle;
     // display: inline;
