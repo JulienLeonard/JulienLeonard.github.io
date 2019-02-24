@@ -47,7 +47,6 @@
 <a class="intromenuitem intromenuitempage intromenuindex2" href="blog.html">BLOG</a>
 </div>
 <div class="clear"></div>
-<div class="introname"><a href="index.html">JULIEN LEONARD</a></div>
 <div class="introtopic">Making of Coral Nest</div>
 <h2 class="introsubtitle">TUTORIAL</h2>
 <div class="clear"></div>
@@ -57,34 +56,53 @@
 <div class="main mainpage">
 <div class="paragraph paragraph-tutorial"><p>In this post, I am going to describe how the work Coral Nest has been created.</p></div>
 <div class="image_middle_center"><img src="images/test-bworld.66.png"/></div>
-<div class="paragraph paragraph-tutorial"><p>Coral Net is made of 30000+ circles, computed by a generative program. This computer program uses pre-defined patterns of adjacent circles, and tries to combine them without collision.</p></div>
-<div class="paragraph paragraph-tutorial"><p>Let check first what are adjacent circles, and how we can define patterns and combinations with them.</p></div>
+<div class="paragraph paragraph-tutorial"><p>Coral Net is made of 30000+ circles, computed by a generative program.</p></div>
+<div class="paragraph paragraph-tutorial"><p>This computer program uses pre-defined patterns of adjacent circles,</p></div>
+<div class="paragraph paragraph-tutorial"><p>and tries to combine them without collision.</p></div>
+<div class="paragraph paragraph-tutorial"><p>Let check first what are adjacent circles,</p></div>
+<div class="paragraph paragraph-tutorial"><p>and how we can define patterns and combinations with them.</p></div>
 <div class="paratitle-tutorial">Circles adjacency</div>
-<div class="paragraph paragraph-tutorial"><p>Two circles are adjacent if their intersection only consists of one point. It simply means that the two circles touch each other.</p></div>
+<div class="paragraph paragraph-tutorial"><p>Two circles are adjacent if their intersection only consists of one point.</p></div>
+<div class="paragraph paragraph-tutorial"><p>It simply means that the two circles touch each other.</p></div>
 <div class="image_middle_center"><img src="images/adjacent.jpg"/></div>
 <div class="paratitle-tutorial">Iterating adjacent circles</div>
-<div class="paragraph paragraph-tutorial"><p>One interesting way to consider two adjacent circles is to imagine that a first circle gives berth to a second one, according to some parameters, a bit like cell division.</p></div>
+<div class="paragraph paragraph-tutorial"><p>One interesting way to consider two adjacent circles is</p></div>
+<div class="paragraph paragraph-tutorial"><p>to imagine that a first circle gives berth to a second one, according to some parameters, a bit like cell division.</p></div>
 <div class="image_middle_center"><img src="images/adj4.jpg"/></div>
 <div class="paragraph paragraph-tutorial"><p>Thus:</p></div>
-<div class="paragraph paragraph-tutorial-list"><p>- a first circle is created, called the seed. On the picture above, let say the seed is the right circle.</p></div>
-<div class="paragraph paragraph-tutorial-list"><p>- from this seed, a new circle is created, by choosing an angle and a radius. On the picture above, the left circle is obtained by creating an adjacent circle from the left right, with a slight angle and an identical radius.</p></div>
-<div class="paragraph paragraph-tutorial-list"><p>- this process can be iterated again, to obtain a pattern of adjacent circles, in that case what I called a circle string</p></div>
-<div class="paragraph paragraph-tutorial"><p>Of course, by varying the angles and the radiuses used at each step for the new circles, we can get some interesting designs. In particular, we can define several new circles with different angles from a same circle, to create bifurcations and trees of circles.</p></div>
+<div class="paragraph paragraph-tutorial-list"><p>- a first circle is created, called the seed.</p></div>
+<div class="paragraph paragraph-tutorial"><p>On the picture above, let say the seed is the right circle.</p></div>
+<div class="paragraph paragraph-tutorial-list"><p>- from this seed, a new circle is created, by choosing an angle and a radius.</p></div>
+<div class="paragraph paragraph-tutorial"><p>On the picture above, the left circle is obtained by creating an adjacent circle from the left right, with a slight angle and an identical radius.</p></div>
+<div class="paragraph paragraph-tutorial-list"><p>- this process can be iterated again, to obtain a pattern of adjacent circles,</p></div>
+<div class="paragraph paragraph-tutorial"><p>in that case what I called a circle string</p></div>
+<div class="paragraph paragraph-tutorial"><p>Of course, by varying the angles and the radiuses used at each step for the new circles, we can get some interesting designs.</p></div>
+<div class="paragraph paragraph-tutorial"><p>In particular, we can define several new circles with different angles from a same circle, to create bifurcations and trees of circles.</p></div>
 <div class="paragraph paragraph-tutorial"><p>Meanwhile, another way to create bifurcations is to use the 2-circle adjaceny, as explained in the next section.</p></div>
 <div class="paratitle-tutorial">2-circle adjacency</div>
-<div class="paragraph paragraph-tutorial"><p>If we consider again the first two adjacent circles, we can use another way to define the next circle to generate. Instead of using only the left-most circle and a new angle and radius, we can impose the new circle to be adjacent to the 2 previous circles.</p></div>
-<div class="paragraph paragraph-tutorial"><p>In that case, the new circle is defined by two new parameters, a radius, and the side of the first 2 circles to be used. So for 2 adjacent circles, with this process, we can obtain 2 new circles, as follows</p></div>
+<div class="paragraph paragraph-tutorial"><p>If we consider again the first two adjacent circles, we can use another way to define the next circle to generate.</p></div>
+<div class="paragraph paragraph-tutorial"><p>Instead of using only the left-most circle and a new angle and radius,</p></div>
+<div class="paragraph paragraph-tutorial"><p>we can impose the new circle to be adjacent to the 2 previous circles.</p></div>
+<div class="paragraph paragraph-tutorial"><p>In that case, the new circle is defined by two new parameters, a radius, and the side of the first 2 circles to be used.</p></div>
+<div class="paragraph paragraph-tutorial"><p>So for 2 adjacent circles, with this process, we can obtain 2 new circles, as follows</p></div>
 <div class="image_middle_center"><img src="images/asj22.jpg"/></div>
 <div class="paragraph paragraph-tutorial"><p>From those 2 red circles, we can:</p></div>
 <div class="paragraph paragraph-tutorial-list"><p>- create a new circle string</p></div>
 <div class="paragraph paragraph-tutorial-list"><p>- or iterate the same 2-circle process with the 4 new circle pairs obtained</p></div>
 <div class="paratitle-tutorial">Bubble pattern</div>
-<div class="paragraph paragraph-tutorial"><p>Based on the mechanism of adjacent circles described in the previous sections, we can define a pattern by the set of parameters used to compute the new circles from a root or seed. This pattern also describes how to render the circles.</p></div>
+<div class="paragraph paragraph-tutorial"><p>Based on the mechanism of adjacent circles described in the previous sections,</p></div>
+<div class="paragraph paragraph-tutorial"><p>we can define a pattern by the set of parameters used to compute the new circles from a root or seed.</p></div>
+<div class="paragraph paragraph-tutorial"><p>This pattern also describes how to render the circles.</p></div>
 <div class="paragraph paragraph-tutorial"><p>For example, the following pictures represent one of the 3 patterns used to compute Coral Net</p></div>
 <div class="image_middle_center"><img src="images/pattern1.jpg"/></div>
-<div class="paragraph paragraph-tutorial"><p>This pattern is made of 5 circles, alternatively white and white/orange, and whose third circle is 3 times the size of the other circles.</p></div>
+<div class="paragraph paragraph-tutorial"><p>This pattern is made of 5 circles,</p></div>
+<div class="paragraph paragraph-tutorial"><p>alternatively white and whote/orange,</p></div>
+<div class="paragraph paragraph-tutorial"><p>and whose third circle is 3 times the size of the other circles.</p></div>
 <div class="paratitle-tutorial">Iteration of bubble patterns</div>
-<div class="paragraph paragraph-tutorial"><p>What is now really interesting is that a bubble pattern can also be used to define seeds for some new patterns, and so to define a way to combine and iterate bubble patterns.</p></div>
+<div class="paragraph paragraph-tutorial"><p>What is now really interesting</p></div>
+<div class="paragraph paragraph-tutorial"><p>is that a bubble pattern can also be used</p></div>
+<div class="paragraph paragraph-tutorial"><p>to define seeds for some new patterns,</p></div>
+<div class="paragraph paragraph-tutorial"><p>and so to define a way to combine and iterate bubble patterns.</p></div>
 <div class="paratitle-tutorial">Coral Net anatomy</div>
 <div class="paragraph paragraph-tutorial"><p>Coral Net makes use of three elementary bubble patterns:</p></div>
 <div class="image_middle_center"><img src="images/pattern1.jpg"/></div>
@@ -102,7 +120,7 @@
 <a href="https://www.instagram.com/julien.leonard.dots.art/">INSTAGRAM</a>
 <a href="https://twitter.com/julleor">TWITTER</a>
 </div>
-<div class="copyright">&copy; JULIEN LEONARD 2018</div>
+<div class="copyright">&copy; JULIEN LEONARD 2007 - 2019</div>
 <div class="space"></div>
 </div>
 </div>
