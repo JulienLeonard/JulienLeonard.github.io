@@ -1151,29 +1151,33 @@ body {
 }
 
 .blog-previous {
+    margin-top: -5vmin;
+    margin-bottom: 5vmin;
     float: left;
 }
 
 .blog-next {
+    margin-top: -5vmin;
+    margin-bottom: 5vmin;
     float: right;
 }
 
 .blog-previous a {
-    text-decoration: none;
+    // text-decoration: none;
     color: #000000;
     font-family: 'Playfair Display', serif;
     // font-family: 'Playfair Display', serif;
-    font-size: 4vmin;
+    font-size: 15px;
     letter-spacing: 1px;
     line-height: 200%;
 }
 
 .blog-next a {
-    text-decoration: none;
+    // text-decoration: none;
     color: #000000;
     font-family: 'Playfair Display', serif;
     // font-family: 'Playfair Display', serif;
-    font-size: 4vmin;
+    font-size: 15px;
     letter-spacing: 1px;
     line-height: 200%;
 }
@@ -1282,7 +1286,7 @@ body {
 
 .copyright {
     margin-top: 50px;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
     // float: left;
     // margin-left: 30vmin;
     // margin-right: 5vmin;
