@@ -51,13 +51,14 @@ body {
 .introcont {
     text-align: center;
     padding-top: 30px;
-    background-color: #f4f4f4;
+    // background-color: #f4f4f4;
+    z-index: -1;
 }
 
 .intro {
     display: inline-block;
-    background-color: #f4f4f4;
-    opacity: 1.0;
+    // background-color: #f4f4f4;
+    // opacity: 1.0;
     // margin-top: 10vmin;
 }
 
@@ -630,7 +631,8 @@ body {
     // float: right;
     // width: 40%;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 25%;
+    // margin: auto;
     height: auto;
     overflow: hidden;
     background-color: #f4f4f4;
@@ -901,7 +903,7 @@ body {
 
 .image_middle {
     width: 100%;
-    text-align: center;    
+    // text-align: center;    
 }
 
 .image_middle img {
@@ -1155,6 +1157,88 @@ body {
     margin-bottom: 5vmin;
     float: left;
 }
+
+.blog-menu {
+    float: left;
+    display: block;
+}
+
+.blog-menus {
+    float: left;
+    display: block;
+    margin-left: 10%;
+    width: 5%;
+    // margin-top: -180px;
+    margin-top: 0px;
+    z-index: 10;
+}
+
+
+.blog-menu a {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: #000000;
+    line-height: 200%;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+
+
+.blog-year {
+    float: left;
+    display: block;
+}
+
+.blog-years {
+    float: left;
+    display: block;
+    margin-left: 10%;
+    width: 5%;
+    // margin-top: -180px;
+    margin-top: 0px;
+    z-index: 10;
+}
+
+
+.blog-year a {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: #000000;
+    line-height: 200%;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.blog-cat {
+    float: left;
+    display: block;
+}
+
+.blog-cats {
+    float: left;
+    display: block;
+    margin-left: 10%;
+    width: 5%;
+    // margin-top: -40px;
+    z-index: 10;
+}
+
+
+.blog-cat a {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: #000000;
+    line-height: 200%;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
 
 .blog-next {
     margin-top: -5vmin;
