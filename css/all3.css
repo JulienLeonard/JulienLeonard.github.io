@@ -183,7 +183,7 @@ body {
     margin-top: 15vmin;
     margin-bottom: 5vmin;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     // line-height: 125%;
     color: #000;
     font-weight: 500;
@@ -294,7 +294,7 @@ body {
     width: 66%;
     color: #000;
     font-family: 'Playfair Display',serif;
-    font-size: 20px;
+    font-size: 15px;
     text-align: right;
     display: block;
 }
@@ -572,7 +572,7 @@ body {
     text-decoration: none;
     color: #000000;
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 200%;
     // letter-spacing: 1px;
     font-weight: 500;
@@ -584,7 +584,7 @@ body {
 .paragraph-index p {
     color: #000000;
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 150%;
     // letter-spacing: 1px;
     font-weight: 500;
@@ -1164,12 +1164,6 @@ body {
     margin: auto;
 }
 
-.blog-previous {
-    // margin-top: -5vmin;
-    // margin-bottom: 5vmin;
-    float: left;
-}
-
 .blog-menu {
     // float: left;
     display: inline-block;
@@ -1254,12 +1248,18 @@ body {
     letter-spacing: 2px;
 }
 
-
+.blog-previous {
+    // margin-top: -5vmin;
+    // margin-bottom: 5vmin;
+    float: left;
+    margin-left: 10%;
+}
 
 .blog-next {
     // margin-top: -5vmin;
     // margin-bottom: 5vmin;
     float: right;
+    margin-right: 10%;
 }
 
 .blog-previous a {
