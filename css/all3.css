@@ -1381,12 +1381,19 @@ body {
 }
 
 .space {
-    height: 80px;
+    // height: 80px;
+    height: 10vmin;
 }
 
+.spacehalf {
+    // height: 80px;
+    height: 5vmin;
+}
+
+
 .copyright {
-    margin-top: 50px;
-    padding-bottom: 0px;
+    // margin-top: 50px;
+    // padding-bottom: 0px;
     // float: left;
     // margin-left: 30vmin;
     // margin-right: 5vmin;
