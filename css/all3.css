@@ -197,8 +197,8 @@ body {
     // float: right;
     text-align: left;
     margin-left: 10%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    // margin-top: 15px;
+    // margin-bottom: 15px;
     text-decoration: none;
     font-size: 10px;
     // line-height: 125%;
@@ -272,6 +272,7 @@ body {
 
 .introtopic {
     margin-top: 15px;
+    margin-bottom: 15px;
     // float: right;
     margin-left: 10%;
     // margin-right: 5vmin;
@@ -1178,7 +1179,7 @@ body {
     // width: 5%;
     width: 80%;
     // margin-top: -180px;
-    margin-top: 0px;
+    margin-top: 15px;
     // z-index: 10;
     text-align: left;
 }
@@ -1387,7 +1388,7 @@ body {
 
 .spacehalf {
     // height: 80px;
-    height: 5vmin;
+    height: 50px;
 }
 
 
