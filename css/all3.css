@@ -51,9 +51,6 @@ body {
     // z-index: -1;
 }
 
-.html.sr .intro {
-    visibility: hidden;
-}
 
 .intro {
     display: inline-block;
@@ -200,6 +197,10 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+.html.sr .introsubtitle {
+    visibility: hidden;
+}
+
 .introsubtitle  {
     width: auto;
     // float: right;
@@ -236,6 +237,10 @@ body {
 .introline {
     width: 33%;
     margin: auto;
+}
+
+.html.sr .intromenu {
+    visibility: hidden;
 }
 
 .introname {
@@ -277,6 +282,11 @@ body {
     letter-spacing: 3px;
     float: right;
 }
+
+.html.sr .introtopic {
+    visibility: hidden;
+}
+
 
 .introtopic {
     margin-top: 15px;
@@ -876,6 +886,10 @@ body {
     display: inline-block;
 }
 
+.html.sr .paragraph_center_frame {
+    visibility: hidden;
+}
+
 .paragraph-center-frame {
     width: 80%;
     margin: auto;
@@ -905,10 +919,6 @@ body {
 
 .clear {
     clear: both;
-}
-
-.html.sr .image_full {
-    visibility: hidden;
 }
 
 .image_full {
@@ -1192,6 +1202,10 @@ body {
     margin-right: 10px;
 }
 
+.html.sr .blog-menus {
+    visibility: hidden;
+}
+
 .blog-menus {
     // float: left;
     display: block;
@@ -1336,6 +1350,10 @@ body {
     margin: auto;
     display: inline-block;
     margin-top: 0vmin;
+}
+
+.html.sr .intrologo {
+    visibility: hidden;
 }
 
 .intrologo {

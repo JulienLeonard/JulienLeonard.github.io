@@ -1,11 +1,42 @@
-ScrollReveal().reveal('.intro',{
-    delay: 500,
+ScrollReveal().reveal('.introtopic',{
+    delay: 0,
+    duration: 1500,
     useDelay: 'onload',
     reset: true,
 });
-ScrollReveal().reveal('.image_full',{
+ScrollReveal().reveal('.introsubtitle',{
+    delay: 500,
+    duration: 1500,
+    useDelay: 'onload',
+    reset: true,
+});
+ScrollReveal().reveal('.introname',{
+    delay: 1000,
+    duration: 1500,
+    useDelay: 'onload',
+    reset: true,
+});
+ScrollReveal().reveal('.intromenu',{
     delay: 1500,
-    duration: 5000,
+    duration: 1500,
+    useDelay: 'onload',
+    reset: true,
+});
+ScrollReveal().reveal('.blog-menus',{
+    delay: 1500,
+    duration: 1500,
+    useDelay: 'onload',
+    reset: true,
+});
+ScrollReveal().reveal('.intrologo',{
+    delay: 1500,
+    duration: 2000,
+    useDelay: 'onload',
+    reset: true,
+});
+ScrollReveal().reveal('.paragraph-center-frame',{
+    delay: 500,
+    duration: 3000,
     scale: 0.99,
     useDelay: 'onload',
     reset: true,
@@ -26,21 +57,18 @@ ScrollReveal().reveal('.paragraph',{
     reset: true,
 });
 ScrollReveal().reveal('.workdescriptionright',{
-    delay: 1500,
+    delay: 2500,
+    duration: 1500,
     useDelay: 'onload',
     reset: true,
 });
 ScrollReveal().reveal('.work-left-frame',{
     delay: 1500,
+    duration: 1500,
     useDelay: 'onload',
     reset: true,
 });
 
-ScrollReveal().reveal('.work-left-frame',{
-    delay: 1500,
-    useDelay: 'onload',
-    reset: true,
-});
 ScrollReveal().reveal('.paratitle',{
     delay: 1500,
     useDelay: 'onload',
