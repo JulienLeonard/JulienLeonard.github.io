@@ -1658,7 +1658,7 @@ body {
     width: 100%;
     padding-bottom: 153.3%;
     background: black;
-    box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.7);
+    box-shadow: 10px 7px rgba(0, 0, 0, 0.3);
 }
 
 .frame-image-mat {
@@ -1683,10 +1683,16 @@ body {
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5) inset;
 }
 
+.frame-image-art a {
+    width: 100%;
+    height: auto;
+}
+
 .frame-image-art img {
     width: 100%;
     height: auto;
 }
+
 
 
 .frame-image-square-frame {
@@ -1721,12 +1727,12 @@ body {
 
 .frame-image-square-art a {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .frame-image-square-art img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 
