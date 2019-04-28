@@ -34,7 +34,14 @@ ScrollReveal().reveal('.intrologo',{
     useDelay: 'onload',
     reset: true,
 });
-ScrollReveal().reveal('.paragraph-center-frame',{
+ScrollReveal().reveal('.frame-image-art',{
+    delay: 500,
+    duration: 3000,
+    scale: 0.99,
+    useDelay: 'onload',
+    reset: true,
+});
+ScrollReveal().reveal('.frame-image-square-art',{
     delay: 500,
     duration: 3000,
     scale: 0.99,
@@ -78,4 +85,8 @@ ScrollReveal().reveal('.paratitle',{
     useDelay: 'onload',
     reset: true,
 });
+
+
+
+
 
