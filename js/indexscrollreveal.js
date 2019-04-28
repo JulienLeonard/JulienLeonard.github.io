@@ -30,7 +30,7 @@ ScrollReveal().reveal('.blog-menus',{
 });
 ScrollReveal().reveal('.intrologo',{
     delay: 1500,
-    duration: 2000,
+    duration: 1500,
     useDelay: 'onload',
     reset: true,
 });
@@ -43,27 +43,30 @@ ScrollReveal().reveal('.paragraph-center-frame',{
 });
 ScrollReveal().reveal('.quotation',{
     delay: 500,
+    duration: 1500,
     useDelay: 'onload',
     reset: true,
 });
 ScrollReveal().reveal('.quoteauthor',{
     delay: 500,
+    duration: 1500,
     useDelay: 'onload',
     reset: true,
 });
 ScrollReveal().reveal('.paragraph',{
     delay: 1500,
+    duration: 1500,
     useDelay: 'onload',
     reset: true,
 });
 ScrollReveal().reveal('.workdescriptionright',{
-    delay: 2500,
+    delay: 1500,
     duration: 1500,
     useDelay: 'onload',
     reset: true,
 });
 ScrollReveal().reveal('.work-left-frame',{
-    delay: 1500,
+    delay: 2500,
     duration: 1500,
     useDelay: 'onload',
     reset: true,
@@ -71,6 +74,7 @@ ScrollReveal().reveal('.work-left-frame',{
 
 ScrollReveal().reveal('.paratitle',{
     delay: 1500,
+    duration: 1500,
     useDelay: 'onload',
     reset: true,
 });
