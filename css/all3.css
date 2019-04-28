@@ -51,6 +51,10 @@ body {
     // z-index: -1;
 }
 
+.html.sr .intro {
+    visibility: hidden;
+}
+
 .intro {
     display: inline-block;
     // background-color: #f4f4f4;
@@ -175,6 +179,10 @@ body {
     padding-bottom: 7vmin;
 }
 
+.html.sr .quotation {
+    visibility: hidden;
+}
+
 .quotation {
     width: auto;
     // float: right;
@@ -285,6 +293,10 @@ body {
     // display: inline;
     letter-spacing: 3px;
     display: block;
+}
+
+.html.sr .quoteauthor {
+    visibility: hidden;
 }
 
 .quoteauthor {
@@ -498,6 +510,10 @@ body {
     text-align: center;
     margin-top: 15vmin;
     margin-bottom: 10vmin;
+}
+
+.html.sr .paragraph {
+    visibility: hidden;
 }
 
 .paragraph {
@@ -889,6 +905,10 @@ body {
 
 .clear {
     clear: both;
+}
+
+.html.sr .image_full {
+    visibility: hidden;
 }
 
 .image_full {
