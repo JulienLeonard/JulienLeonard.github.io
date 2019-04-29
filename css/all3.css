@@ -1653,6 +1653,19 @@ body {
     margin-bottom: 10px;
 }
 
+.html.sr .frame-image-frame {
+    visibility: hidden;
+}
+
+.html.sr .frame-image-frame-red {
+    visibility: hidden;
+}
+
+.html.sr .frame-image-square-frame {
+    visibility: hidden;
+}
+
+
 .frame-image-frame {
     position: relative;
     width: 100%;
@@ -1691,7 +1704,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5) inset;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75) inset;
 }
 
 .frame-image-art a {
@@ -1734,7 +1747,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5) inset;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75) inset;
 }
 
 .frame-image-square-art a {

@@ -2,88 +2,95 @@ ScrollReveal().reveal('.introtopic',{
     delay: 0,
     duration: 1500,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
 ScrollReveal().reveal('.introsubtitle',{
-    delay: 500,
+    delay: 0,
     duration: 1500,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
 ScrollReveal().reveal('.introname',{
-    delay: 1000,
+    delay: 0,
     duration: 1500,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
 ScrollReveal().reveal('.intromenu',{
-    delay: 1500,
+    delay: 500,
     duration: 1500,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
 ScrollReveal().reveal('.blog-menus',{
-    delay: 1500,
+    delay: 500,
     duration: 1500,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
 ScrollReveal().reveal('.intrologo',{
-    delay: 1500,
+    delay: 500,
     duration: 1500,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
-ScrollReveal().reveal('.frame-image-art',{
-    delay: 500,
-    duration: 3000,
+ScrollReveal().reveal('.frame-image-frame',{
+    delay: 1500,
+    duration: 1500,
     scale: 0.99,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
-ScrollReveal().reveal('.frame-image-square-art',{
-    delay: 500,
-    duration: 3000,
+ScrollReveal().reveal('.frame-image-frame-red',{
+    delay: 1500,
+    duration: 1500,
     scale: 0.99,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
+});
+ScrollReveal().reveal('.frame-image-square-frame',{
+    delay: 1500,
+    duration: 1500,
+    scale: 0.99,
+    useDelay: 'onload',
+    reset: false,
 });
 ScrollReveal().reveal('.quotation',{
     delay: 500,
     duration: 1500,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
 ScrollReveal().reveal('.quoteauthor',{
     delay: 500,
     duration: 1500,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
 ScrollReveal().reveal('.paragraph',{
     delay: 1500,
     duration: 1500,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
 ScrollReveal().reveal('.workdescriptionright',{
     delay: 1500,
     duration: 1500,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
 ScrollReveal().reveal('.work-left-frame',{
-    delay: 2500,
+    delay: 1500,
     duration: 1500,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
 
 ScrollReveal().reveal('.paratitle',{
     delay: 1500,
     duration: 1500,
     useDelay: 'onload',
-    reset: true,
+    reset: false,
 });
 
 
