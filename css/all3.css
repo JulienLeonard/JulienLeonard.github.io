@@ -188,7 +188,7 @@ body {
     margin-top: 15vmin;
     margin-bottom: 5vmin;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 17.5px;
     // line-height: 125%;
     color: #000;
     font-weight: 500;
@@ -317,7 +317,7 @@ body {
     width: 66%;
     color: #000;
     font-family: 'Playfair Display',serif;
-    font-size: 15px;
+    font-size: 17.5px;
     text-align: right;
     display: block;
 }
@@ -335,7 +335,7 @@ body {
     max-width: 400px;
     color: #000000;
     font-family: 'Playfair Display',serif;
-    font-size: 15px;
+    font-size: 17.5px;
     text-align: left;
 }
 
@@ -351,7 +351,7 @@ body {
     max-width: 400px;
     color: #000000;
     font-family: 'Playfair Display',serif;
-    font-size: 15px;
+    font-size: 17.5px;
     text-align: left;
 }
 
@@ -599,7 +599,7 @@ body {
     text-decoration: none;
     color: #000000;
     font-family: 'Playfair Display', serif;
-    font-size: 15px;
+    font-size: 17.5px;
     line-height: 200%;
     // letter-spacing: 1px;
     font-weight: 500;
@@ -611,7 +611,7 @@ body {
 .paragraph-index p {
     color: #000000;
     font-family: 'Playfair Display', serif;
-    font-size: 15px;
+    font-size: 17.5px;
     line-height: 150%;
     // letter-spacing: 1px;
     font-weight: 500;
@@ -1002,7 +1002,7 @@ body {
 /*     // color: #ffffff; */
 /*     color: #000; */
 /*     font-family: 'Playfair Display', serif; */
-/*     font-size: 15px; */
+/*     font-size: 17.5px; */
 /*     // font-weight: bold; */
 /*     // letter-spacing: 1px; */
 /*     // line-height: 200%; */
@@ -1334,15 +1334,13 @@ body {
     // margin-right: 5vmin;
 }
 .action-link a {
-    // text-decoration: none;
-    color: #000000;
     font-family: 'Playfair Display', serif;
-    font-size: 15px;
-    width: auto;
-    margin: auto;
-    // display: block;
-    // font-weight: bold;
-    // margin: 5vmin;
+    text-decoration: none;
+    color: #000000;
+    line-height: 200%;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .image_logo {
