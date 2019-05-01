@@ -34,6 +34,20 @@ ScrollReveal().reveal('.intrologo',{
     useDelay: 'onload',
     reset: false,
 });
+ScrollReveal().reveal('.footer',{
+    delay: 1000,
+    duration: 1500,
+    scale: 0.99,
+    useDelay: 'onload',
+    reset: false,
+});
+ScrollReveal().reveal('.legend',{
+    delay: 1000,
+    duration: 1500,
+    scale: 0.99,
+    useDelay: 'onload',
+    reset: false,
+});
 ScrollReveal().reveal('.frame-image-frame',{
     delay: 1000,
     duration: 1500,

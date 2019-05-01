@@ -185,8 +185,8 @@ html.sr .quotation {
     // float: right;
     text-align: center;
     // margin-right: 15vmin;
-    margin-top: 15vmin;
-    margin-bottom: 5vmin;
+    margin-top: 40px;
+    margin-bottom: 20px;
     text-decoration: none;
     font-size: 16.5px;
     // line-height: 125%;
@@ -200,6 +200,11 @@ html.sr .quotation {
 html.sr .introsubtitle {
     visibility: hidden;
 }
+
+html.sr .introname {
+    visibility: hidden;
+}
+
 
 .introsubtitle  {
     width: auto;
@@ -310,10 +315,10 @@ html.sr .quoteauthor {
 }
 
 .quoteauthor {
-    margin-top: 2.5vmin;
+    margin-top: 20px;
     // float: left;
     // margin-left: 30vmin;
-    margin-bottom: 15vmin;
+    margin-bottom: 40px;
     width: 66%;
     color: #000;
     font-family: 'Playfair Display',serif;
@@ -983,6 +988,10 @@ html.sr .paragraph_center_frame {
     border: 1px solid #000;
 }
 
+html.sr .footer {
+    visibility: hidden;
+}
+
 
 
 .footer {
@@ -1010,6 +1019,8 @@ html.sr .paragraph_center_frame {
 /*     margin-left: 10%; */
 /*     // background-color: #f4f4f4; */
 /* } */
+
+
 
 .footer a {
     text-decoration: none;
@@ -1438,6 +1449,10 @@ html.sr .intrologo {
     font-size: 10px;
     letter-spacing: 3px;
     text-align: center;
+}
+
+html.sr .legend {
+    visibility: hidden;
 }
 
 .legend {
