@@ -176,7 +176,7 @@ body {
     padding-bottom: 7vmin;
 }
 
-.html.sr .quotation {
+html.sr .quotation {
     visibility: hidden;
 }
 
@@ -188,7 +188,7 @@ body {
     margin-top: 15vmin;
     margin-bottom: 5vmin;
     text-decoration: none;
-    font-size: 17.5px;
+    font-size: 16.5px;
     // line-height: 125%;
     color: #000;
     font-weight: 500;
@@ -197,7 +197,7 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-.html.sr .introsubtitle {
+html.sr .introsubtitle {
     visibility: hidden;
 }
 
@@ -239,7 +239,7 @@ body {
     margin: auto;
 }
 
-.html.sr .intromenu {
+html.sr .intromenu {
     visibility: hidden;
 }
 
@@ -283,7 +283,7 @@ body {
     float: right;
 }
 
-.html.sr .introtopic {
+html.sr .introtopic {
     visibility: hidden;
 }
 
@@ -305,7 +305,7 @@ body {
     display: block;
 }
 
-.html.sr .quoteauthor {
+html.sr .quoteauthor {
     visibility: hidden;
 }
 
@@ -317,7 +317,7 @@ body {
     width: 66%;
     color: #000;
     font-family: 'Playfair Display',serif;
-    font-size: 17.5px;
+    font-size: 16.5px;
     text-align: right;
     display: block;
 }
@@ -335,7 +335,7 @@ body {
     max-width: 400px;
     color: #000000;
     font-family: 'Playfair Display',serif;
-    font-size: 17.5px;
+    font-size: 16.5px;
     text-align: left;
 }
 
@@ -351,7 +351,7 @@ body {
     max-width: 400px;
     color: #000000;
     font-family: 'Playfair Display',serif;
-    font-size: 17.5px;
+    font-size: 16.5px;
     text-align: left;
 }
 
@@ -522,7 +522,7 @@ body {
     margin-bottom: 10vmin;
 }
 
-.html.sr .paragraph {
+html.sr .paragraph {
     visibility: hidden;
 }
 
@@ -599,7 +599,7 @@ body {
     text-decoration: none;
     color: #000000;
     font-family: 'Playfair Display', serif;
-    font-size: 17.5px;
+    font-size: 16.5px;
     line-height: 200%;
     // letter-spacing: 1px;
     font-weight: 500;
@@ -611,7 +611,7 @@ body {
 .paragraph-index p {
     color: #000000;
     font-family: 'Playfair Display', serif;
-    font-size: 17.5px;
+    font-size: 16.5px;
     line-height: 150%;
     // letter-spacing: 1px;
     font-weight: 500;
@@ -886,7 +886,7 @@ body {
     display: inline-block;
 }
 
-.html.sr .paragraph_center_frame {
+html.sr .paragraph_center_frame {
     visibility: hidden;
 }
 
@@ -1002,7 +1002,7 @@ body {
 /*     // color: #ffffff; */
 /*     color: #000; */
 /*     font-family: 'Playfair Display', serif; */
-/*     font-size: 17.5px; */
+/*     font-size: 16.5px; */
 /*     // font-weight: bold; */
 /*     // letter-spacing: 1px; */
 /*     // line-height: 200%; */
@@ -1202,7 +1202,7 @@ body {
     margin-right: 10px;
 }
 
-.html.sr .blog-menus {
+html.sr .blog-menus {
     visibility: hidden;
 }
 
@@ -1350,7 +1350,7 @@ body {
     margin-top: 0vmin;
 }
 
-.html.sr .intrologo {
+html.sr .intrologo {
     visibility: hidden;
 }
 
@@ -1418,13 +1418,11 @@ body {
 }
 
 .space {
-    // height: 80px;
-    height: 10vmin;
+    height: 80px;
 }
 
 .spacehalf {
-    // height: 80px;
-    height: 50px;
+    height: 40px;
 }
 
 
@@ -1651,15 +1649,15 @@ body {
     margin-bottom: 10px;
 }
 
-.html.sr .frame-image-frame {
+html.sr .frame-image-frame {
     visibility: hidden;
 }
 
-.html.sr .frame-image-frame-red {
+html.sr .frame-image-frame-red {
     visibility: hidden;
 }
 
-.html.sr .frame-image-square-frame {
+html.sr .frame-image-square-frame {
     visibility: hidden;
 }
 
