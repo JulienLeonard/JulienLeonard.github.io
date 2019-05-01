@@ -1759,9 +1759,9 @@ html.sr .frame-image-square-frame {
 
 .frame-image-middle-frame {
     position: relative;
-    width: 400px;
+    max-width: 400px;
     margin: auto;
-    padding-bottom: 400px;
+    padding-bottom: 100%;
     background: black;
     box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.7);
     margin-bottom: 10px;
