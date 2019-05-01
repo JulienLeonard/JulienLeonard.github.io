@@ -572,7 +572,7 @@ html.sr .paragraph {
 
 .paragraph-work {
     // float: right;
-    width: 80%;
+    width: 100%;
     max-width: 400px;
     // margin-left: 10%;
     margin: auto;
@@ -647,10 +647,9 @@ html.sr .paragraph {
 
 .work-left-frame {
     // float: right;
-    // width: 40%;
-    width: 80%;
-    margin-left: 10%;
-    // margin: auto;
+    // width: 80%;
+    width: 100%;
+    // margin-left: 10%;
     height: auto;
     overflow: hidden;
     background-color: #f4f4f4;
@@ -1031,10 +1030,11 @@ html.sr .paragraph_center_frame {
 }
 
 .main {
-    width: 100%;
+    width: 80%;
     // margin-bottom: -5vmin;
     background-color: #f4f4f4;
     display: block;
+    margin: auto;
 }
 
 .mainpage {
@@ -1418,7 +1418,7 @@ html.sr .intrologo {
 }
 
 .space {
-    height: 80px;
+    height: 70px;
 }
 
 .spacehalf {
@@ -1586,8 +1586,8 @@ html.sr .intrologo {
 .workdescriptionright {
     // width: 35%;
     max-width: 400px;
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    // margin: auto;
     // float: right;
 }
 
@@ -1759,7 +1759,7 @@ html.sr .frame-image-square-frame {
 
 .frame-image-middle-frame {
     position: relative;
-    max-width: 400px;
+    width: 100%;
     margin: auto;
     padding-bottom: 100%;
     background: black;
@@ -1794,5 +1794,9 @@ html.sr .frame-image-square-frame {
     height: auto;
 }
 
-
+.main-panel {
+    width: 80%;
+    margin: auto;
+    max-width: 400px;
+}
 
