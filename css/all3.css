@@ -890,7 +890,7 @@ html.sr .paragraph_center_frame {
 }
 
 .paragraph-center-frame {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -1443,7 +1443,7 @@ html.sr .intrologo {
 .legend {
     margin-top: 3vmin;
     float: left;
-    margin-left: 10%;
+    // margin-left: 10%;
     font-family: 'Playfair Display',serif;
 }
 
