@@ -704,20 +704,24 @@ function main() {
     
   function resizeRendererToDisplaySize(renderer) {
     const canvas = renderer.domElement;
+    //const pixelRatio = window.devicePixelRatio;
+    //const width  = canvas.clientWidth  * pixelRatio | 0;
+    //const height = canvas.clientHeight * pixelRatio | 0;
       var ww = window.innerWidth;
       var wh = window.innerHeight;
       var realToCSSPixels = window.devicePixelRatio;
       var maxdim = wh > ww ? wh : ww;
-      var width =  maxdim * realToCSSPixels;
-      var height =  maxdim * realToCSSPixels;
-      // var w = ww;
-      // var h = wh;
-
-    const needResize = canvas.width !== width || canvas.height !== height;
-    if (needResize) {
-	renderer.setSize(width, height, true);
-    }
-    return needResize;
+      var width =  ww * realToCSSPixels;
+      var height =  wh * realToCSSPixels;
+      // // var w = ww;
+      // // var h = wh;
+    
+      
+      const needResize = canvas.width !== width || canvas.height !== height;
+      if (needResize) {
+	  renderer.setSize(width, height, false);
+      }
+      return needResize;
   }
 
   function render(time) {
