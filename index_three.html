@@ -709,7 +709,7 @@ function main() {
     const height = canvas.clientHeight * pixelRatio | 0;
     const needResize = canvas.width !== width || canvas.height !== height;
     if (needResize) {
-	renderer.setSize(width, height, false);
+	renderer.setSize(width, height, true);
     }
     return needResize;
   }
