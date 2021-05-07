@@ -35,7 +35,7 @@ html, body {
   <div class="introtopic">D <span class="gold">O</span> T I F U L L Y</div>
   <div class="clear"></div>
   <div class="intromenu intromenupage">
-<!-- <div class="intrologo"><a href="index.html"><div class="image_full"><img src="file://c:/Dropbox/dev/websitewabisabi/images/crow-of-heart-2018---julien-leonard-dots-art.801.png" alt="crow of heart 2018   julien leonard dots art"/></div></a></div> -->
+<!-- <div class="intrologo"><a href="index.html"><div class="image_full"><img src="images/crow-of-heart-2018---julien-leonard-dots-art.801.png" alt="crow of heart 2018   julien leonard dots art"/></div></a></div> -->
 <!-- <a class="intromenuitem intromenuitempage intromenuindex0" href="works.html">WORK</a> -->
 <a class="intromenuitem intromenuitempage intromenuindex1" href="about.html">A B <span class="gold">O</span> U T</a>
 <a class="intromenuitem intromenuitempage intromenuindex2" href="blog.html">B L <span class="gold">O</span> G</a>
@@ -516,7 +516,8 @@ function main() {
     materialwallr.castShadow = true;
     materialwallr.receiveShadow = true;
 
-    const textureleft = loader.load('backgrounds/concretelongleft.png')
+    const texturebgk = loader.load('backgrounds/concretelongr.jpg')
+    const materialwallbgk = new THREE.MeshPhongMaterial({
 	map: texturebgk,
 	color: 0xBBBBCC,
     });
