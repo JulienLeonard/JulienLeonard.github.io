@@ -15,29 +15,31 @@ html, body {
   z-index: -9999;
 }
   </style>
-  <link rel="stylesheet" href="css/allnew.css"/>
+  <link rel="stylesheet" href="file://c:/Dropbox/dev/websitewabisabi/css/allnew.css"/>
 <head>
 <body>
   <canvas id="c"></canvas>
   <body class="home">
 <div class="container">
 <div class="leaf">
-<div class="spacehalf"></div>
+<!-- <div class="spacehalf"></div> -->
 <div class="introcont">
 <div class="intro intropage">
 <div class="introhead">
-<!-- <div class="intrologo"><a href="index.html"><div class="image_full"><img src="images/crow-of-heart-2018---julien-leonard-dots-art.801.png" alt="crow of heart 2018   julien leonard dots art"/></div></a></div> -->
-<div class="intromenu intromenupage">
-<a class="intromenuitem intromenuitempage intromenuindex0" href="works.html">WORK</a>
-<a class="intromenuitem intromenuitempage intromenuindex1" href="about.html">ABOUT</a>
-<a class="intromenuitem intromenuitempage intromenuindex2" href="blog.html">BLOG</a>
-</div>
-<div class="clear"></div>
+
+<!-- <div class="clear"></div> -->
 <!-- <div class="spacehalf"></div> -->
 <!-- <div class="borderframe"> -->
-  <div class="introtopic">DOTIFULLY</div>
+  <div class="introname"><a href="index.html">J U L I E N &nbsp; L E <span class="gold">O</span> N A R D</a></div>
   <div class="clear"></div>
-<div class="introname"><a href="index.html">J U L I E N &nbsp; L E O N A R D</a></div>
+  <div class="introtopic">D <span class="gold">O</span> T I F U L L Y</div>
+  <div class="clear"></div>
+  <div class="intromenu intromenupage">
+<!-- <div class="intrologo"><a href="index.html"><div class="image_full"><img src="file://c:/Dropbox/dev/websitewabisabi/images/crow-of-heart-2018---julien-leonard-dots-art.801.png" alt="crow of heart 2018   julien leonard dots art"/></div></a></div> -->
+<!-- <a class="intromenuitem intromenuitempage intromenuindex0" href="works.html">WORK</a> -->
+<a class="intromenuitem intromenuitempage intromenuindex1" href="about.html">A B <span class="gold">O</span> U T</a>
+<a class="intromenuitem intromenuitempage intromenuindex2" href="blog.html">B L <span class="gold">O</span> G</a>
+</div>
 <!-- </div> -->
 <!-- <h2 class="introsubtitle">Generative dots art</h2> -->
 
@@ -47,7 +49,7 @@ html, body {
 </div>
 <div class="space"></div>
 <div class="main mainpage">
-<!-- <div class="paragraph-frame  paragraph-center-frame paragraph-0-frame"><a href="blue-hole.html"><div class="frame-image-square-frame"><div class="frame-image-square-mat"><div class="frame-image-square-art"><img src="images/blue-hole-2018---julien-leonard-dots-art.800.png" alt="blue hole 2018   julien leonard dots art"/></div></div></div></a></div> -->
+<!-- <div class="paragraph-frame  paragraph-center-frame paragraph-0-frame"><a href="blue-hole.html"><div class="frame-image-square-frame"><div class="frame-image-square-mat"><div class="frame-image-square-art"><img src="file://c:/Dropbox/dev/websitewabisabi/images/blue-hole-2018---julien-leonard-dots-art.800.png" alt="blue hole 2018   julien leonard dots art"/></div></div></div></a></div> -->
 <!--
 <div class="legend">
 <a href="dotscapes.html"><div class="legendperiod">dotscapes</div></a>
@@ -449,7 +451,7 @@ adress
   <script src="https://rawcdn.githack.com/mrdoob/three.js/r124/build/three.js"></script>
   <script src="https://rawgit.com/Wilt/ThreeCSG/develop/ThreeCSG.js"></script>
 <script type="module">
-  // import * as THREE from 'threejs/r127/build/three.module.js';
+  // import * as THREE from 'file://c:/Dropbox/dev/websitewabisabi/threejs/r127/build/three.module.js';
 
 function main() {
   const canvas = document.querySelector('#c');
@@ -468,13 +470,14 @@ function main() {
 
   const scene = new THREE.Scene();
 
-    const color = 0xFFDFBF;
+    const color = 0xFFCF6F;
+    // const color = 0xFFAF2F;
     const intensity = 0.999;
-    const light = new THREE.DirectionalLight(color, intensity * 1.0 );
-    light.position.set(2, 1, 1);
+    const light = new THREE.DirectionalLight(color, intensity * 2.5 );
+    light.position.set(2, 1, 0.3925);
     light.castShadow = true;
-    light.shadow.mapSize.width = 512;
-    light.shadow.mapSize.height = 512;
+    // light.shadow.mapSize.width = 512;
+    // light.shadow.mapSize.height = 512;
     // light.shadow.radius = 8;
       // light.shadowDarkness = 0.1;
     scene.add(light);
@@ -483,63 +486,75 @@ function main() {
     // light2.position.set(-1, -3, -2);
     // scene.add(light2);
 
-    const light0 = new THREE.AmbientLight( 0xC1B8B0 ); // soft white light
+    const light0 = new THREE.AmbientLight( 0xC1B8B0, 1.0 ); // soft white light
+    // const light0 = new THREE.AmbientLight( 0xFFFFFF, 0.75 ); // soft white light
     scene.add( light0 );
 
     const geometry       = new THREE.BoxGeometry(1.0, 1.0, 1.0);
     const geometrysmall  = new THREE.BoxGeometry(0.1, 0.1, 0.1);
-    const geometrywall   = new THREE.BoxGeometry(4.0, 6.0, 1.0);
+    const geometrywall   = new THREE.BoxGeometry(10.0, 6.0, 1.0);
     const geometryfloor  = new THREE.BoxGeometry(4.0, 2.0, 1.0);
-    const geometrybkg    = new THREE.BoxGeometry(100.0, 100.0, 1.0);
-
+    const geometrybkg    = new THREE.BoxGeometry(20.0, 20.0, 1.0);
+    const geometrysphere = new THREE.SphereGeometry( 1.0, 128, 128 );
+    
 
 
     
     
     const loader = new THREE.TextureLoader();
-    const texture = loader.load('backgrounds/concretelong.jpg')
+    const texture = loader.load('file://c:/Dropbox/dev/websitewabisabi/backgrounds/concretelong.jpg')
     const materialwall = new THREE.MeshPhongMaterial({
 	map: texture,
     });
     materialwall.castShadow = true;
     materialwall.receiveShadow = true;
 
-    const texturer = loader.load('backgrounds/concretelongr.jpg')
+    const texturer = loader.load('file://c:/Dropbox/dev/websitewabisabi/backgrounds/concretelongr.jpg')
     const materialwallr = new THREE.MeshPhongMaterial({
 	map: texturer,
     });
     materialwallr.castShadow = true;
     materialwallr.receiveShadow = true;
 
-    const textureleft = loader.load('backgrounds/concretelongleft.png')
+    const texturebgk = loader.load('file://c:/Dropbox/dev/websitewabisabi/backgrounds/concretelongr.jpg')
+    const materialwallbgk = new THREE.MeshPhongMaterial({
+	map: texturebgk,
+	color: 0xBBBBCC,
+    });
+    // materialwallr.castShadow = true;
+    // materialwallr.receiveShadow = true;
+
+    
+    const textureleft = loader.load('file://c:/Dropbox/dev/websitewabisabi/backgrounds/concretelongleft.png')
     const materialwallleft = new THREE.MeshPhongMaterial({
 	map: textureleft,
     });
     materialwallleft.castShadow = true;
     materialwallleft.receiveShadow = true;
 
-    const textureright = loader.load('backgrounds/concretelongright.png')
+    const textureright = loader.load('file://c:/Dropbox/dev/websitewabisabi/backgrounds/concretelongright.png')
     const materialwallright = new THREE.MeshPhongMaterial({
 	map: textureright,
+	color: 0xBBBBCC,
     });
     materialwallright.castShadow = true;
     materialwallright.receiveShadow = true;
 
     
-    const texturehole = loader.load('images/blue-hole-2018---julien-leonard-dots-art.800.png')
+    const texturehole = loader.load('file://c:/Dropbox/dev/websitewabisabi/images/blue-hole-2018---julien-leonard-dots-art.800.png')
     const materialhole = new THREE.MeshPhongMaterial({
 	map: texturehole,
     });
     materialhole.castShadow = true;
     materialhole.receiveShadow = true;
 
-    const texturefmuseum = loader.load('images/floating-museum-2018---julien-leonard-dots-art.-.png')
+    const texturefmuseum = loader.load('file://c:/Dropbox/dev/websitewabisabi/images/floating-museum-2018---julien-leonard-dots-art.-.png')
     const materialfmuseum = new THREE.MeshPhongMaterial({
 	map: texturefmuseum,
     });
     materialfmuseum.receiveShadow = true;
 
-    const textureforest = loader.load('images/sleeping-forest-2018---julien-leonard-dots-art.800.png');
+    const textureforest = loader.load('file://c:/Dropbox/dev/websitewabisabi/images/sleeping-forest-2018---julien-leonard-dots-art.800.png');
     const materialforest = new THREE.MeshPhongMaterial({
 	map: textureforest,
     });
@@ -599,6 +614,7 @@ function main() {
 	const thick = 0.05;
 	const geometryframe       = new THREE.BoxGeometry(w, h, 0.1);
 	const geometrypic          = new THREE.BoxGeometry(w * 0.66, h * 0.66, 0.1);
+	// const geometrypic          = new THREE.BoxGeometry(w, h, 0.1);
 
 	const geometryframeleft   = new THREE.BoxGeometry(thick, h + thick*2, 0.2);
 	const geometryframeup     = new THREE.BoxGeometry(w + thick*2, thick, 0.2);
@@ -610,7 +626,7 @@ function main() {
 	cubes.push(makeInstanceSmall(geometryframeup, materialborder, x, y + h/2.0 + thick/2.0, z));
 	cubes.push(makeInstanceSmall(geometryframeup, materialborder, x, y - h/2.0 - thick/2.0, z));
 
-	cubes.push(makeInstanceHole(geometryframe, materialborder,  x, y, z));
+	cubes.push(makeInstanceHole(geometryframe, materialwallbgk,  x, y, z));
 
 	cubes.push(makeInstanceHole(geometrypic, materialpic,  x, y, z));
 
@@ -618,25 +634,35 @@ function main() {
     
   const cubes = [
       // makeInstance(geometry, 0x444488,  0, 0, 0.0),
-      makeInstance(geometrybkg, materialwall,  0.0, 0.0, -1.0),
+      makeInstance(geometrybkg, materialwallbgk,  0.0, 0.0, -1.0),
 
-      makeInstance(geometrywall, materialwall,  0.0, 0.0, 0.0),
+      makeInstance(geometrywall, materialwallright,  0.0, 0.0, 0.0),
 
-      makeInstance(geometrywall, materialwall,  -4.0, 0.0, 1.0),
+      // makeInstance(geometrywall, materialwall,  4.0, -4.0, 1.0),
+      // makeInstance(geometrywall, materialwall,  4.0, 7.5, 1.0),
+      // makeInstance(geometrywall, materialwall,  8.0, 0.0, 1.0),
 
+      
+      // makeInstance(geometrywall, materialwall,  4.0, 10.0, 1.0),
+
+      
+      // makeInstance(geometrywall, materialwall,  0.0, 8.0, 0.0),
+      // makeInstance(geometrysphere, materialwall,  1.0, -2.5, 1.0),
+
+      
       // makeInstance(geometrywall, materialwall,  4.0, 3.0, 2.0),
 
 
-      makeInstance(geometrywall, materialwall,  0.0, -6.0, 1.0),
+      // makeInstance(geometrywall, materialwall,  0.0, -6.0, 1.0),
 
-      makeInstance(geometrywall, materialwallr,  -0.0, -7.0, 0.0),
+      // makeInstance(geometrywall, materialwallr,  -0.0, -7.0, 0.0),
 
       
-      makeInstance(geometrywall, materialwall,  4.0, -5.5, 1.0),
+      // makeInstance(geometrywall, materialwall,  4.0, -5.5, 1.0),
 
-      makeInstance(geometrywall, materialwall,  -4.0, -7.0, -0.5),
+      // makeInstance(geometrywall, materialwall,  -4.0, -7.0, -0.5),
 
-      makeInstance(geometrywall, materialwall,  4.0, -8.0, 1.5),
+      // makeInstance(geometrywall, materialwall,  4.0, -8.0, 1.5),
       
 
 
@@ -694,10 +720,13 @@ function main() {
       
   ];
 
-    makeFrame(cubes, 1.5, 1.5, materialhole, 0.33, 0.6, 0.5, materialwall);
-    makeFrame(cubes, 1.5, 1.5, materialforest, -0.33, -1.5, 0.5, materialwall);
+    // makeFrame(cubes, 1.5, 1.5, materialhole, 0.33, 0.6, 0.5, materialwall);
+    // makeFrame(cubes, 1.5, 1.5, materialforest, -0.33, -1.5, 0.5, materialwall);
 
-    makeFrame(cubes, 2.0, 2.0 * 1.82125, materialfmuseum, -0.05, -7.0, 1.0, materialwall);
+    // makeFrame(cubes, 2.0, 2.0 * 1.82125, materialfmuseum, -0.05, -7.0, 1.0, materialwall);
+
+    // makeFrame(cubes, 1.5, 1.5 * 1.82125, materialfmuseum, -0.05, 0.0, 0.5, materialwall);
+    makeFrame(cubes, 1.5, 1.5 * 1.82125, materialfmuseum, -0.05, 0.0, 0.5, materialwall);
 
 
     

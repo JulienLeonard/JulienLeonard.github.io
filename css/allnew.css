@@ -44,7 +44,7 @@ Menu
 .container {
     /* overflow: hidden; */
     width: 100%;
-    max-width: 800px;
+    // max-width: 800px;
     margin: auto;
     padding: 0px;
     /* background-color: #f4f4f4; */
@@ -228,7 +228,7 @@ html.sr .introname {
     // line-height: 125%;
     color: #000;
     font-weight: 500;
-    color: #888;
+    color: #444;
     // font-style: italic;
     font-weight: 600;
     font-family: 'Playfair Display', serif;
@@ -259,8 +259,8 @@ html.sr .intromenu {
 }
 
 .introname {
-    margin-left: 10%;
-    // margin-top: 60px;
+    margin-left: 5vmin;
+    margin-top: 5vmin;
     display: block;
     width: auto;
     text-align: left;
@@ -269,9 +269,9 @@ html.sr .intromenu {
 }
 
 .introname a {
-    color: #000000;
+    color: #444;
     font-family: 'Playfair Display',serif;
-    font-size: 10px;
+    font-size: 15px;
     text-align: left;
     // margin: auto;
     // vertical-align: middle;
@@ -306,16 +306,18 @@ html.sr .introtopic {
 
 
 .introtopic {
-    // margin-top: 15px;
+    margin-top: 15px;
     margin-bottom: 15px;
     // float: right;
-    margin-left: 10%;
+    margin-left: 5vmin;
     // margin-right: 5vmin;
-    border: 1.5px solid #000;
+    // border: 1.5px solid #FFDB61;
+    border: 1.5px solid #444;
     width: auto;
-    color: #000000;
+    // color: #FFAF2F;
+    color: #444;
     font-family: 'Playfair Display',serif;
-    font-size: 25px;
+    font-size: 30px;
     text-align: left;
     // vertical-align: middle;
     display: inline;
@@ -412,7 +414,7 @@ html.sr .quoteauthor {
     font-size: 10px;
     font-weight: 600;
     text-align: left;
-    // background-color: #888;
+    // background-color: #444;
     // border: 1px solid #000;
     border-radius: 100%;
     padding: 10px;
@@ -451,18 +453,26 @@ html.sr .quoteauthor {
     // margin: auto;
     // text-align: right;
     // text-align: right;
-    margin-top: 0vmin;
+    // margin-top: 0vmin;
+    // margin-top: 5vmin;
     margin-bottom: 0vmin;
-    float: right;
-    margin-right: 10px;
+    float: left;
+    margin-left: 5vmin;
 }
 
+.gold {
+    // color: #FFAF2F;
+    // color: #FFDB61;
+}
 
 .intromenuitem {
     text-decoration: none;
-    color: #000000;
+    // text-decoration-color: #FFAF2F;
+    // border-bottom: 1px solid #FFAF2F;
+    // padding-bottom: 3px;
+    color: #444;
     font-family: 'Playfair Display',serif;
-    font-size: 10px;
+    font-size: 20px;
     width: auto;
     display: inline;
     // text-align: right;
@@ -1428,7 +1438,7 @@ html.sr .intrologo {
     float: left;
     // display: inline;
     margin-left: 10%;
-    background-color: #888;
+    background-color: #444;
     // border: 1px solid #000;
     border-radius: 100%;
     padding-top: 7.5px;
@@ -1516,7 +1526,7 @@ html.sr .legend {
 
 .legendperiod {
     font-size: 10px;
-    color: #888;
+    color: #444;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
@@ -1529,7 +1539,7 @@ html.sr .legend {
 
 .legendyear {
     font-size: 10px;
-    color: #888;
+    color: #444;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
@@ -1586,7 +1596,7 @@ html.sr .legend {
     // line-height: 125%;
     color: #000;
     font-weight: 500;
-    color: #888;
+    color: #444;
     // font-style: italic;
     font-weight: 600;
     font-family: 'Playfair Display', serif;
@@ -1666,7 +1676,7 @@ html.sr .legend {
 
 .blogcat a {
     font-size: 10px;
-    color: #888;
+    color: #444;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
@@ -1675,7 +1685,7 @@ html.sr .legend {
 
 .blogdate {
     font-size: 10px;
-    color: #888;
+    color: #444;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
