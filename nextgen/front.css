@@ -143,7 +143,7 @@ body::-webkit-scrollbar {
     // color: #fff;
     color: rgb(0,33,66);
     font-family: 'Helvetica';
-    font-size: 15px;
+    font-size: 25px;
     text-align: left;
     letter-spacing: 1px;
     // font-weight: 800;
@@ -185,9 +185,10 @@ body::-webkit-scrollbar {
 .footer {
     position: absolute;
     bottom: 0px;
-    left: 5px;
+    left: 20px;
     right: 20px;
-    // background: green;    
+    // background: green;
+    height: 50px;
 }
 
 
@@ -282,15 +283,45 @@ canvas {
     font-size: 20px;
     width: 100px;
     height: 100px;
-    display: block;
-    float: right;
+    display: inline;
     text-align: center;
     vertical-align: middle;
-    line-height: 100px;
+    line-height: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
     font-weight: 800;
     letter-spacing: 1px;
+    background: white;
+    border: 5px;
+    border-color: rgb(0,33,66);
+    border-style: solid;
+    border-radius: 100%;
+    
+}
+
+.footerlogos {
+    display: table;
+    margin: 0 auto;
+    // background: orange;
+}
+
+.footeractionlogo {
+    display: block;
+    float: left;
+}
+
+.footeractionlogo a img {
+    text-decoration: none;
+    color: rgb(0,33,66);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
     background: white;
     border: 5px;
     border-color: rgb(0,33,66);
