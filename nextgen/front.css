@@ -62,20 +62,23 @@ body::-webkit-scrollbar {
 
 .introhead {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    left: 20px;
+    top: 2vmin;
+    right: 8vmin;
+    left: 8vmin;
+    height: 6vmin;
+    // background: green;
 }
 
 .intromenu {
     display: block;
     float: right;
-    margin-right: 20px;
+    margin-right: 0px;
     margin-top: 0px;
     // border-radius: 100%;
     // border: 5px;
     border-color: white;
     border-style: solid;
+    // background: green;
 }
 
 
@@ -83,69 +86,54 @@ body::-webkit-scrollbar {
     text-decoration: none;
     color: rgb(0,33,66);
     font-family: 'Helvetica';
-    font-size: 15px;
+    font-size: 1.5vmin;
     display: block;
     float: right;
     text-align: center;
     vertical-align: middle;
-    width: 60px;
-    height: 60px;
+    // width: 100px;
+    height: 5vmin;
     /* padding-right: 10px; */
     /* padding-left: 10px; */
     /* padding-top: 25px; */
     /* padding-bottom: 25px; */
-    line-height: 60px;
-    margin-left: 10px;
+    line-height: 5vmin;
+    margin-right: 0vmin;
+    margin-top: 0vmin;
     // font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: 0.2vmin;
     background: white;
-    border-radius: 100%;
+    // border-radius: 100%;
 }
 
 .intromain {
     display: block;
     float: left;
-    margin-left: 0px;
-    margin-top:  0px;
-    // background: rgb(0,33,66);
-    background: white;
-    // border-radius: 100%;
-    padding-left: 20px;
-    // padding-right: 25px;
-    padding-top: 0px;
-    // padding-bottom: 65px;
-    // border: 5px;
-    border-color: white;
-    border-style: solid;
+    // background: pink;
 }
 
 .introname {
     display: block;
-    width: auto;
     text-align: left;
-}
-
-.introname a {
-    // color: #ffffff;
     color: rgb(0,33,66);
     font-family: 'Helvetica';
-    font-size: 15px;
+    font-size: 1.5vmin;
     text-align: left;
-    letter-spacing: 2px;
+    // letter-spacing: 0.2vmin;
     // font-weight: 800;
     text-decoration: none;
 }
 
 .introtopic {
     width: auto;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 1vmin;
+    // margin-bottom: 1vmin;
     // color: #fff;
     color: rgb(0,33,66);
     font-family: 'Helvetica';
-    font-size: 25px;
+    font-size: 2vmin;
     text-align: left;
-    letter-spacing: 1px;
+    letter-spacing: 0.5vmin;
     // font-weight: 800;
 }
 
@@ -153,7 +141,7 @@ body::-webkit-scrollbar {
     width: auto;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 10px;
     // color: #fff;
     color: rgb(0,33,66);
     // font-weight: 600;
@@ -170,14 +158,13 @@ body::-webkit-scrollbar {
 
 .vertical {
     position: absolute;
-    top: 100px;
-    left: 15px;
-    font-weight: 600;
+    top: 8vmin;
+    left: 3vmin;
+    // font-weight: 600;
     font-family: 'Helvetica';
     text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 2px;
+    font-size: 1.5vmin;
+    // letter-spacing: 2px;
     writing-mode: vertical-rl;
     text-orientation: upright;;
 }
@@ -212,7 +199,7 @@ body::-webkit-scrollbar {
 
 .center-frame {
     position: absolute;
-    top: 100px; bottom: 50px; left: 20px; right: 20px;
+    top: 8vmin; bottom: 8vmin; left: 8vmin; right: 8vmin;
     margin: auto;
     background: rgb(0,33,66);
     border: 0;
