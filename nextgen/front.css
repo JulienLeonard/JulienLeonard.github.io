@@ -21,6 +21,10 @@ table {
     border-collapse: collapse;
     border-spacing: 0; }
 
+:root {
+    --bg: rgb(0,33,66);
+    --fg: white;
+}
 
 
 /*
@@ -28,8 +32,7 @@ Menu
 */
 
 body {
-    // background: rgb(0,33,66);
-    background: rgb(0,33,66);
+    background: var(--bg);
     border: 0;
     margin: 0;
     width: 100%;
@@ -57,15 +60,15 @@ body::-webkit-scrollbar {
     top: 0px; bottom: 0px; left: 0px; right: 0px;
     border: 0;
     z-index: -1;
-    background: white;
+    background: var(--bg);
  }
 
 .introhead {
     position: absolute;
-    top: 2vmin;
-    right: 8vmin;
-    left: 8vmin;
-    height: 6vmin;
+    top: 30px;
+    right: 50px;
+    left: 50px;
+    height: 100px;
     // background: green;
 }
 
@@ -84,25 +87,25 @@ body::-webkit-scrollbar {
 
 .intromenuitem {
     text-decoration: none;
-    color: rgb(0,33,66);
+    color: var(--fg);
     font-family: 'Helvetica';
-    font-size: 1.5vmin;
+    font-size: 12px;
     display: block;
     float: right;
-    text-align: center;
+    text-align: right;
     vertical-align: middle;
     // width: 100px;
-    height: 5vmin;
+    height: 90px;
     /* padding-right: 10px; */
     /* padding-left: 10px; */
     /* padding-top: 25px; */
     /* padding-bottom: 25px; */
-    line-height: 5vmin;
+    line-height: 70px;
     margin-right: 0vmin;
     margin-top: 0vmin;
     // font-weight: 800;
-    letter-spacing: 0.2vmin;
-    background: white;
+    // letter-spacing: 0.2vmin;
+    // background: white;
     // border-radius: 100%;
 }
 
@@ -110,44 +113,45 @@ body::-webkit-scrollbar {
     display: block;
     float: left;
     // background: pink;
+    // margin: auto;
 }
 
 .introname {
     display: block;
     text-align: left;
-    color: rgb(0,33,66);
+    color: var(--fg);;
     font-family: 'Helvetica';
-    font-size: 1.5vmin;
+    font-size: 15px;
     text-align: left;
-    // letter-spacing: 0.2vmin;
+    letter-spacing: 2px;
     // font-weight: 800;
     text-decoration: none;
 }
 
 .introtopic {
     width: auto;
-    margin-top: 1vmin;
-    // margin-bottom: 1vmin;
+    margin-top: 10px;
+    margin-bottom: 10px;
     // color: #fff;
-    color: rgb(0,33,66);
+    color: var(--fg);;
     font-family: 'Helvetica';
-    font-size: 2vmin;
+    font-size: 30px;
     text-align: left;
-    letter-spacing: 0.5vmin;
-    // font-weight: 800;
+    letter-spacing: 6px;
+    font-weight: 500;
 }
 
 .introsubtitle  {
     width: auto;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 12px;
     // color: #fff;
-    color: rgb(0,33,66);
+    color: var(--fg);;
     // font-weight: 600;
     font-family: 'Helvetica';
     text-transform: uppercase;
-    letter-spacing: 2px;
+    // letter-spacing: 2px;
 }
 
 .middle {
@@ -199,7 +203,7 @@ body::-webkit-scrollbar {
 
 .center-frame {
     position: absolute;
-    top: 8vmin; bottom: 8vmin; left: 8vmin; right: 8vmin;
+    top: 140px; bottom: 50px; left: 50px; right: 50px;
     margin: auto;
     background: rgb(0,33,66);
     border: 0;
