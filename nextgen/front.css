@@ -95,25 +95,31 @@ body::-webkit-scrollbar {
     text-align: right;
     vertical-align: middle;
     // width: 100px;
-    height: 90px;
-    /* padding-right: 10px; */
-    /* padding-left: 10px; */
-    /* padding-top: 25px; */
-    /* padding-bottom: 25px; */
-    line-height: 70px;
+    height: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
     margin-right: 0vmin;
     margin-top: 0vmin;
     // font-weight: 800;
     // letter-spacing: 0.2vmin;
-    // background: white;
-    // border-radius: 100%;
+    background: var(--bg);
+    border-radius: 100%;
 }
 
 .intromain {
     display: block;
     float: left;
-    // background: pink;
-    // margin: auto;
+    background: var(--bg);
+    margin-left: -80px;
+    margin-top: -140px;
+    padding-top: 135px;
+    padding-bottom: 65px;
+    padding-left: 60px;
+    padding-right: 30px;
+    border-radius: 100%;
 }
 
 .introname {
@@ -203,7 +209,7 @@ body::-webkit-scrollbar {
 
 .center-frame {
     position: absolute;
-    top: 140px; bottom: 50px; left: 50px; right: 50px;
+    top: 0px; bottom: 0px; left: 0px; right: 0px;
     margin: auto;
     background: rgb(0,33,66);
     border: 0;
