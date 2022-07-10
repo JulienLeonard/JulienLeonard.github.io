@@ -83,10 +83,10 @@ body::-webkit-scrollbar {
     text-decoration: none;
     color: var(--fg);
     font-family: 'Helvetica';
-    font-size: 5vmin;
-    padding-left: 1.5vmin;
-    padding-right: 1.5vmin;
-    line-height: 5vmin;
+    font-size: 3vmin;
+    padding-left: 1vmin;
+    padding-right: 1vmin;
+    line-height: 4vmin;
     display: block;
     float: right;
     text-align: right;
@@ -381,7 +381,7 @@ canvas {
 .middleactionprev {
     position: absolute;
     top: 50vh;
-    left: 0vmin;
+    left: 1vmin;
     color: var(--bg);
     background: var(--fg);    
     border-color: white;
@@ -397,7 +397,7 @@ canvas {
 .middleactionnext {
     position: absolute;
     top: 50vh;
-    right: 0vmin;
+    right: 1vmin;
     color: var(--bg);
     background: var(--fg);    
     border-color: white;
