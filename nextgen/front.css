@@ -117,7 +117,7 @@ body::-webkit-scrollbar {
     display: block;
     float: left;
     margin-top: 0vmin;
-    margin-left: 0vmin;
+    margin-left: 7vmin;
     // background: var(--bg);
     // background: var(--fg);
     /* margin-left: -20px; */
@@ -156,7 +156,7 @@ body::-webkit-scrollbar {
     color: var(--bg);
     text-align: left;
     font-family: 'Helvetica';
-    font-size: 3vmin;
+    font-size: 2vmin;
     // line-height: 3vmin;
     letter-spacing: 1px;
     font-weight: 500;
@@ -236,12 +236,12 @@ body::-webkit-scrollbar {
 
 .vertical {
     position: absolute;
-    bottom: 0vmin;
+    top: 7vmin;
     left: 0vmin;
     color: var(--bg);
     background: var(--fg);
-    font-size: 3vmin;
-    margin-left: 2px;
+    font-size: 2vmin;
+    margin-left: 0px;
     // margin-top: 30px;
     // font-weight: 600;
     font-family: 'Helvetica';
