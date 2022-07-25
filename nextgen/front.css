@@ -132,7 +132,7 @@ body::-webkit-scrollbar {
     /* padding-bottom: 0px; */
     border: 2px;
     border-color: white;
-    padding: 5vmin;
+    padding: 25px;
     border-style: solid;
 }
 
@@ -145,8 +145,8 @@ body::-webkit-scrollbar {
     color: var(--fg);
     text-align: left;
     font-family: "Helvetica";
-    font-size: 2vmin;
-    letter-spacing: 0.5vmin;
+    font-size: 20px;
+    letter-spacing: 3px;
     text-decoration: none;
     vertical-align: middle;
 }
@@ -155,14 +155,14 @@ body::-webkit-scrollbar {
     text-align: left;
     border-color: var(--fg);
     border-style: solid;
-    margin-top: 2.5vmin;
-    margin-bottom: 2.5vmin;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .introtopic a {
     font-family: "Garamond";
-    font-size: 7vmin;
-    letter-spacing: 1vmin;
+    font-size: 40px;
+    letter-spacing: 6px;
     text-decoration: none;
     color: var(--fg);
     vertical-align: middle;
@@ -178,7 +178,7 @@ body::-webkit-scrollbar {
 .introsubtitle a {
     text-decoration: none;
     text-align: left;
-    font-size: 2vmin;
+    font-size: 16px;
     color: var(--fg);
     font-family: 'Helvetica';
     text-transform: uppercase;
