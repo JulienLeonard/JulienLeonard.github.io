@@ -1810,8 +1810,8 @@ html.sr .frame-image-square-frame {
 }
 
 .main-panel {
-    width: 80%;
+    width: 100%;
     margin: auto;
-    max-width: 400px;
+    /* max-width: 400px; */
 }
 
