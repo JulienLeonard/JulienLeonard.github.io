@@ -7,8 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
      }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block; }
-body {
-    line-height: 1; }
+
 ol, ul {
     list-style: none; }
 blockquote, q {
@@ -27,7 +26,8 @@ Menu
 */
 
 body {
-    background-color: #ffffff;
+    line-height: 1;
+    background-color: #f4f3f1;
 }
 
 .container {
@@ -36,25 +36,25 @@ body {
     max-width: 800px;
     margin: auto;
     padding: 0px;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
 }
 
 .leaf {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
 }
 
 .introcont {
     text-align: center;
     // padding-top: 30px;
-    // background-color: #ffffff;
+    // background-color: #f4f3f1;
     // z-index: -1;
 }
 
 
 .intro {
     display: inline-block;
-    // background-color: #ffffff;
+    // background-color: #f4f3f1;
     // opacity: 1.0;
     // margin-top: 10vmin;
 }
@@ -82,7 +82,7 @@ body {
     width: 80%;
     height: 1px;
     color: #ffffff;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     margin-top: 7.5vmin;
     margin-bottom: 7.5vmin;
 }
@@ -115,7 +115,7 @@ body {
     color: #000000;
     font-weight: 500;
     // font-family: 'Cormorant', serif;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     // font-style: italic;
     // font-family: 'Lora', serif;
 }
@@ -124,11 +124,11 @@ body {
     text-decoration: none;
     font-size: 10vmin;
     color: #000000;
-    // background-color: #ffffff;
+    // background-color: #f4f3f1;
     // border-radius: 100%;
     font-weight: 500;
     // font-family: 'Crimson Text', serif;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     // font-family: 'Cormorant', serif;
     /* padding: 3vmin; */
     /* padding-top: 5vmin; */
@@ -144,7 +144,7 @@ body {
     // text-decoration: none;
     font-size: 5vmin;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     border-radius: 100%;
     font-weight: 500;
     padding: 1.5vmin;
@@ -156,7 +156,7 @@ body {
     // text-decoration: none;
     font-size: 5vmin;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     border-radius: 100%;
     font-weight: 500;
     padding: 1.5vmin;
@@ -168,7 +168,7 @@ body {
     // text-decoration: none;
     font-size: 5vmin;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     border-radius: 100%;
     font-weight: 500;
     padding: 3vmin;
@@ -193,8 +193,8 @@ html.sr .quotation {
     color: #000;
     font-weight: 500;
     font-style: italic;
-    // font-family: 'Helvetica';
-    font-family: 'Helvetica';
+    // font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 html.sr .introsubtitle {
@@ -221,7 +221,7 @@ html.sr .introname {
     color: #888;
     // font-style: italic;
     font-weight: 600;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -258,7 +258,7 @@ html.sr .intromenu {
 
 .introname a {
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 10px;
     text-align: left;
     // margin: auto;
@@ -278,7 +278,7 @@ html.sr .intromenu {
     // margin-right: 5vmin;
     width: auto;
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 3vmin;
     text-align: right;
     // margin: auto;
@@ -301,7 +301,7 @@ html.sr .introtopic {
     // margin-right: 5vmin;
     width: auto;
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 25px;
     text-align: left;
     // vertical-align: middle;
@@ -321,7 +321,7 @@ html.sr .quoteauthor {
     margin-bottom: 60px;
     width: 66%;
     color: #000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 16.5px;
     text-align: right;
     display: block;
@@ -339,7 +339,7 @@ html.sr .quoteauthor {
     width: 80%;
     max-width: 400px;
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 16.5px;
     text-align: left;
 }
@@ -355,7 +355,7 @@ html.sr .quoteauthor {
     width: 80%;
     max-width: 400px;
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 16.5px;
     text-align: left;
 }
@@ -369,7 +369,7 @@ html.sr .quoteauthor {
     // margin-right: 5vmin;
     width: auto;
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 5vmin;
     text-align: center;
 }
@@ -381,7 +381,7 @@ html.sr .quoteauthor {
     // margin-right: 5vmin;
     width: auto;
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 5vmin;
     font-style: italic;
     text-align: center;
@@ -393,7 +393,7 @@ html.sr .quoteauthor {
     float: left;
     margin-left: 10%;
     width: auto;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 10px;
     font-weight: 600;
     text-align: left;
@@ -442,7 +442,7 @@ html.sr .quoteauthor {
 .intromenuitem {
     text-decoration: none;
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 10px;
     width: auto;
     display: inline;
@@ -451,7 +451,7 @@ html.sr .quoteauthor {
     padding-right: 5px;
     padding-left: 5px;
     margin: auto;
-    // background-color: #ffffff;
+    // background-color: #f4f3f1;
     // border-radius: 100%;
     font-weight: 600;
     letter-spacing: 2px;
@@ -491,8 +491,8 @@ html.sr .quoteauthor {
     text-decoration: none;
     font-size: 3vmin;
     color: #000000;
-    font-family: 'Helvetica';
-    background-color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f3f1;
     border-radius: 100%;
     margin-right: 30vmin;
     margin-top: 7.5vmin;
@@ -518,8 +518,8 @@ html.sr .quoteauthor {
 .front-title {
     text-decoration: none;
     color: #000000;
-    font-family: 'Helvetica';
-    // font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
+    // font-family: 'Playfair Display', serif;
     font-size: 4vmin;
     letter-spacing: 2px;
     text-align: center;
@@ -603,8 +603,8 @@ html.sr .paragraph {
 .paragraph p {
     text-decoration: none;
     color: #000000;
-    font-family: 'Helvetica';
-    font-size: 16.5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
     line-height: 200%;
     // letter-spacing: 1px;
     font-weight: 500;
@@ -615,7 +615,7 @@ html.sr .paragraph {
 
 .paragraph-index p {
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 16.5px;
     line-height: 150%;
     // letter-spacing: 1px;
@@ -640,7 +640,7 @@ html.sr .paragraph {
     margin: auto;
     height: auto;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     // margin-top: 10vh;
     // margin-bottom: 10vh;
     // background-color: #fdd;
@@ -657,7 +657,7 @@ html.sr .paragraph {
     // margin-left: 10%;
     height: auto;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     // margin-top: 10vh;
     // margin-bottom: 10vh;
     // background-color: #fdd;
@@ -678,7 +678,7 @@ html.sr .paragraph {
     // margin: auto;
     height: auto;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     // margin-top: 10vh;
     // margin-bottom: 10vh;
     // background-color: #fdd;
@@ -698,7 +698,7 @@ html.sr .paragraph {
     margin-left: 5%;
     height: auto;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     // margin-top: 10vh;
     // margin-bottom: 10vh;
     // background-color: #fdd;
@@ -712,7 +712,7 @@ html.sr .paragraph {
 
 .paradark {
     // background-color: #bdbebf;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     display: inline-block;
     width: auto;
     margin: auto;
@@ -730,7 +730,7 @@ html.sr .paragraph {
     margin: auto;
     height: auto;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     // margin-top: 10vh;
     // margin-bottom: 10vh;
     // background-color: #fdd;
@@ -745,7 +745,7 @@ html.sr .paragraph {
     margin: auto;
     height: auto;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     display: block;
     padding: 0vmin;
     text-align: center;
@@ -907,7 +907,7 @@ html.sr .paragraph_center_frame {
     // margin-top:  5vmin;
     // margin-bottom: 30vmin;
     // margin-left: 40%;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     // padding: 2vmin;
     // border-radius: 100%;
     // margin-left: 50vmin;
@@ -933,7 +933,7 @@ html.sr .paragraph_center_frame {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    // background-color: white;
+    // background-color: #f4f3f1;
 }
 
 
@@ -1000,7 +1000,7 @@ html.sr .footer {
     // margin-top: 20vw;
     // margin-bottom: 10vh;
     // margin: 10vh auto;
-    // background-color: #ffffff;
+    // background-color: #f4f3f1;
     // padding-top: 0vmin;
     // padding-bottom: 5vmin;
 }
@@ -1009,7 +1009,7 @@ html.sr .footer {
 /*     // text-decoration: none; */
 /*     // color: #ffffff; */
 /*     color: #000; */
-/*     font-family: 'Helvetica'; */
+/*     font-family: 'Playfair Display', serif; */
 /*     font-size: 16.5px; */
 /*     // font-weight: bold; */
 /*     // letter-spacing: 1px; */
@@ -1017,7 +1017,7 @@ html.sr .footer {
 /*     display: inline-block; */
 /*     margin-right: 10%; */
 /*     margin-left: 10%; */
-/*     // background-color: #ffffff; */
+/*     // background-color: #f4f3f1; */
 /* } */
 
 
@@ -1025,7 +1025,7 @@ html.sr .footer {
 .footer a {
     text-decoration: none;
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 10px;
     width: auto;
     display: inline-block;
@@ -1034,7 +1034,7 @@ html.sr .footer {
     padding-right: 14px;
     padding-left: 14px;
     margin: auto;
-    // background-color: #ffffff;
+    // background-color: #f4f3f1;
     // border-radius: 100%;
     font-weight: 600;
     letter-spacing: 2px;
@@ -1043,7 +1043,7 @@ html.sr .footer {
 .main {
     width: 80%;
     // margin-bottom: -5vmin;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     display: block;
     margin: auto;
 }
@@ -1053,19 +1053,19 @@ html.sr .footer {
     // top: 100%;
     // left: 0%;
     // padding-top: 5vh;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
 }
 
 .mainwork {
-    background-color: #ffffff;
+    background-color: #f4f3f1;
 }
 
 .main-simple {
     width: 70%;
     text-decoration: none;
     color: #000000;
-    font-family: 'Helvetica';
-    // font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
+    // font-family: 'Playfair Display', serif;
     font-size: 4vmin;
     letter-spacing: 1px;
     line-height: 200%;
@@ -1088,8 +1088,8 @@ html.sr .footer {
 .paragraph-about-left p {
     text-decoration: none;
     color: #000000;
-    font-family: 'Helvetica';
-    // font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
+    // font-family: 'Playfair Display', serif;
     font-size: 4vmin;
     letter-spacing: 1px;
     line-height: 200%;
@@ -1114,8 +1114,8 @@ html.sr .footer {
 .paragraph-about-right p {
     text-decoration: none;
     color: #000000;
-    font-family: 'Helvetica';
-    // font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
+    // font-family: 'Playfair Display', serif;
     font-size: 4vmin;
     letter-spacing: 1px;
     line-height: 200%;
@@ -1178,8 +1178,8 @@ html.sr .footer {
     width: 100%;
     text-decoration: none;
     color: #000000;
-    font-family: 'Helvetica';
-    // font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
+    // font-family: 'Playfair Display', serif;
     font-size: 4vmin;
     letter-spacing: 1px;
     line-height: 200%;
@@ -1192,8 +1192,8 @@ html.sr .footer {
     width: 100%;
     text-decoration: none;
     color: #000000;
-    font-family: 'Helvetica';
-    // font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
+    // font-family: 'Playfair Display', serif;
     font-size: 8vmin;
     letter-spacing: 1px;
     line-height: 200%;
@@ -1231,7 +1231,7 @@ html.sr .blog-menus {
 
 
 .blog-menu a {
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
     color: #000000;
     line-height: 200%;
@@ -1260,7 +1260,7 @@ html.sr .blog-menus {
 
 
 .blog-year a {
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
     color: #000000;
     line-height: 200%;
@@ -1285,7 +1285,7 @@ html.sr .blog-menus {
 
 
 .blog-cat a {
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
     color: #000000;
     line-height: 200%;
@@ -1309,7 +1309,7 @@ html.sr .blog-menus {
 }
 
 .blog-previous a {
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
     color: #000000;
     line-height: 200%;
@@ -1319,7 +1319,7 @@ html.sr .blog-menus {
 }
 
 .blog-next a {
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
     color: #000000;
     line-height: 200%;
@@ -1337,7 +1337,7 @@ html.sr .blog-menus {
     margin-top: 0vmin;
     margin-bottom: 0vmin;
     // margin-left: 45vmin;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     // border-radius: 100%;
     padding: 3vmin;
     padding-top: 5vmin;
@@ -1345,7 +1345,7 @@ html.sr .blog-menus {
     // margin-right: 5vmin;
 }
 .action-link a {
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
     color: #000000;
     line-height: 200%;
@@ -1372,7 +1372,7 @@ html.sr .intrologo {
     float: right;
     // display: inline;
     margin-right: 10%;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     margin-top: -5px;
 }
 
@@ -1381,7 +1381,7 @@ html.sr .intrologo {
     border: 0px solid #000;
     padding: 0vmin;
     border-radius: 100%;
-    background-color: #ffffff;
+    background-color: #f4f3f1;
     // float: left;
 }
 
@@ -1418,7 +1418,7 @@ html.sr .intrologo {
 }
 
 .homelogo a {
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 10px;
     letter-spacing: 3px;
     text-decoration: none;
@@ -1445,7 +1445,7 @@ html.sr .intrologo {
     // margin-right: 5vmin;
     width: auto;
     color: #000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 10px;
     letter-spacing: 3px;
     text-align: center;
@@ -1459,7 +1459,7 @@ html.sr .legend {
     margin-top: 3vmin;
     float: left;
     // margin-left: 10%;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
 }
 
 .legendleft {
@@ -1467,7 +1467,7 @@ html.sr .legend {
     margin-top: 3vmin;
     float: left;
     margin-left: 0%;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
 }
 
 .legendright {
@@ -1476,7 +1476,7 @@ html.sr .legend {
     float: right;
     test-align: right;
     margin-right: 10%;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
 }
 
 .legend a {
@@ -1546,7 +1546,7 @@ html.sr .legend {
     // margin-right: 5vmin;
     width: auto;
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 15px;
     text-align: left;
     // vertical-align: middle;
@@ -1570,7 +1570,7 @@ html.sr .legend {
     color: #888;
     // font-style: italic;
     font-weight: 600;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -1588,7 +1588,7 @@ html.sr .legend {
     margin-right: 10%;
     text-decoration: none;
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 15px;
     line-height: 200%;
     // letter-spacing: 1px;
@@ -1614,7 +1614,7 @@ html.sr .legend {
     // margin-right: 5vmin;
     width: auto;
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 15px;
     text-align: left;
     // vertical-align: middle;
@@ -1632,7 +1632,7 @@ html.sr .legend {
     // margin-right: 5vmin;
     width: auto;
     color: #000000;
-    font-family: 'Helvetica';
+    font-family: 'Playfair Display', serif;
     font-size: 12.5px;
     text-align: left;
     // vertical-align: middle;
@@ -1681,7 +1681,7 @@ html.sr .frame-image-square-frame {
     position: relative;
     width: 100%;
     padding-bottom: 153.3%;
-    background: black;
+    background: #d8d8d8;
     box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.3);
     margin-bottom: 10px;
 }
@@ -1690,7 +1690,7 @@ html.sr .frame-image-square-frame {
     position: relative;
     width: 100%;
     padding-bottom: 147.2%;
-    background: black;
+    background: #d8d8d8;
     box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.3);
     margin-bottom: 10px;
 }
@@ -1698,9 +1698,9 @@ html.sr .frame-image-square-frame {
 
 .frame-image-mat {
   position: absolute;
-  background: white;
+  background-color: #f4f3f1;
   top: 1.37%; bottom: 1.37%; left: 2.5%; right: 2.5%;
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5) inset;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3) inset;
 }
 
 .frame-image-art {
@@ -1715,7 +1715,7 @@ html.sr .frame-image-square-frame {
   top: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75) inset;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3) inset;
 }
 
 .frame-image-art a {
@@ -1734,16 +1734,16 @@ html.sr .frame-image-square-frame {
     position: relative;
     width: 100%;
     padding-bottom: 100%;
-    background: black;
-    box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.7);
+    background: #d8d8d8;
+    box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.3);
     margin-bottom: 10px;
 }
 
 .frame-image-square-mat {
   position: absolute;
-  background: white;
+  background-color: #f4f3f1;
   top: 2.5%; bottom: 2.5%; left: 2.5%; right: 2.5%;
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5) inset;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3) inset;
 }
 
 .frame-image-square-art {
@@ -1758,7 +1758,7 @@ html.sr .frame-image-square-frame {
   top: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75) inset;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3) inset;
 }
 
 .frame-image-square-art a {
@@ -1777,16 +1777,16 @@ html.sr .frame-image-square-frame {
     width: 100%;
     margin: auto;
     padding-bottom: 100%;
-    background: black;
-    box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.7);
+    background: #d8d8d8;
+    box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.3);
     margin-bottom: 10px;
 }
 
 .frame-image-middle-mat {
   position: absolute;
-  background: white;
+  background-color: #f4f3f1;
   top: 2.5%; bottom: 2.5%; left: 2.5%; right: 2.5%;
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5) inset;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3) inset;
 }
 
 .frame-image-middle-art {
@@ -1801,7 +1801,7 @@ html.sr .frame-image-square-frame {
   top: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75) inset;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3) inset;
 }
 
 .frame-image-middle-art img {
