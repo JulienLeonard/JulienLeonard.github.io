@@ -63,7 +63,6 @@ section {
 
   position: relative;
   color: white;
-  overflow: hidden; /* prevents bleed */
 }
 
 section::before {
@@ -79,13 +78,22 @@ section > * {
   z-index: 1;
 }
 
-/* ========================= BACKGROUNDS ========================= */
-#hero    { background-image: url("hero.jpg"); }
-// #work    { background-image: url("work-bg.jpg"); }
-#about   { background-image: url("about-bg.jpg"); }
-#contact { background-image: url("contact-bg.jpg"); }
+/* ========================= BACKGROUNDS (DESKTOP) ========================= */
+
+#hero {
+  background-image: url("hero.jpg");
+}
+
+#about {
+  background-image: url("about-bg.jpg");
+}
+
+#contact {
+  background-image: url("contact-bg.jpg");
+}
 
 /* ========================= NAV ========================= */
+
 nav {
   position: fixed;
   top: 0;
@@ -119,14 +127,16 @@ nav a {
 }
 
 /* ========================= CONTAINER ========================= */
+
 .container {
   max-width: 1100px;
   width: 100%;
   text-align: center;
-  padding: 90px 22px; /* moved padding here */
+  padding: 90px 22px;
 }
 
 /* ========================= TITLES ========================= */
+
 .slide-title {
   font-family: "Cormorant Garamond", serif;
   font-size: 42px;
@@ -135,9 +145,6 @@ nav a {
 }
 
 /* ========================= HERO ========================= */
-.hero-content {
-  text-align: center;
-}
 
 .title {
   font-family: "Cormorant Garamond", serif;
@@ -183,6 +190,7 @@ nav a {
 }
 
 /* ========================= GALLERY ========================= */
+
 .grid {
   display: grid;
   gap: 20px;
@@ -200,6 +208,7 @@ nav a {
 }
 
 /* ========================= CONTACT ========================= */
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -218,15 +227,33 @@ nav a {
 }
 
 /* ========================= ANIMATION ========================= */
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: none; }
 }
 
 /* ========================= MOBILE ========================= */
+
 @media (max-width: 600px) {
+
   .title { font-size: 46px; }
   .subtitle { font-size: 16px; }
+
+  /* MOBILE BACKGROUNDS */
+
+  #hero {
+    background-image: url("heromobile.jpg");
+  }
+
+  #about {
+    background-image: url("about-bgmobile.jpg");
+  }
+
+  #contact {
+    background-image: url("contact-bgmobile.jpg");
+  }
+
 }
 
 </style>
@@ -246,21 +273,22 @@ nav a {
 </nav>
 
 <!-- HERO -->
+
 <section id="hero">
   <div class="container">
-  <!-- <div class="hero-content"> -->
     <div class="title">RE:CURSIVE</div>
     <div class="subtitle"><i>When iteration becomes expression</i></div>
     <div class="author">Julien Leonard</div>
     <a href="#work" class="cta">View Gallery →</a>
-  <!-- </div> -->
   </div>
 </section>
 
 <!-- WORK -->
+
 <section id="work">
   <div class="container">
     <div class="slide-title">Selected Works</div>
+
     <div class="grid">
       <img src="img1.png" loading="lazy">
       <img src="img2.png" loading="lazy">
@@ -269,23 +297,29 @@ nav a {
       <img src="img5.png" loading="lazy">
       <img src="img6.png" loading="lazy">
     </div>
+
   </div>
 </section>
 
 <!-- ABOUT -->
+
 <section id="about">
   <div class="container">
     <div class="slide-title">About</div>
+
     <p>
       I create generative compositions emerging from recurrent systems and
       dynamical processes, exploring how computation evolves into form.
     </p>
+
   </div>
 </section>
 
 <!-- CONTACT -->
+
 <section id="contact">
   <div class="container contact">
+
     <div class="slide-title">Contact</div>
 
     <div>jl.julien.leonard at gmail.com</div>
@@ -297,28 +331,41 @@ nav a {
     <div class="copyright">
       © 2026 Julien Leonard
     </div>
+
   </div>
 </section>
 
 <script>
-const backgrounds = [
-  "hero.jpg",
-  "about-bg.jpg",
-  "contact-bg.jpg"
-];
+
+/* detect mobile */
+
+const isMobile = window.innerWidth < 600;
+
+/* preload correct images */
+
+const backgrounds = isMobile
+  ? ["heromobile.jpg","about-bgmobile.jpg","contact-bgmobile.jpg"]
+  : ["hero.jpg","about-bg.jpg","contact-bg.jpg"];
 
 let loaded = 0;
 
 backgrounds.forEach(src => {
+
   const img = new Image();
   img.src = src;
+
   img.onload = () => {
+
     loaded++;
+
     if (loaded === backgrounds.length) {
       document.getElementById("loader").classList.add("hidden");
     }
+
   };
+
 });
+
 </script>
 
 </body>
